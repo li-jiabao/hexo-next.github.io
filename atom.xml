@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-03-02T15:48:30.218Z</updated>
+  <updated>2021-03-02T16:33:13.385Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,34 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Linux</title>
+    <link href="http://example.com/wiki/Linux/"/>
+    <id>http://example.com/wiki/Linux/</id>
+    <published>2021-03-02T16:27:42.000Z</published>
+    <updated>2021-03-02T16:33:13.385Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="Linux系统安装"><a href="#Linux系统安装" class="headerlink" title="Linux系统安装"></a>Linux系统安装</h3><ol><li>官网下载镜像源，制作启动盘，启动盘软件制作使用ventoy,这个软件制作的启动盘，既可以<br>当成启动盘，还可当作存储盘使用</li><li>重启进入bios,不同的主办型号需要按不同的BIOS键</li><li>进入BIOS之后进行一些必要的设置</li></ol><ul><li>将AHCP设置为true,开启uefi关闭传统的启动引导方式</li><li>选择启动顺序为U盘在最前面，或者选中u盘进行启动</li></ul><ol start="4"><li>启动后选择制作的ISO镜像进行安装</li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;Linux系统安装&quot;&gt;&lt;a href=&quot;#Linux系统安装&quot; class=&quot;headerlink&quot; title=&quot;Linux系统安装&quot;&gt;&lt;/a&gt;Linux系统安装&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;官网下载镜像源，制作启动盘，启动盘软件制作使用ventoy,这个软件制作</summary>
+      
+    
+    
+    
+    
+    <category term="Linux" scheme="http://example.com/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hello World</title>
     <link href="http://example.com/wiki/hello-world/"/>
     <id>http://example.com/wiki/hello-world/</id>
     <published>2021-03-02T15:48:30.218Z</published>
-    <updated>2021-03-02T15:48:30.218Z</updated>
+    <updated>2021-03-02T16:33:35.495Z</updated>
     
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
     
@@ -33,6 +56,8 @@
     
     
     
+    
+    <category term="Start" scheme="http://example.com/tags/Start/"/>
     
   </entry>
   

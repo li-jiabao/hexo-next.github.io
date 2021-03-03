@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    
+    <title>Category: Sound | Hexo</title>
+    
+    
+        <meta name="keywords" content="Sound">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Synthesizing Sound Most programs that avail themselves of the Java Sound API’s MIDI package do so to synthesize sound. The entire apparatus of MIDI files, events, sequences, and sequencers, which was">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Synthesizing Sound">
+<meta property="og:url" content="http://example.com/wiki/2021-03-03-Synthesizing%20Sound/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Synthesizing Sound Most programs that avail themselves of the Java Sound API’s MIDI package do so to synthesize sound. The entire apparatus of MIDI files, events, sequences, and sequencers, which was">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-12-05T17:47:59.227Z">
+<meta property="article:modified_time" content="2021-03-03T07:30:49.597Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="Sound">
+<meta name="twitter:card" content="summary">
+    
+
+    
+        <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    
+
+    
+        <link rel="icon" href="/favicon.ico">
+    
+
+    
+<link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+
+    
+<link rel="stylesheet" href="/libs/open-sans/styles.css">
+
+    
+<link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+<script src="/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    
+<script src="/libs/jquery/plugins/cookie/1.4.1/jquery.cookie.js"></script>
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+
+    
+    
+    
+    
+
+
+    
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+    <div id="container">
+        <header id="header">
+    <div id="header-main" class="header-inner">
+        <div class="outer">
+            <a href="/" id="logo">
+                <i class="logo"></i>
+                <span class="site-title">Hexo</span>
+            </a>
+            <nav id="main-nav">
+                
+                    <a class="main-nav-link" href="/">首页</a>
+                
+                    <a class="main-nav-link" href="/archives">归档</a>
+                
+                    <a class="main-nav-link" href="/categories">分类</a>
+                
+                    <a class="main-nav-link" href="/tags">标签</a>
+                
+                    <a class="main-nav-link" href="/about">关于</a>
+                
+            </nav>
+            
+                
+                <nav id="sub-nav">
+                    <div class="profile" id="profile-nav">
+                        <a id="profile-anchor" href="javascript:;">
+                            <img class="avatar" src="https://www.gravatar.com/avatar/8e8cb93ba6bbc1955fdfe3cbe7ec0924">
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                    </div>
+                </nav>
+            
+            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search">
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something...">
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+
+</div>
+        </div>
+    </div>
+    <div id="main-nav-mobile" class="header-sub header-inner">
+        <table class="menu outer">
+            <tr>
+                
+                    <td><a class="main-nav-link" href="/">首页</a></td>
+                
+                    <td><a class="main-nav-link" href="/archives">归档</a></td>
+                
+                    <td><a class="main-nav-link" href="/categories">分类</a></td>
+                
+                    <td><a class="main-nav-link" href="/tags">标签</a></td>
+                
+                    <td><a class="main-nav-link" href="/about">关于</a></td>
+                
+                <td>
+                    
+    <div class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search">
+    </div>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+</header>
+
+        <div class="outer">
+            
+                
+
+<aside id="profile">
+    <div class="inner profile-inner">
+        <div class="base-info profile-block">
+            <img id="avatar" src="https://www.gravatar.com/avatar/8e8cb93ba6bbc1955fdfe3cbe7ec0924?s=128">
+            <h2 id="name">Lijiabao</h2>
+            <h3 id="title">Student &amp; Programmer lover</h3>
+            <span id="location"><i class="fa fa-map-marker"></i>Nanjing, China</span>
+            <a id="follow" target="_blank" href="https://github.com/li-jiabao/" rel="external nofollow noopener noreferrer">FOLLOW</a>
+        </div>
+        <div class="article-info profile-block">
+            <div class="article-info-block">
+                355
+                <span>posts</span>
+            </div>
+            <div class="article-info-block">
+                21
+                <span>tags</span>
+            </div>
+        </div>
+        
+        <div class="profile-block social-links">
+            <table>
+                <tr>
+                    
+                    
+                    <td>
+                        <a href="https://github.com/li-jiabaox/li-jiabao.github.io" target="_blank" title="github" class="tooltip" rel="external nofollow noopener noreferrer">
+                            <i class="fa fa-github"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="http://stackoverflow.com/users/7277090/zthxxx?tab=profile" target="_blank" title="stack-overflow" class="tooltip" rel="external nofollow noopener noreferrer">
+                            <i class="fa fa-stack-overflow"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="http://codepen.io/zthxxx/" target="_blank" title="codepen" class="tooltip" rel="external nofollow noopener noreferrer">
+                            <i class="fa fa-codepen"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="/atom.xml" target="_blank" title="rss" class="tooltip">
+                            <i class="fa fa-rss"></i>
+                        </a>
+                    </td>
+                    
+                </tr>
+            </table>
+        </div>
+        
+    </div>
+</aside>
+
+            
+            
+                <aside id="sidebar">
+   
+        
+    <div class="widget-wrap" id="categories">
+        <h3 class="widget-title">
+            <span>categories</span>
+            &nbsp;
+            <a id="allExpand" href="#">
+                <i class="fa fa-angle-double-down fa-2x"></i>
+            </a>
+        </h3>
+        
+        
+        
+         <ul class="unstyled" id="tree"> 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Archlinux配置
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/2021-03-03-%E4%BA%AE%E5%BA%A6%E8%B0%83%E8%8A%82/">亮度调节</a></li>  <li class="file"><a href="/wiki/2021-03-03-DPI%E7%BC%A9%E6%94%BE%E8%B0%83%E8%8A%82/">DPI缩放调节</a></li>  <li class="file"><a href="/wiki/2021-03-03-%E8%87%AA%E5%8A%A8%E7%99%BB%E9%99%86/">自动登陆</a></li>  <li class="file"><a href="/wiki/2021-03-03-%E6%81%AF%E5%B1%8F%E5%92%8C%E4%BC%91%E7%9C%A0%E8%AE%BE%E7%BD%AE/">息屏和休眠设置</a></li>  <li class="file"><a href="/wiki/2021-03-03-systemd/">systemd</a></li>  <li class="file"><a href="/wiki/2021-03-03-journalctl/">journalctl</a></li>  <li class="file"><a href="/wiki/2021-03-03-shortcut-keys/">shortcut-keys</a></li>  <li class="file"><a href="/wiki/2021-03-03-tar%E7%B3%BB%E7%BB%9F%E5%A4%87%E4%BB%BD/">tar系统备份</a></li>  <li class="file"><a href="/wiki/2021-03-03-system%20maintenance/">system maintenance</a></li>  <li class="file"><a href="/wiki/2021-03-03-%E5%90%AF%E5%8A%A8%E6%95%B0%E5%AD%97%E9%94%AE%E7%9B%98%E6%BF%80%E6%B4%BB/">启动数字键盘激活</a></li>  <li class="file"><a href="/wiki/2021-03-03-%E5%AE%89%E8%A3%85%E5%92%8C%E7%AE%80%E5%8D%95%E9%85%8D%E7%BD%AE/">安装和简单配置</a></li>  <li class="file"><a href="/wiki/2021-03-03-arch%E5%AE%89%E8%A3%85%E5%90%8E%E9%85%8D%E7%BD%AE/">arch安装后配置</a></li>  <li class="file"><a href="/wiki/2021-03-03-console%20%E5%A2%9E%E5%BC%BA/">console 增强</a></li>  <li class="file"><a href="/wiki/2021-03-03-automount%20at%20boot/">automount at boot</a></li>  <li class="file"><a href="/wiki/2021-03-03-i3%E9%85%8D%E7%BD%AE/">i3配置</a></li>  <li class="file"><a href="/wiki/2021-03-03-%E9%A2%9C%E8%89%B2%E9%85%8D%E7%BD%AE/">颜色配置</a></li>  <li class="file"><a href="/wiki/2021-03-03-%E8%B6%85%E7%BA%A7%E7%94%A8%E6%88%B7/">超级用户</a></li>  <li class="file"><a href="/wiki/2021-03-03-%E7%BD%91%E7%BB%9C%E8%AE%BE%E7%BD%AE/">网络设置</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Blog
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/2021-03-03-jekyll%E9%85%8D%E7%BD%AE%E7%AE%A1%E7%90%86%E5%8D%9A%E5%AE%A2/">jekyll配置管理博客</a></li>  <li class="file"><a href="/wiki/2021-03-03-%E4%BD%BF%E7%94%A8jekyll%E4%B8%BB%E9%A2%98/">使用jekyll主题</a></li>  <li class="file"><a href="/wiki/2021-03-03-jekyll%E8%AF%AD%E6%B3%95/">jekyll语法</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Bonus
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/2021-03-03-Bonus/">Bonus</a></li>  <li class="file"><a href="/wiki/2021-03-03-Generics/">Generics</a></li>  <li class="file"><a href="/wiki/2021-03-03-Defining%20Simple%20Generics/">Defining Simple Generics</a></li>  <li class="file"><a href="/wiki/2021-03-03-Generics%20and%20Subtyping/">Generics and Subtyping</a></li>  <li class="file"><a href="/wiki/2021-03-03-Wildcards/">Wildcards</a></li>  <li class="file"><a href="/wiki/2021-03-03-Generic%20Methods/">Generic Methods</a></li>  <li class="file"><a href="/wiki/2021-03-03-Interoperating%20with%20Legacy%20Code/">Interoperating with Legacy Code</a></li>  <li class="file"><a href="/wiki/2021-03-03-The%20Fine%20Print/">The Fine Print</a></li>  <li class="file"><a href="/wiki/2021-03-03-Class%20Literals%20as%20Runtime-Type%20Tokens/">Class Literals as Runtime-Type Tokens</a></li>  <li class="file"><a href="/wiki/2021-03-03-More%20Fun%20with%20Wildcards/">More Fun with Wildcards</a></li>  <li class="file"><a href="/wiki/2021-03-03-Converting%20Legacy%20Code%20to%20Use%20Generics/">Converting Legacy Code to Use Generics</a></li>  <li class="file"><a href="/wiki/2021-03-03-Acknowledgements/">Acknowledgements</a></li>  <li class="file"><a href="/wiki/2021-03-03-Full-Screen%20Exclusive%20Mode%20API/">Full-Screen Exclusive Mode API</a></li>  <li class="file"><a href="/wiki/2021-03-03-Full-Screen%20Exclusive%20Mode/">Full-Screen Exclusive Mode</a></li>  <li class="file"><a href="/wiki/2021-03-03-Display%20Mode/">Display Mode</a></li>  <li class="file"><a href="/wiki/2021-03-03-Passive%20vs.%20Active%20Rendering/">Passive vs. Active Rendering</a></li>  <li class="file"><a href="/wiki/2021-03-03-Double%20Buffering%20and%20Page%20Flipping/">Double Buffering and Page Flipping</a></li>  <li class="file"><a href="/wiki/2021-03-03-BufferStrategy%20and%20BufferCapabilities/">BufferStrategy and BufferCapabilities</a></li>  <li class="file"><a href="/wiki/2021-03-03-Examples/">Examples</a></li>  <li class="file"><a href="/wiki/2021-03-03-Preparation%20for%20Java%20Programmer%20Language%20Certification/">Preparation for Java Programmer Language Certification</a></li>  <li class="file"><a href="/wiki/2021-03-03-Java%20SE%208%20Programmer%20I%20Exam/">Java SE 8 Programmer I Exam</a></li>  <li class="file"><a href="/wiki/2021-03-03-Java%20SE%208%20Programmer%20II%20Exam/">Java SE 8 Programmer II Exam</a></li>  <li class="file"><a href="/wiki/2021-03-03-Java%20SE%208%20Upgrade%20Exam/">Java SE 8 Upgrade Exam</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Collections
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/2021-03-03-Collections/">Collections</a></li>  <li class="file"><a href="/wiki/2021-03-03-Introduction%20to%20Collections/">Introduction to Collections</a></li>  <li class="file"><a href="/wiki/2021-03-03-Interfaces/">Interfaces</a></li>  <li class="file"><a href="/wiki/2021-03-03-The%20Collection%20Interface/">The Collection Interface</a></li>  <li class="file"><a href="/wiki/2021-03-03-The%20Set%20Interface/">The Set Interface</a></li>  <li class="file"><a href="/wiki/2021-03-03-The%20List%20Interface/">The List Interface</a></li>  <li class="file"><a href="/wiki/2021-03-03-The%20Queue%20Interface/">The Queue Interface</a></li>  <li class="file"><a href="/wiki/2021-03-03-The%20Deque%20Interface/">The Deque Interface</a></li>  <li class="file"><a href="/wiki/2021-03-03-The%20Map%20Interface/">The Map Interface</a></li>  <li class="file"><a href="/wiki/2021-03-03-Object%20Ordering/">Object Ordering</a></li>  <li class="file"><a href="/wiki/2021-03-03-The%20SortedSet%20Interface/">The SortedSet Interface</a></li>  <li class="file"><a href="/wiki/2021-03-03-The%20SortedMap%20Interface/">The SortedMap Interface</a></li>  <li class="file"><a href="/wiki/2021-03-03-Summary%20of%20Interfaces/">Summary of Interfaces</a></li>  <li class="file"><a href="/wiki/2021-03-03-Questions%20and%20Exercises%20%20Interfaces/">Questions and Exercises  Interfaces</a></li>  <li class="file"><a href="/wiki/2021-03-03-Aggregate%20Operations/">Aggregate Operations</a></li>  <li class="file"><a href="/wiki/2021-03-03-Reduction/">Reduction</a></li>  <li class="file"><a href="/wiki/2021-03-03-Parallelism/">Parallelism</a></li>  <li class="file"><a href="/wiki/2021-03-03-Questions%20and%20Exercises%20%20Aggregate%20Operations/">Questions and Exercises  Aggregate Operations</a></li>  <li class="file"><a href="/wiki/2021-03-03-Implementations/">Implementations</a></li>  <li class="file"><a href="/wiki/2021-03-03-Set%20Implementations/">Set Implementations</a></li>  <li class="file"><a href="/wiki/2021-03-03-List%20Implementations/">List Implementations</a></li>  <li class="file"><a href="/wiki/2021-03-03-Map%20Implementations/">Map Implementations</a></li>  <li class="file"><a href="/wiki/2021-03-03-Queue%20Implementations/">Queue Implementations</a></li>  <li class="file"><a href="/wiki/2021-03-03-Deque%20Implementations/">Deque Implementations</a></li>  <li class="file"><a href="/wiki/2021-03-03-Wrapper%20Implementations/">Wrapper Implementations</a></li>  <li class="file"><a href="/wiki/2021-03-03-Convenience%20Implementations/">Convenience Implementations</a></li>  <li class="file"><a href="/wiki/2021-03-03-Summary%20of%20Implementations/">Summary of Implementations</a></li>  <li class="file"><a href="/wiki/2021-03-03-Questions%20and%20Exercises%20%20Implementations/">Questions and Exercises  Implementations</a></li>  <li class="file"><a href="/wiki/2021-03-03-Algorithms/">Algorithms</a></li>  <li class="file"><a href="/wiki/2021-03-03-Custom%20Collection%20Implementations/">Custom Collection Implementations</a></li>  <li class="file"><a href="/wiki/2021-03-03-Interoperability/">Interoperability</a></li>  <li class="file"><a href="/wiki/2021-03-03-Compatibility/">Compatibility</a></li>  <li class="file"><a href="/wiki/2021-03-03-API%20Design/">API Design</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Deployment
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/2021-03-03-Deployment/">Deployment</a></li>  <li class="file"><a href="/wiki/2021-03-03-Java%20Applets/">Java Applets</a></li>  <li class="file"><a href="/wiki/2021-03-03-Getting%20Started%20With%20Applets/">Getting Started With Applets</a></li>  <li class="file"><a href="/wiki/2021-03-03-Defining%20an%20Applet%20Subclass/">Defining an Applet Subclass</a></li>  <li class="file"><a href="/wiki/2021-03-03-Methods%20for%20Milestones/">Methods for Milestones</a></li>  <li class="file"><a href="/wiki/2021-03-03-Life%20Cycle%20of%20an%20Applet/">Life Cycle of an Applet</a></li>  <li class="file"><a href="/wiki/2021-03-03-Applet's%20Execution%20Environment/">Applet's Execution Environment</a></li>  <li class="file"><a href="/wiki/2021-03-03-Developing%20an%20Applet/">Developing an Applet</a></li>  <li class="file"><a href="/wiki/2021-03-03-Deploying%20With%20the%20Applet%20Tag/">Deploying With the Applet Tag</a></li>  <li class="file"><a href="/wiki/2021-03-03-Doing%20More%20With%20Applets/">Doing More With Applets</a></li>  <li class="file"><a href="/wiki/2021-03-03-Finding%20and%20Loading%20Data%20Files/">Finding and Loading Data Files</a></li>  <li class="file"><a href="/wiki/2021-03-03-Defining%20and%20Using%20Applet%20Parameters/">Defining and Using Applet Parameters</a></li>  <li class="file"><a href="/wiki/2021-03-03-Displaying%20Short%20Status%20Strings/">Displaying Short Status Strings</a></li>  <li class="file"><a href="/wiki/2021-03-03-Displaying%20Documents%20in%20the%20Browser/">Displaying Documents in the Browser</a></li>  <li class="file"><a href="/wiki/2021-03-03-Invoking%20JavaScript%20Code%20From%20an%20Applet/">Invoking JavaScript Code From an Applet</a></li>  <li class="file"><a href="/wiki/2021-03-03-Invoking%20Applet%20Methods%20From%20JavaScript%20Code/">Invoking Applet Methods From JavaScript Code</a></li>  <li class="file"><a href="/wiki/2021-03-03-Handling%20Initialization%20Status%20With%20Event%20Handlers%20/">Handling Initialization Status With Event Handlers</a></li>  <li class="file"><a href="/wiki/2021-03-03-Manipulating%20DOM%20of%20Applet's%20Web%20Page/">Manipulating DOM of Applet's Web Page</a></li>  <li class="file"><a href="/wiki/2021-03-03-Writing%20Diagnostics%20to%20Standard%20Output%20and%20Error%20Streams/">Writing Diagnostics to Standard Output and Error Streams</a></li>  <li class="file"><a href="/wiki/2021-03-03-Developing%20Draggable%20Applets/">Developing Draggable Applets</a></li>  <li class="file"><a href="/wiki/2021-03-03-Communicating%20With%20Other%20Applets/">Communicating With Other Applets</a></li>  <li class="file"><a href="/wiki/2021-03-03-Working%20With%20a%20Server-Side%20Application%20/">Working With a Server-Side Application</a></li>  <li class="file"><a href="/wiki/2021-03-03-Network%20Client%20Applet%20Example/">Network Client Applet Example</a></li>  <li class="file"><a href="/wiki/2021-03-03-What%20Applets%20Can%20and%20Cannot%20Do/">What Applets Can and Cannot Do</a></li>  <li class="file"><a href="/wiki/2021-03-03-Solving%20Common%20Applet%20Problems/">Solving Common Applet Problems</a></li>  <li class="file"><a href="/wiki/2021-03-03-Questions%20and%20Exercises%20%20Applets/">Questions and Exercises  Applets</a></li>  <li class="file"><a href="/wiki/2021-03-03-Java%20Web%20Start/">Java Web Start</a></li>  <li class="file"><a href="/wiki/2021-03-03-Developing%20a%20Java%20Web%20Start%20Application/">Developing a Java Web Start Application</a></li>  <li class="file"><a href="/wiki/2021-03-03-Retrieving%20Resources/">Retrieving Resources</a></li>  <li class="file"><a href="/wiki/2021-03-03-Setting%20Up%20a%20Web%20Server/">Setting Up a Web Server</a></li>  <li class="file"><a href="/wiki/2021-03-03-Running%20a%20Java%20Web%20Start%20Application/">Running a Java Web Start Application</a></li>  <li class="file"><a href="/wiki/2021-03-03-Java%20Web%20Start%20and%20Security/">Java Web Start and Security</a></li>  <li class="file"><a href="/wiki/2021-03-03-Common%20Java%20Web%20Start%20Problems/">Common Java Web Start Problems</a></li>  <li class="file"><a href="/wiki/2021-03-03-Questions%20and%20Exercises%20%20Java%20Web%20Start/">Questions and Exercises  Java Web Start</a></li>  <li class="file"><a href="/wiki/2021-03-03-Doing%20More%20With%20Java%20Rich%20Internet%20Applications/">Doing More With Java Rich Internet Applications</a></li>  <li class="file"><a href="/wiki/2021-03-03-Setting%20Trusted%20Arguments%20and%20Secure%20Properties/">Setting Trusted Arguments and Secure Properties</a></li>  <li class="file"><a href="/wiki/2021-03-03-System%20Properties/">System Properties</a></li>  <li class="file"><a href="/wiki/2021-03-03-JNLP%20API/">JNLP API</a></li>  <li class="file"><a href="/wiki/2021-03-03-Accessing%20the%20Client%20Using%20JNLP%20API/">Accessing the Client Using JNLP API</a></li>  <li class="file"><a href="/wiki/2021-03-03-Cookies/">Cookies</a></li>  <li class="file"><a href="/wiki/2021-03-03-Accessing%20Cookies/">Accessing Cookies</a></li>  <li class="file"><a href="/wiki/2021-03-03-Security%20in%20Rich%20Internet%20Applications%20/">Security in Rich Internet Applications</a></li>  <li class="file"><a href="/wiki/2021-03-03-Guidelines%20for%20Securing%20Rich%20Internet%20Applications/">Guidelines for Securing Rich Internet Applications</a></li>  <li class="file"><a href="/wiki/2021-03-03-Questions%20and%20Exercises%20%20Doing%20More%20With%20Rich%20Internet%20Applications/">Questions and Exercises  Doing More With Rich Internet Applications</a></li>  <li class="file"><a href="/wiki/2021-03-03-Deployment%20In-Depth/">Deployment In-Depth</a></li>  <li class="file"><a href="/wiki/2021-03-03-User%20Acceptance%20of%20RIAs/">User Acceptance of RIAs</a></li>  <li class="file"><a href="/wiki/2021-03-03-Deployment%20Toolkit/">Deployment Toolkit</a></li>  <li class="file"><a href="/wiki/2021-03-03-Deploying%20an%20Applet/">Deploying an Applet</a></li>  <li class="file"><a href="/wiki/2021-03-03-Embedding%20JNLP%20File%20in%20Applet%20Tag/">Embedding JNLP File in Applet Tag</a></li>  <li class="file"><a href="/wiki/2021-03-03-Deploying%20a%20Java%20Web%20Start%20Application/">Deploying a Java Web Start Application</a></li>  <li class="file"><a href="/wiki/2021-03-03-Changing%20the%20Launch%20Button/">Changing the Launch Button</a></li>  <li class="file"><a href="/wiki/2021-03-03-Deploying%20Without%20Codebase/">Deploying Without Codebase</a></li>  <li class="file"><a href="/wiki/2021-03-03-Checking%20the%20Client%20JRE%20Software%20Version/">Checking the Client JRE Software Version</a></li>  <li class="file"><a href="/wiki/2021-03-03-Java%20Network%20Launch%20Protocol/">Java Network Launch Protocol</a></li>  <li class="file"><a href="/wiki/2021-03-03-Structure%20of%20the%20JNLP%20File/">Structure of the JNLP File</a></li>  <li class="file"><a href="/wiki/2021-03-03-Deployment%20Best%20Practices/">Deployment Best Practices</a></li>  <li class="file"><a href="/wiki/2021-03-03-Reducing%20the%20Download%20Time/">Reducing the Download Time</a></li>  <li class="file"><a href="/wiki/2021-03-03-Avoiding%20Unnecessary%20Update%20Checks/">Avoiding Unnecessary Update Checks</a></li>  <li class="file"><a href="/wiki/2021-03-03-Ensuring%20the%20Presence%20of%20the%20JRE%20Software/">Ensuring the Presence of the JRE Software</a></li>  <li class="file"><a href="/wiki/2021-03-03-Questions%20and%20Exercises%20%20Deployment%20In-Depth/">Questions and Exercises  Deployment In-Depth</a></li>  <li class="file"><a href="/wiki/2021-03-03-Deploying%20Self-Contained%20Applications/">Deploying Self-Contained Applications</a></li>  <li class="file"><a href="/wiki/2021-03-03-Pre-Requisites%20for%20Packaging%20Self-Contained%20Applications/">Pre-Requisites for Packaging Self-Contained Applications</a></li>  <li class="file"><a href="/wiki/2021-03-03-Converting%20an%20Existing%20Application/">Converting an Existing Application</a></li>  <li class="file"><a href="/wiki/2021-03-03-Using%20File%20Associations/">Using File Associations</a></li>  <li class="file"><a href="/wiki/2021-03-03-Adding%20an%20External%20Library/">Adding an External Library</a></li>  <li class="file"><a href="/wiki/2021-03-03-Providing%20a%20Default%20Argument/">Providing a Default Argument</a></li>  <li class="file"><a href="/wiki/2021-03-03-Using%20a%20Common%20Build%20File%20for%20All%20Platforms/">Using a Common Build File for All Platforms</a></li>  <li class="file"><a href="/wiki/2021-03-03-Using%20Multiple%20Entry%20Points/">Using Multiple Entry Points</a></li>  <li class="file"><a href="/wiki/2021-03-03-Questions%20and%20Exercises%20%20Self-Contained%20Applications/">Questions and Exercises  Self-Contained Applications</a></li>  <li class="file"><a href="/wiki/2021-03-03-Packaging%20Programs%20in%20JAR%20Files/">Packaging Programs in JAR Files</a></li>  <li class="file"><a href="/wiki/2021-03-03-Using%20JAR%20Files%20%20The%20Basics/">Using JAR Files  The Basics</a></li>  <li class="file"><a href="/wiki/2021-03-03-Creating%20a%20JAR%20File/">Creating a JAR File</a></li>  <li class="file"><a href="/wiki/2021-03-03-Viewing%20the%20Contents%20of%20a%20JAR%20File/">Viewing the Contents of a JAR File</a></li>  <li class="file"><a href="/wiki/2021-03-03-Extracting%20the%20Contents%20of%20a%20JAR%20File/">Extracting the Contents of a JAR File</a></li>  <li class="file"><a href="/wiki/2021-03-03-Updating%20a%20JAR%20File/">Updating a JAR File</a></li>  <li class="file"><a href="/wiki/2021-03-03-Running%20JAR-Packaged%20Software/">Running JAR-Packaged Software</a></li>  <li class="file"><a href="/wiki/2021-03-03-Working%20with%20Manifest%20Files%20%20The%20Basics/">Working with Manifest Files  The Basics</a></li>  <li class="file"><a href="/wiki/2021-03-03-Understanding%20the%20Default%20Manifest/">Understanding the Default Manifest</a></li>  <li class="file"><a href="/wiki/2021-03-03-Setting%20an%20Application's%20Entry%20Point/">Setting an Application's Entry Point</a></li>  <li class="file"><a href="/wiki/2021-03-03-Adding%20Classes%20to%20the%20JAR%20File's%20Classpath/">Adding Classes to the JAR File's Classpath</a></li>  <li class="file"><a href="/wiki/2021-03-03-Setting%20Package%20Version%20Information/">Setting Package Version Information</a></li>  <li class="file"><a href="/wiki/2021-03-03-Sealing%20Packages%20within%20a%20JAR%20File/">Sealing Packages within a JAR File</a></li>  <li class="file"><a href="/wiki/2021-03-03-Enhancing%20Security%20with%20Manifest%20Attributes/">Enhancing Security with Manifest Attributes</a></li>  <li class="file"><a href="/wiki/2021-03-03-Signing%20and%20Verifying%20JAR%20Files/">Signing and Verifying JAR Files</a></li>  <li class="file"><a href="/wiki/2021-03-03-Understanding%20Signing%20and%20Verification/">Understanding Signing and Verification</a></li>  <li class="file"><a href="/wiki/2021-03-03-Signing%20JAR%20Files/">Signing JAR Files</a></li>  <li class="file"><a href="/wiki/2021-03-03-Verifying%20Signed%20JAR%20Files/">Verifying Signed JAR Files</a></li>  <li class="file"><a href="/wiki/2021-03-03-Using%20JAR-related%20APIs/">Using JAR-related APIs</a></li>  <li class="file"><a href="/wiki/2021-03-03-The%20JarClassLoader%20Class/">The JarClassLoader Class</a></li>  <li class="file"><a href="/wiki/2021-03-03-The%20JarRunner%20Class/">The JarRunner Class</a></li>  <li class="file"><a href="/wiki/2021-03-03-Questions%20and%20Exercises%20%20JAR/">Questions and Exercises  JAR</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Internationalization
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/2021-03-03-Internationalization/">Internationalization</a></li>  <li class="file"><a href="/wiki/2021-03-03-Introduction/">Introduction</a></li>  <li class="file"><a href="/wiki/2021-03-03-A%20Quick%20Example/">A Quick Example</a></li>  <li class="file"><a href="/wiki/2021-03-03-Before%20Internationalization/">Before Internationalization</a></li>  <li class="file"><a href="/wiki/2021-03-03-After%20Internationalization/">After Internationalization</a></li>  <li class="file"><a href="/wiki/2021-03-03-Running%20the%20Sample%20Program/">Running the Sample Program</a></li>  <li class="file"><a href="/wiki/2021-03-03-Internationalizing%20the%20Sample%20Program/">Internationalizing the Sample Program</a></li>  <li class="file"><a href="/wiki/2021-03-03-Checklist/">Checklist</a></li>  <li class="file"><a href="/wiki/2021-03-03-Setting%20the%20Locale/">Setting the Locale</a></li>  <li class="file"><a href="/wiki/2021-03-03-Creating%20a%20Locale/">Creating a Locale</a></li>  <li class="file"><a href="/wiki/2021-03-03-BCP%2047%20Extensions/">BCP 47 Extensions</a></li>  <li class="file"><a href="/wiki/2021-03-03-Identifying%20Available%20Locales/">Identifying Available Locales</a></li>  <li class="file"><a href="/wiki/2021-03-03-Language%20Tag%20Filtering%20and%20Lookup/">Language Tag Filtering and Lookup</a></li>  <li class="file"><a href="/wiki/2021-03-03-The%20Scope%20of%20a%20Locale/">The Scope of a Locale</a></li>  <li class="file"><a href="/wiki/2021-03-03-Locale-Sensitive%20Services%20SPI/">Locale-Sensitive Services SPI</a></li>  <li class="file"><a href="/wiki/2021-03-03-Isolating%20Locale-Specific%20Data/">Isolating Locale-Specific Data</a></li>  <li class="file"><a href="/wiki/2021-03-03-About%20the%20ResourceBundle%20Class/">About the ResourceBundle Class</a></li>  <li class="file"><a href="/wiki/2021-03-03-Preparing%20to%20Use%20a%20ResourceBundle/">Preparing to Use a ResourceBundle</a></li>  <li class="file"><a href="/wiki/2021-03-03-Backing%20a%20ResourceBundle%20with%20Properties%20Files/">Backing a ResourceBundle with Properties Files</a></li>  <li class="file"><a href="/wiki/2021-03-03-Using%20a%20ListResourceBundle/">Using a ListResourceBundle</a></li>  <li class="file"><a href="/wiki/2021-03-03-Customizing%20Resource%20Bundle%20Loading/">Customizing Resource Bundle Loading</a></li>  <li class="file"><a href="/wiki/2021-03-03-Formatting/">Formatting</a></li>  <li class="file"><a href="/wiki/2021-03-03-Numbers%20and%20Currencies/">Numbers and Currencies</a></li>  <li class="file"><a href="/wiki/2021-03-03-Dates%20and%20Times/">Dates and Times</a></li>  <li class="file"><a href="/wiki/2021-03-03-Using%20Predefined%20Formats/">Using Predefined Formats</a></li>  <li class="file"><a href="/wiki/2021-03-03-Customizing%20Formats/">Customizing Formats</a></li>  <li class="file"><a href="/wiki/2021-03-03-Changing%20Date%20Format%20Symbols/">Changing Date Format Symbols</a></li>  <li class="file"><a href="/wiki/2021-03-03-Messages/">Messages</a></li>  <li class="file"><a href="/wiki/2021-03-03-Dealing%20with%20Compound%20Messages/">Dealing with Compound Messages</a></li>  <li class="file"><a href="/wiki/2021-03-03-Handling%20Plurals/">Handling Plurals</a></li>  <li class="file"><a href="/wiki/2021-03-03-Working%20with%20Text/">Working with Text</a></li>  <li class="file"><a href="/wiki/2021-03-03-Checking%20Character%20Properties/">Checking Character Properties</a></li>  <li class="file"><a href="/wiki/2021-03-03-Comparing%20Strings/">Comparing Strings</a></li>  <li class="file"><a href="/wiki/2021-03-03-Performing%20Locale-Independent%20Comparisons/">Performing Locale-Independent Comparisons</a></li>  <li class="file"><a href="/wiki/2021-03-03-Customizing%20Collation%20Rules/">Customizing Collation Rules</a></li>  <li class="file"><a href="/wiki/2021-03-03-Improving%20Collation%20Performance/">Improving Collation Performance</a></li>  <li class="file"><a href="/wiki/2021-03-03-Unicode/">Unicode</a></li>  <li class="file"><a href="/wiki/2021-03-03-Terminology/">Terminology</a></li>  <li class="file"><a href="/wiki/2021-03-03-Supplementary%20Characters%20as%20Surrogates/">Supplementary Characters as Surrogates</a></li>  <li class="file"><a href="/wiki/2021-03-03-Character%20and%20String%20APIs/">Character and String APIs</a></li>  <li class="file"><a href="/wiki/2021-03-03-Sample%20Usage/">Sample Usage</a></li>  <li class="file"><a href="/wiki/2021-03-03-Design%20Considerations/">Design Considerations</a></li>  <li class="file"><a href="/wiki/2021-03-03-More%20Information/">More Information</a></li>  <li class="file"><a href="/wiki/2021-03-03-Detecting%20Text%20Boundaries/">Detecting Text Boundaries</a></li>  <li class="file"><a href="/wiki/2021-03-03-About%20the%20BreakIterator%20Class/">About the BreakIterator Class</a></li>  <li class="file"><a href="/wiki/2021-03-03-Character%20Boundaries/">Character Boundaries</a></li>  <li class="file"><a href="/wiki/2021-03-03-Word%20Boundaries/">Word Boundaries</a></li>  <li class="file"><a href="/wiki/2021-03-03-Sentence%20Boundaries/">Sentence Boundaries</a></li>  <li class="file"><a href="/wiki/2021-03-03-Line%20Boundaries/">Line Boundaries</a></li>  <li class="file"><a href="/wiki/2021-03-03-Converting%20Latin%20Digits%20to%20Other%20Unicode%20Digits/">Converting Latin Digits to Other Unicode Digits</a></li>  <li class="file"><a href="/wiki/2021-03-03-Converting%20Non-Unicode%20Text/">Converting Non-Unicode Text</a></li>  <li class="file"><a href="/wiki/2021-03-03-Byte%20Encodings%20and%20Strings/">Byte Encodings and Strings</a></li>  <li class="file"><a href="/wiki/2021-03-03-Character%20and%20Byte%20Streams/">Character and Byte Streams</a></li>  <li class="file"><a href="/wiki/2021-03-03-Normalizing%20Text/">Normalizing Text</a></li>  <li class="file"><a href="/wiki/2021-03-03-Working%20with%20Bidirectional%20Text%20with%20the%20JTextComponent%20Class/">Working with Bidirectional Text with the JTextComponent Class</a></li>  <li class="file"><a href="/wiki/2021-03-03-Internationalization%20of%20Network%20Resources/">Internationalization of Network Resources</a></li>  <li class="file"><a href="/wiki/2021-03-03-Internationalized%20Domain%20Name/">Internationalized Domain Name</a></li>  <li class="file"><a href="/wiki/2021-03-03-Service%20Providers%20for%20Internationalization/">Service Providers for Internationalization</a></li>  <li class="file"><a href="/wiki/2021-03-03-Installing%20a%20Custom%20Resource%20Bundle%20as%20an%20Extension/">Installing a Custom Resource Bundle as an Extension</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            JavaBeans(TM)
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/2021-03-03-JavaBeans(TM)/">JavaBeans(TM)</a></li>  <li class="file"><a href="/wiki/2021-03-03-Quick%20Start/">Quick Start</a></li>  <li class="file"><a href="/wiki/2021-03-03-Creating%20a%20Project/">Creating a Project</a></li>  <li class="file"><a href="/wiki/2021-03-03-A%20Button%20is%20a%20Bean/">A Button is a Bean</a></li>  <li class="file"><a href="/wiki/2021-03-03-Wiring%20the%20Application/">Wiring the Application</a></li>  <li class="file"><a href="/wiki/2021-03-03-Using%20a%20Third-Party%20Bean/">Using a Third-Party Bean</a></li>  <li class="file"><a href="/wiki/2021-03-03-Writing%20JavaBeans%20Components/">Writing JavaBeans Components</a></li>  <li class="file"><a href="/wiki/2021-03-03-Properties/">Properties</a></li>  <li class="file"><a href="/wiki/2021-03-03-Methods/">Methods</a></li>  <li class="file"><a href="/wiki/2021-03-03-Events/">Events</a></li>  <li class="file"><a href="/wiki/2021-03-03-Using%20a%20BeanInfo/">Using a BeanInfo</a></li>  <li class="file"><a href="/wiki/2021-03-03-Advanced%20JavaBeans%20Topics/">Advanced JavaBeans Topics</a></li>  <li class="file"><a href="/wiki/2021-03-03-Bean%20Persistence/">Bean Persistence</a></li>  <li class="file"><a href="/wiki/2021-03-03-Long%20Term%20Persistence/">Long Term Persistence</a></li>  <li class="file"><a href="/wiki/2021-03-03-Bean%20Customization/">Bean Customization</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            JavaNotebook
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/2021-03-03-Java%20data%20type/">Java data type</a></li>  <li class="file"><a href="/wiki/2021-03-03-Encapsulation/">Encapsulation</a></li>  <li class="file"><a href="/wiki/2021-03-03-Override/">Override</a></li>  <li class="file"><a href="/wiki/2021-03-03-aggregation%20operation/">aggregation operation</a></li>  <li class="file"><a href="/wiki/2021-03-03-Java%20Number/">Java Number</a></li>  <li class="file"><a href="/wiki/2021-03-03-Math/">Math</a></li>  <li class="file"><a href="/wiki/2021-03-03-Java%20String/">Java String</a></li>  <li class="file"><a href="/wiki/2021-03-03-Essential%20Class/">Essential Class</a></li>  <li class="file"><a href="/wiki/2021-03-03-Error%20exception/">Error exception</a></li>  <li class="file"><a href="/wiki/2021-03-03-checked%20exception/">checked exception</a></li>  <li class="file"><a href="/wiki/2021-03-03-Runtime%20exception/">Runtime exception</a></li>  <li class="file"><a href="/wiki/2021-03-03-Specify%20Exception%20thrown%20by%20method/">Specify Exception thrown by method</a></li>  <li class="file"><a href="/wiki/2021-03-03-unchecked%20exception/">unchecked exception</a></li>  <li class="file"><a href="/wiki/2021-03-03-Java/">Java</a></li>  <li class="file"><a href="/wiki/2021-03-03-Document%20Comment/">Document Comment</a></li>  <li class="file"><a href="/wiki/2021-03-03-Abstraction/">Abstraction</a></li>  <li class="file"><a href="/wiki/2021-03-03-Java%20modifier/">Java modifier</a></li>  <li class="file"><a href="/wiki/2021-03-03-Enum/">Enum</a></li>  <li class="file"><a href="/wiki/2021-03-03-Object/">Object</a></li>  <li class="file"><a href="/wiki/2021-03-03-generic%20Array%20List/">generic Array List</a></li>  <li class="file"><a href="/wiki/2021-03-03-Inheritance/">Inheritance</a></li>  <li class="file"><a href="/wiki/2021-03-03-Java%20OOP/">Java OOP</a></li>  <li class="file"><a href="/wiki/2021-03-03-Static%20inner%20class/">Static inner class</a></li>  <li class="file"><a href="/wiki/2021-03-03-Inner%20class/">Inner class</a></li>  <li class="file"><a href="/wiki/2021-03-03-Java%20variable/">Java variable</a></li>  <li class="file"><a href="/wiki/2021-03-03-Java%20basic/">Java basic</a></li>  <li class="file"><a href="/wiki/2021-03-03-Interface/">Interface</a></li>  <li class="file"><a href="/wiki/2021-03-03-Package/">Package</a></li>  <li class="file"><a href="/wiki/2021-03-03-Polymorphism/">Polymorphism</a></li>  <li class="file"><a href="/wiki/2021-03-03-casting/">casting</a></li>  <li class="file"><a href="/wiki/2021-03-03-Generic/">Generic</a></li>  <li class="file"><a href="/wiki/2021-03-03-%E6%96%AD%E8%A8%80/">断言</a></li>  <li class="file"><a href="/wiki/2021-03-03-Exception/">Exception</a></li>  <li class="file"><a href="/wiki/2021-03-03-%E6%97%A5%E5%BF%97logger/">日志logger</a></li>  <li class="file"><a href="/wiki/2021-03-03-throw%20a%20exception/">throw a exception</a></li>  <li class="file"><a href="/wiki/2021-03-03-create%20a%20exception%20class/">create a exception class</a></li>  <li class="file"><a href="/wiki/2021-03-03-catch%20and%20handle%20exception/">catch and handle exception</a></li>  <li class="file"><a href="/wiki/2021-03-03-%E5%BC%82%E5%B8%B8%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/">异常使用技巧</a></li>  <li class="file"><a href="/wiki/2021-03-03-Exception%20Advantages/">Exception Advantages</a></li>  <li class="file"><a href="/wiki/2021-03-03-Class/">Class</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            JavascriptNotebook
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/2021-03-03-JavaScript_data_type/">JavaScript_data_type</a></li>  <li class="file"><a href="/wiki/2021-03-03-javascript_grammar/">javascript_grammar</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Linux
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/Linux/">Linux</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            RMI
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/2021-03-03-RMI/">RMI</a></li>  <li class="file"><a href="/wiki/2021-03-03-An%20Overview%20of%20RMI%20Applications/">An Overview of RMI Applications</a></li>  <li class="file"><a href="/wiki/2021-03-03-Writing%20an%20RMI%20Server/">Writing an RMI Server</a></li>  <li class="file"><a href="/wiki/2021-03-03-Designing%20a%20Remote%20Interface/">Designing a Remote Interface</a></li>  <li class="file"><a href="/wiki/2021-03-03-Implementing%20a%20Remote%20Interface/">Implementing a Remote Interface</a></li>  <li class="file"><a href="/wiki/2021-03-03-Creating%20a%20Client%20Program/">Creating a Client Program</a></li>  <li class="file"><a href="/wiki/2021-03-03-Compiling%20and%20Running%20the%20Example/">Compiling and Running the Example</a></li>  <li class="file"><a href="/wiki/2021-03-03-Compiling%20the%20Example%20Programs/">Compiling the Example Programs</a></li>  <li class="file"><a href="/wiki/2021-03-03-Running%20the%20Example%20Programs/">Running the Example Programs</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory open">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder-open"></i>
+                            &nbsp;
+                            Sound
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/2021-03-03-Sound/">Sound</a></li>  <li class="file"><a href="/wiki/2021-03-03-Overview%20of%20the%20Sampled%20Package/">Overview of the Sampled Package</a></li>  <li class="file"><a href="/wiki/2021-03-03-Accessing%20Audio%20System%20Resources/">Accessing Audio System Resources</a></li>  <li class="file"><a href="/wiki/2021-03-03-Playing%20Back%20Audio/">Playing Back Audio</a></li>  <li class="file"><a href="/wiki/2021-03-03-Capturing%20Audio/">Capturing Audio</a></li>  <li class="file"><a href="/wiki/2021-03-03-Processing%20Audio%20with%20Controls/">Processing Audio with Controls</a></li>  <li class="file"><a href="/wiki/2021-03-03-Using%20Files%20and%20Format%20Converters/">Using Files and Format Converters</a></li>  <li class="file"><a href="/wiki/2021-03-03-Overview%20of%20the%20MIDI%20Package/">Overview of the MIDI Package</a></li>  <li class="file"><a href="/wiki/2021-03-03-Accessing%20MIDI%20System%20Resources/">Accessing MIDI System Resources</a></li>  <li class="file"><a href="/wiki/2021-03-03-Transmitting%20and%20Receiving%20MIDI%20Messages/">Transmitting and Receiving MIDI Messages</a></li>  <li class="file"><a href="/wiki/2021-03-03-Introduction%20to%20Sequencers/">Introduction to Sequencers</a></li>  <li class="file"><a href="/wiki/2021-03-03-Using%20Sequencer%20Methods/">Using Sequencer Methods</a></li>  <li class="file"><a href="/wiki/2021-03-03-Using%20Advanced%20Sequencer%20Features/">Using Advanced Sequencer Features</a></li>  <li class="file active"><a href="/wiki/2021-03-03-Synthesizing%20Sound/">Synthesizing Sound</a></li>  <li class="file"><a href="/wiki/2021-03-03-Introduction%20to%20the%20Service%20Provider%20Interfaces/">Introduction to the Service Provider Interfaces</a></li>  <li class="file"><a href="/wiki/2021-03-03-Providing%20Sampled-Audio%20Services/">Providing Sampled-Audio Services</a></li>  <li class="file"><a href="/wiki/2021-03-03-Providing%20MIDI%20Services/">Providing MIDI Services</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Start
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/hello-world/">Hello World</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Web相关
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/2021-03-03-ssl%E8%AF%81%E4%B9%A6/">ssl证书</a></li>  <li class="file"><a href="/wiki/2021-03-03-%E5%85%8D%E8%B4%B9%E5%9F%9F%E5%90%8D%E7%94%B3%E8%AF%B7/">免费域名申请</a></li>  <li class="file"><a href="/wiki/2021-03-03-%E5%9F%9F%E5%90%8D%E5%92%8Cip/">域名和ip</a></li>  <li class="file"><a href="/wiki/2021-03-03-%E5%86%85%E7%BD%91%E5%92%8C%E5%A4%96%E7%BD%91/">内网和外网</a></li>  <li class="file"><a href="/wiki/2021-03-03-%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/">内网穿透</a></li>  <li class="file"><a href="/wiki/2021-03-03-%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F%E5%8E%9F%E7%90%86/">内网穿透原理</a></li>  <li class="file"><a href="/wiki/2021-03-03-DDNS%E4%B8%8E%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91/">DDNS与端口转发</a></li>  <li class="file"><a href="/wiki/2021-03-03-VPN%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86/">VPN工作原理</a></li>  <li class="file"><a href="/wiki/2021-03-03-trojan%E4%BB%A3%E7%90%86%E9%85%8D%E7%BD%AE/">trojan代理配置</a></li>  <li class="file"><a href="/wiki/2021-03-03-%E5%85%8D%E8%B4%B9%E4%BB%A3%E7%90%86%E9%85%8D%E7%BD%AE/">免费代理配置</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            bat批处理的使用
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/2021-03-03-%E6%89%B9%E5%A4%84%E7%90%86%E7%9A%84%E5%8F%82%E6%95%B0%E4%BC%A0%E9%80%92/">批处理的参数传递</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            git使用
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/2021-03-03-%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/">版本控制</a></li>  <li class="file"><a href="/wiki/2021-03-03-%E9%87%8D%E7%BD%AE%E7%99%BB%E9%99%86%E4%BF%A1%E6%81%AF/">重置登陆信息</a></li>  <li class="file"><a href="/wiki/2021-03-03-%E6%9F%A5%E7%9C%8B%E6%8F%90%E4%BA%A4%E5%8E%86%E5%8F%B2/">查看提交历史</a></li>  <li class="file"><a href="/wiki/2021-03-03-%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/">服务器搭建</a></li>  <li class="file"><a href="/wiki/2021-03-03-git%E9%85%8D%E7%BD%AE/">git配置</a></li>  <li class="file"><a href="/wiki/2021-03-03-Github%E8%AE%BF%E9%97%AE%E5%A4%B1%E8%B4%A5/">Github访问失败</a></li>  <li class="file"><a href="/wiki/2021-03-03-git%E5%8E%9F%E7%90%86/">git原理</a></li>  <li class="file"><a href="/wiki/2021-03-03-Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">Git常用命令</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            maven-note
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/2021-03-03-quick-start/">quick-start</a></li>  <li class="file"><a href="/wiki/2021-03-03-%E5%8A%A0%E8%BD%BD%E7%AC%AC%E4%B8%89%E6%96%B9%E8%BD%AF%E4%BB%B6%E5%8C%85%E5%92%8C%E5%BA%93/">加载第三方软件包和库</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            md_photos
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/2021-03-03-plaxis%E6%8C%87%E5%AF%BC%E6%89%8B%E5%86%8C%E7%AC%94%E8%AE%B0/">plaxis指导手册笔记</a></li>  <li class="file"><a href="/wiki/2021-03-03-plaxis_workflow/">plaxis_workflow</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            plaxis_notebook
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/2021-03-03-ansys_knowledges/">ansys_knowledges</a></li>  <li class="file"><a href="/wiki/2021-03-03-Plaxis_knowledges/">Plaxis_knowledges</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            python_notebook
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/2021-03-03-common_encrypt_algorithms_python/">common_encrypt_algorithms_python</a></li>  <li class="file"><a href="/wiki/2021-03-03-data_anlyze/">data_anlyze</a></li>  <li class="file"><a href="/wiki/2021-03-03-python_spider/">python_spider</a></li>  <li class="file"><a href="/wiki/2021-03-03-python_data_anlysis_notes/">python_data_anlysis_notes</a></li>  <li class="file"><a href="/wiki/2021-03-03-python_knowledges/">python_knowledges</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            vim使用
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/2021-03-03-%E5%BF%AB%E9%80%9F%E6%B3%A8%E9%87%8A%E5%92%8C%E5%8F%96%E6%B6%88%E6%B3%A8%E9%87%8A/">快速注释和取消注释</a></li>  <li class="file"><a href="/wiki/2021-03-03-vim%E9%85%8D%E7%BD%AE/">vim配置</a></li>  <li class="file"><a href="/wiki/2021-03-03-vim%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/">vim配置文件</a></li>  <li class="file"><a href="/wiki/2021-03-03-VIMSCRIPT/">VIMSCRIPT</a></li>  <li class="file"><a href="/wiki/2021-03-03-vim%E5%BF%AB%E6%8D%B7%E9%94%AE/">vim快捷键</a></li>  <li class="file"><a href="/wiki/2021-03-03-%E7%B3%BB%E7%BB%9Fvim%E6%8F%92%E4%BB%B6%E5%AE%89%E8%A3%85/">系统vim插件安装</a></li>  <li class="file"><a href="/wiki/2021-03-03-YouCompleteMe%E6%8F%92%E4%BB%B6/">YouCompleteMe插件</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/wiki/2021-03-03-Annoymous%20class/"></a></li>  <li class="file"><a href="/wiki/2021-03-03-Concurrency/"></a></li>  <li class="file"><a href="/wiki/2020-12-06-Modifying-a-Manifest-File/"></a></li>  <li class="file"><a href="/wiki/2021-03-03-IO%20Operation/"></a></li>  <li class="file"><a href="/wiki/2021-03-03-Local%20class/"></a></li>  <li class="file"><a href="/wiki/2021-03-03-hhh/"></a></li>  </ul> 
+    </div>
+    <script>
+        $(document).ready(function() {
+            var iconFolderOpenClass  = 'fa-folder-open';
+            var iconFolderCloseClass = 'fa-folder';
+            var iconAllExpandClass = 'fa-angle-double-down';
+            var iconAllPackClass = 'fa-angle-double-up';
+            // Handle directory-tree expansion:
+            // 左键单独展开目录
+            $(document).on('click', '#categories a[data-role="directory"]', function (event) {
+                event.preventDefault();
+
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconFolderOpenClass);
+                var subtree = $(this).siblings('ul');
+                icon.removeClass(iconFolderOpenClass).removeClass(iconFolderCloseClass);
+                if (expanded) {
+                    if (typeof subtree != 'undefined') {
+                        subtree.slideUp({ duration: 100 });
+                    }
+                    icon.addClass(iconFolderCloseClass);
+                } else {
+                    if (typeof subtree != 'undefined') {
+                        subtree.slideDown({ duration: 100 });
+                    }
+                    icon.addClass(iconFolderOpenClass);
+                }
+            });
+            // 右键展开下属所有目录
+            $('#categories a[data-role="directory"]').bind("contextmenu", function(event){
+                event.preventDefault();
+                
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconFolderOpenClass);
+                var listNode = $(this).siblings('ul');
+                var subtrees = $.merge(listNode.find('li ul'), listNode);
+                var icons = $.merge(listNode.find('.fa'), icon);
+                icons.removeClass(iconFolderOpenClass).removeClass(iconFolderCloseClass);
+                if(expanded) {
+                    subtrees.slideUp({ duration: 100 });
+                    icons.addClass(iconFolderCloseClass);
+                } else {
+                    subtrees.slideDown({ duration: 100 });
+                    icons.addClass(iconFolderOpenClass);
+                }
+            })
+            // 展开关闭所有目录按钮
+            $(document).on('click', '#allExpand', function (event) {
+                event.preventDefault();
+                
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconAllExpandClass);
+                icon.removeClass(iconAllExpandClass).removeClass(iconAllPackClass);
+                if(expanded) {
+                    $('#sidebar .fa.fa-folder').removeClass('fa-folder').addClass('fa-folder-open')
+                    $('#categories li ul').slideDown({ duration: 100 });
+                    icon.addClass(iconAllPackClass);
+                } else {
+                    $('#sidebar .fa.fa-folder-open').removeClass('fa-folder-open').addClass('fa-folder')
+                    $('#categories li ul').slideUp({ duration: 100 });
+                    icon.addClass(iconAllExpandClass);
+                }
+            });  
+        });
+    </script>
+
+    
+    <div id="toTop" class="fa fa-angle-up"></div>
+</aside>
+            
+            <section id="main"><article id="post-2021-03-03-Synthesizing Sound" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+                    <div class="article-meta">
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/Sound/">Sound</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link-link" href="/tags/Sound/" rel="tag">Sound</a>
+    </div>
+
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/wiki/2021-03-03-Synthesizing%20Sound/">
+            <time datetime="2020-12-05T17:47:59.227Z" itemprop="datePublished">2020-12-06</time>
+        </a>
+    </div>
+
+
+                        
+                            <i class="fa fa-bar-chart"></i>
+                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
+                        
+                        
+                            <div class="article-meta-button">
+                                <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/li-jiabao/mywiki/raw/main/source/_posts/2021-03-03-Synthesizing Sound.md"> Source </a>
+                            </div>
+                            <div class="article-meta-button">
+                                <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/li-jiabao/mywiki/edit/main/source/_posts/2021-03-03-Synthesizing Sound.md"> Edit </a>
+                            </div>
+                            <div class="article-meta-button">
+                                <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/li-jiabao/mywiki/commits/main/source/_posts/2021-03-03-Synthesizing Sound.md"> History </a>
+                            </div>
+                        
+                    </div>
+                
+                
+    
+        <h1 class="article-title" itemprop="name">
+            Synthesizing Sound
+        </h1>
+    
+
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+        
+            
+        
+        
+            <h1 id="Synthesizing-Sound"><a href="#Synthesizing-Sound" class="headerlink" title="Synthesizing Sound"></a>Synthesizing Sound</h1><p><a name="121725" id="121725"></a> Most programs that avail themselves of the Java Sound API’s MIDI package do so to synthesize sound. The entire apparatus of MIDI files, events, sequences, and sequencers, which was previously discussed, nearly always has the goal of eventually sending musical data to a synthesizer to convert into audio. (Possible exceptions include programs that convert MIDI into musical notation that can be read by a musician, and programs that send messages to external MIDI-controlled devices such as mixing consoles.)</p>
+<p><a name="121727" id="121727"></a> The <code>Synthesizer</code> interface is therefore fundamental to the MIDI package. This page shows how to manipulate a synthesizer to play sound. Many programs will simply use a sequencer to send MIDI file data to the synthesizer, and won’t need to invoke many <code>Synthesizer</code> methods directly. However, it’s possible to control a synthesizer directly, without using sequencers or even <code>MidiMessage</code> objects, as explained near the end of this page.</p>
+<p><a name="121729" id="121729"></a> The synthesis architecture might seem complex for readers who are unfamiliar with MIDI. Its API includes three interfaces:</p>
+<li><a name="121730" id="121730"></a> 
+[`Synthesizer`](https://docs.oracle.com/javase/8/docs/api/javax/sound/midi/Synthesizer.html)</li>
+<li><a name="121731" id="121731"></a> 
+[`MidiChannel`](https://docs.oracle.com/javase/8/docs/api/javax/sound/midi/MidiChannel.html)</li>
+<li><a name="121732" id="121732"></a> 
+[`Soundbank`](https://docs.oracle.com/javase/8/docs/api/javax/sound/midi/Soundbank.html)</li>
+
+<p><a name="121733" id="121733"></a> and four classes:</p>
+<li><a name="121734" id="121734"></a> 
+[`Instrument`](https://docs.oracle.com/javase/8/docs/api/javax/sound/midi/Instrument.html)</li>
+<li><a name="121735" id="121735"></a> 
+[`Patch`](https://docs.oracle.com/javase/8/docs/api/javax/sound/midi/Patch.html)</li>
+<li><a name="121736" id="121736"></a> 
+[`SoundbankResource`](https://docs.oracle.com/javase/8/docs/api/javax/sound/midi/SoundbankResource.html)</li>
+<li><a name="121737" id="121737"></a> 
+[`VoiceStatus`](https://docs.oracle.com/javase/8/docs/api/javax/sound/midi/VoiceStatus.html)</li>
+
+<p><a name="121739" id="121739"></a>As orientation for all this API, the next section explains some of the basics of MIDI synthesis and how they’re reflected in the Java Sound API. Subsequent sections give a more detailed look at the API.</p>
+<p><a name="121742" id="121742"></a></p>
+<h2 id="Understanding-MIDI-Synthesis"><a href="#Understanding-MIDI-Synthesis" class="headerlink" title="Understanding MIDI Synthesis"></a>Understanding MIDI Synthesis</h2><p><a name="121745" id="121745"></a> How does a synthesizer generate sound? Depending on its implementation, it may use one or more sound-synthesis techniques. For example, many synthesizers use wavetable synthesis. A wavetable synthesizer reads stored snippets of audio from memory, playing them at different sample rates and looping them to create notes of different pitches and durations. For example, to synthesize the sound of a saxophone playing the note C#4 (MIDI note number 61), the synthesizer might access a very short snippet from a recording of a saxophone playing the note Middle C (MIDI note number 60), and then cycle repeatedly through this snippet at a slightly faster sample rate than it was recorded at, which creates a long note of a slightly higher pitch. Other synthesizers use techniques such as frequency modulation (FM), additive synthesis, or physical modeling, which don’t make use of stored audio but instead generate audio from scratch using different algorithms.</p>
+<p><a name="121747" id="121747"></a></p>
+<h3 id="Instruments"><a href="#Instruments" class="headerlink" title="Instruments"></a>Instruments</h3><p><a name="123181" id="123181"></a> What all synthesis techniques have in common is the ability to create many sorts of sounds. Different algorithms, or different settings of parameters within the same algorithm, create different-sounding results. An <strong>instrument</strong> is a specification for synthesizing a certain type of sound. That sound may emulate a traditional musical instrument, such as a piano or violin; it may emulate some other kind of sound source, for instance, a telephone or helicopter; or it may emulate no “real-world” sound at all. A specification called General MIDI defines a standard list of 128 instruments, but most synthesizers allow other instruments as well. Many synthesizers provide a collection of built-in instruments that are always available for use; some synthesizers also support mechanisms for loading additional instruments.</p>
+<p><a name="123190" id="123190"></a> An instrument may be vendor-specific&#226;&#128;&#148;in other words, applicable to only one synthesizer or several models from the same vendor. This incompatibility results when two different synthesizers use different sound-synthesis techniques, or different internal algorithms and parameters even if the fundamental technique is the same. Because the details of the synthesis technique are often proprietary, incompatibility is common. The Java Sound API includes ways to detect whether a given synthesizer supports a given instrument.</p>
+<p><a name="121753" id="121753"></a> An instrument can usually be considered a preset; you don’t have to know anything about the details of the synthesis technique that produces its sound. However, you can still vary aspects of its sound. Each Note On message specifies the pitch and volume of an individual note. You can also alter the sound through other MIDI commands such as controller messages or system-exclusive messages.</p>
+<p><a name="121755" id="121755"></a></p>
+<h3 id="Channels"><a href="#Channels" class="headerlink" title="Channels"></a>Channels</h3><p><a name="121759" id="121759"></a> Many synthesizers are <strong>multimbral</strong> (sometimes called <strong>polytimbral</strong>), meaning that they can play the notes of different instruments simultaneously. (<strong>Timbre</strong> is the characteristic sound quality that enables a listener to distinguish one kind of musical instrument from other kinds.) Multimbral synthesizers can emulate an entire ensemble of real-world instruments, instead of only one instrument at a time. MIDI synthesizers normally implement this feature by taking advantage of the different MIDI channels on which the MIDI specification allows data to be transmitted. In this case, the synthesizer is actually a collection of sound-generating units, each emulating a different instrument and responding independently to messages that are received on a different MIDI channel. Since the MIDI specification provides only 16 channels, a typical MIDI synthesizer can play up to 16 different instruments at once. The synthesizer receives a stream of MIDI commands, many of which are channel commands. (Channel commands are targeted to a particular MIDI channel; for more information, see the MIDI specification.) If the synthesizer is multitimbral, it routes each channel command to the correct sound-generating unit, according to the channel number indicated in the command.</p>
+<p><a name="121761" id="121761"></a> In the Java Sound API, these sound-generating units are instances of classes that implement the <code>MidiChannel</code> interface. A <code>synthesizer</code> object has at least one <code>MidiChannel</code> object. If the synthesizer is multimbral, it has more than one, normally 16. Each <code>MidiChannel</code> represents an independent sound-generating unit.</p>
+<p><a name="121763" id="121763"></a> Because a synthesizer’s <code>MidiChannel</code> objects are more or less independent, the assignment of instruments to channels doesn’t have to be unique. For example, all 16 channels could be playing a piano timbre, as though there were an ensemble of 16 pianos. Any grouping is possible&#226;&#128;&#148;for instance, channels 1, 5, and 8 could be playing guitar sounds, while channels 2 and 3 play percussion and channel 12 has a bass timbre. The instrument being played on a given MIDI channel can be changed dynamically; this is known as a <strong>program change</strong>.</p>
+<p><a name="121765" id="121765"></a> Even though most synthesizers allow only 16 or fewer instruments to be active at a given time, these instruments can generally be chosen from a much larger selection and assigned to particular channels as required.</p>
+<p><a name="121767" id="121767"></a></p>
+<h3 id="Soundbanks-and-Patches"><a href="#Soundbanks-and-Patches" class="headerlink" title="Soundbanks and Patches"></a>Soundbanks and Patches</h3><p><a name="121769" id="121769"></a> Instruments are organized hierarchically in a synthesizer, by bank number and program number. Banks and programs can be thought of as rows and columns in a two-dimensional table of instruments. A bank is a collection of programs. The MIDI specification allows up to 128 programs in a bank, and up to 128 banks. However, a particular synthesizer might support only one bank, or a few banks, and might support fewer than 128 programs per bank.</p>
+<p><a name="121771" id="121771"></a> In the Java Sound API, there’s a higher level to the hierarchy: a soundbank. Soundbanks can contain up to 128 banks, each containing up to 128 instruments. Some synthesizers can load an entire soundbank into memory.</p>
+<p><a name="121773" id="121773"></a> To select an instrument from the current soundbank, you specify a bank number and a program number. The MIDI specification accomplishes this with two MIDI commands: bank select and program change. In the Java Sound API, the combination of a bank number and program number is encapsulated in a <code>Patch</code> object. You change a MIDI channel’s current instrument by specifying a new patch. The patch can be considered the two-dimensional index of the instruments in the current soundbank.</p>
+<p><a name="121775" id="121775"></a> You might be wondering if soundbanks, too, are indexed numerically. The answer is no; the MIDI specification does not provide for this. In the Java Sound API, a <code>Soundbank</code> object can be obtained by reading a soundbank file. If the soundbank is supported by the synthesizer, its instruments can be loaded into the synthesizer individually as desired, or all at once. Many synthesizers have a built-in or default soundbank; the instruments contained in this soundbank are always available to the synthesizer.</p>
+<p><a name="121777" id="121777"></a></p>
+<h3 id="Voices"><a href="#Voices" class="headerlink" title="Voices"></a>Voices</h3><p><a name="121779" id="121779"></a> It’s important to distinguish between the number of <strong>timbres</strong> a synthesizer can play simultaneously and the number of <strong>notes</strong> it can play simultaneously. The former was described above under “Channels.” The ability to play multiple notes at once is referred to as <strong>polyphony</strong>. Even a synthesizer that isn’t multitimbral can generally play more than one note at a time (all having the same timbre, but different pitches). For example, playing any chord, such as a G major triad or a B minor seventh chord, requires polyphony. Any synthesizer that generates sound in real time has a limitation on the number of notes it can synthesize at once. In the Java Sound API, the synthesizer reports this limitation through the <code>getMaxPolyphony</code> method.</p>
+<p><a name="121783" id="121783"></a> A <strong>voice</strong> is a succession of single notes, such as a melody that a person can sing. Polyphony consists of multiple voices, such as the parts sung by a choir. A 32-voice synthesizer, for example, can play 32 notes simultaneously. (However, some MIDI literature uses the word “voice” in a different sense, similar to the meaning of “instrument” or “timbre.”)</p>
+<p><a name="121785" id="121785"></a> The process of assigning incoming MIDI notes to specific voices is known as <strong>voice allocation</strong>. A synthesizer maintains a list of voices, keeping track of which ones are active (meaning that they currently have notes sounding). When a note stops sounding, the voice becomes inactive, meaning that it’s now free to accept the next note-on request that the synthesizer receives. An incoming stream of MIDI commands can easily request more simultaneous notes than the synthesizer is capable of generating. When all the synthesizer’s voices are active, how should the next Note On request be handled? Synthesizers can implement different strategies: the most recently requested note can be ignored; or it can be played by discontinuing another note, such as the least recently started one.</p>
+<p><a name="121787" id="121787"></a> Although the MIDI specification does not require it, a synthesizer can make public the contents of each of its voices. The Java Sound API includes a <code>VoiceStatus</code> class for this purpose.</p>
+<p><a name="121788" id="121788"></a> A <code>VoiceStatus</code> reports on the voice’s current active or inactive status, MIDI channel, bank and program number, MIDI note number, and MIDI volume.</p>
+<p><a name="121790" id="121790"></a> With this background, let’s examine the specifics of the Java Sound API for synthesis.</p>
+<p><a name="121793" id="121793"></a></p>
+<h2 id="Managing-Instruments-and-Soundbanks"><a href="#Managing-Instruments-and-Soundbanks" class="headerlink" title="Managing Instruments and Soundbanks"></a>Managing Instruments and Soundbanks</h2><p><a name="121795" id="121795"></a> In many cases, a program can make use of a <code>Synthesizer</code> object without explicitly invoking almost any of the synthesis API. For example, suppose you’re playing a standard MIDI file. You load it into a <code>Sequence</code> object, which you play by having a sequencer send the data to the default synthesizer. The data in the sequence controls the synthesizer as intended, playing all the right notes at the right times.</p>
+<p><a name="121797" id="121797"></a> However, there are cases when this simple scenario is inadequate. The sequence contains the right music, but the instruments sound all wrong! This unfortunate situation probably arose because the creator of the MIDI file had different instruments in mind than the ones that are currently loaded into the synthesizer.</p>
+<p><a name="123339" id="123339"></a> The MIDI 1.0 Specification provides for bank-select and program-change commands, which affect which instrument is currently playing on each MIDI channel. However, the specification does not define what instrument should reside in each patch location (bank and program number). The more recent General MIDI specification addresses this problem by defining a bank containing 128 programs that correspond to specific instrument sounds. A General MIDI synthesizer uses 128 instruments that match this specified set. Different General MIDI synthesizers can sound quite different, even when playing what’s supposed to be the same instrument. However, a MIDI file should for the most part sound similar (even if not identical), no matter which General MIDI synthesizer is playing it.</p>
+<p><a name="123341" id="123341"></a> Nonetheless, not all creators of MIDI files want to be limited to the set of 128 timbres defined by General MIDI. This section shows how to change the instruments from the default set that the synthesizer comes with. (If there is no default, meaning that no instruments are loaded when you access the synthesizer, you’ll have to use this API to start with in any case.)</p>
+<p><a name="121803" id="121803"></a></p>
+<h3 id="Learning-What-Instruments-Are-Loaded"><a href="#Learning-What-Instruments-Are-Loaded" class="headerlink" title="Learning What Instruments Are Loaded"></a>Learning What Instruments Are Loaded</h3><p><a name="121805" id="121805"></a> To learn whether the instruments currently loaded into the synthesizer are the ones you want, you can invoke this <code>Synthesizer</code> method:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">Instrument[] getLoadedInstruments() </span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>and iterate over the returned array to see exactly which instruments are currently loaded. Most likely, you would display the instruments’ names in the user interface (using the <code>getName</code> method of <code>Instrument</code>), and let the user decide whether to use those instruments or load others. The <code>Instrument</code> API includes a method that reports which soundbank the instrument belongs to. The soundbank’s name might help your program or the user ascertain exactly what the instrument is.</p>
+<p><a name="123382" id="123382"></a> This <code>Synthesizer</code> method:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">Soundbank getDefaultSoundbank() </span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>gives you the default soundbank. The <code>Soundbank</code> API includes methods to retrieve the soundbank’s name, vendor, and version number, by which the program or the user can verify the bank’s identity. However, you can’t assume when you first get a synthesizer that the instruments from the default soundbank have been loaded into the synthesizer. For example, a synthesizer might have a large assortment of built-in instruments available for use, but because of its limited memory it might not load them automatically. <a name="121824" id="121824"></a></p>
+<h3 id="Loading-Different-Instruments"><a href="#Loading-Different-Instruments" class="headerlink" title="Loading Different Instruments"></a>Loading Different Instruments</h3><p><a name="122802" id="122802"></a> The user might decide to load instruments that are different from the current ones (or you might make that decision programmatically). The following method tells you which instruments come with the synthesizer (versus having to be loaded from soundbank files):</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">Instrument[] getAvailableInstruments()</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>You can load any of these instruments by invoking:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">boolean loadInstrument(Instrument instrument) </span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>The instrument gets loaded into the synthesizer in the location specified by the instrument’s <code>Patch</code> object (which can be retrieved using the <code>getPatch</code> method of <code>Instrument</code>).</p>
+<p><a name="121836" id="121836"></a> To load instruments from other soundbanks, first invoke <code>Synthesizer&#39;s</code> <code>isSupportedSoundbank</code> method to make sure that the soundbank is compatible with this synthesizer (if it isn’t, you can iterate over the system’s synthesizers to try to find one that supports the soundbank). You can then invoke one of these methods to load instruments from the soundbank:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">boolean loadAllInstruments(Soundbank soundbank) </span><br><span class="line">boolean loadInstruments(Soundbank soundbank, </span><br><span class="line">  Patch[] patchList) </span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>As the names suggest, the first of these loads the entire set of instruments from a given soundbank, and the second loads selected instruments from the soundbank. You could also use <code>Soundbank&#39;s</code> <code>getInstruments</code> method to access all the instruments, then iterate over them and load selected instruments one at a time using <code>loadInstrument</code>.</p>
+<p><a name="121843" id="121843"></a> It’s not necessary for all the instruments you load to be from the same soundbank. You could use <code>loadInstrument</code> or <code>loadInstruments</code> to load certain instruments from one soundbank, another set from a different soundbank, and so on.</p>
+<p><a name="121846" id="121846"></a> Each instrument has its own <code>Patch</code> object that specifies the location on the synthesizer where the instrument should be loaded. The location is defined by a bank number and a program number. There’s no API to change the location by changing the patch’s bank or program number.</p>
+<p><a name="121852" id="121852"></a> However, it is possible to load an instrument into a location other than the one specified by its patch, using the following method of <code>Synthesizer</code>:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">boolean remapInstrument(Instrument from, Instrument to) </span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>This method unloads its first argument from the synthesizer, and places its second argument in whatever synthesizer patch location had been occupied by the first argument. <a name="121858" id="121858"></a></p>
+<h3 id="Unloading-Instruments"><a href="#Unloading-Instruments" class="headerlink" title="Unloading Instruments"></a>Unloading Instruments</h3><p><a name="123434" id="123434"></a> Loading an instrument into a program location automatically unloads whatever instrument was already at that location, if any. You can also explicitly unload instruments without necessarily replacing them with new ones. <code>Synthesizer</code> includes three unloading methods that correspond to the three loading methods. If the synthesizer receives a program-change message that selects a program location where no instrument is currently loaded, there won’t be any sound from the MIDI channel on which the program-change message was sent.</p>
+<p><a name="123435" id="123435"></a></p>
+<h3 id="Accessing-Soundbank-Resources"><a href="#Accessing-Soundbank-Resources" class="headerlink" title="Accessing Soundbank Resources"></a>Accessing Soundbank Resources</h3><p><a name="123439" id="123439"></a> Some synthesizers store other information besides instruments in their soundbanks. For example, a wavetable synthesizer stores audio samples that one or more instruments can access. Because the samples might be shared by multiple instruments, they’re stored in the soundbank independently of any instrument. Both the <code>Soundbank</code> interface and the <code>Instrument</code> class provide a method call <code>getSoundbankResources</code>, which returns a list of <code>SoundbankResource</code> objects. The details of these objects are specific to the synthesizer for which the soundbank is designed. In the case of wavetable synthesis, a resource might be an object that encapsulates a series of audio samples, taken from one snippet of a sound recording. Synthesizers that use other synthesis techniques might store other kinds of objects in the synthesizer’s <code>SoundbankResources</code> array.</p>
+<p><a name="123441" id="123441"></a></p>
+<h2 id="Querying-the-Synthesizer’s-Capabilities-and-Current-State"><a href="#Querying-the-Synthesizer’s-Capabilities-and-Current-State" class="headerlink" title="Querying the Synthesizer’s Capabilities and Current State"></a>Querying the Synthesizer’s Capabilities and Current State</h2><p><a name="121873" id="121873"></a> The <code>Synthesizer</code> interface includes methods that return information about the synthesizer’s capabilities:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">public long getLatency()</span><br><span class="line">public int getMaxPolyphony()</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>The latency measures the worst-case delay between the time a MIDI message is delivered to the synthesizer and the time that the synthesizer actually produces the corresponding result. For example, it might take a synthesizer a few milliseconds to begin generating audio after receiving a note-on event.</p>
+<p><a href="#121777">Voices</a>. As mentioned in the same discussion, a synthesizer can provide information about its voices. This is accomplished through the following method:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">public VoiceStatus[] getVoiceStatus()</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>Each <code>VoiceStatus</code> in the returned array reports the voice’s current active or inactive status, MIDI channel, bank and program number, MIDI note number, and MIDI volume. The array’s length should normally be the same number returned by <code>getMaxPolyphony</code>. If the synthesizer isn’t playing, all its <code>VoiceStatus</code> objects have their active field set to <code>false</code>.</p>
+<p><a name="121886" id="121886"></a> You can learn additional information about the current status of a synthesizer by retrieving its <code>MidiChannel</code> objects and querying their state. This is discussed more in the next section.</p>
+<p><a name="121890" id="121890"></a></p>
+<h2 id="Using-Channels"><a href="#Using-Channels" class="headerlink" title="Using Channels"></a>Using Channels</h2><p><a name="121892" id="121892"></a> Sometimes it’s useful or necessary to access a synthesizer’s <code>MidiChannel</code> objects directly. This section discusses such situations.</p>
+<p><a name="121894" id="121894"></a></p>
+<h3 id="Controlling-the-Synthesizer-without-Using-a-Sequencer"><a href="#Controlling-the-Synthesizer-without-Using-a-Sequencer" class="headerlink" title="Controlling the Synthesizer without Using a Sequencer"></a>Controlling the Synthesizer without Using a Sequencer</h3><p><a name="121896" id="121896"></a> When using a sequence, such as one read from a MIDI file, you don’t need to send MIDI commands to the synthesizer yourself. Instead, you just load the sequence into a sequencer, connect the sequencer to the synthesizer, and let it run. The sequencer takes care of scheduling the events, and the result is a predictable musical performance. This scenario works fine when the desired music is known in advance, which is true when it’s read from a file.</p>
+<p><a name="121898" id="121898"></a> In some situations, however, the music is generated on the fly as it’s playing. For example, the user interface might display a musical keyboard or a guitar fretboard and let the user play notes at will by clicking with the mouse. As another example, an application might use a synthesizer not to play music per se, but to generate sound effects in response to the user’s actions. This scenario is typical of games. As a final example, the application might indeed be playing music that’s read from a file, but the user interface allows the user to interact with the music, altering it dynamically. In all these cases, the application sends commands directly to the synthesizer, since the MIDI messages need to be delivered immediately, instead of being scheduled for some determinate point in the future.</p>
+<p><a name="121900" id="121900"></a> There are at least two ways of sending a MIDI message to the synthesizer without using a sequencer. The first is to construct a <code>MidiMessage</code> and pass it to the synthesizer using the send method of <code>Receiver</code>. For example, to produce a Middle C (MIDI note number 60) on MIDI channel 5 (one-based) immediately, you could do the following:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">ShortMessage myMsg &#x3D; new ShortMessage();</span><br><span class="line">&#x2F;&#x2F; Play the note Middle C (60) moderately loud</span><br><span class="line">&#x2F;&#x2F; (velocity &#x3D; 93)on channel 4 (zero-based).</span><br><span class="line">myMsg.setMessage(ShortMessage.NOTE_ON, 4, 60, 93); </span><br><span class="line">Synthesizer synth &#x3D; MidiSystem.getSynthesizer();</span><br><span class="line">Receiver synthRcvr &#x3D; synth.getReceiver();</span><br><span class="line">synthRcvr.send(myMsg, -1); &#x2F;&#x2F; -1 means no time stamp</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>The second way is to bypass the message-passing layer (that is, the <code>MidiMessage</code> and <code>Receiver</code> API) altogether, and interact with the synthesizer’s <code>MidiChannel</code> objects directly. You first need to retrieve the synthesizer’s <code>MidiChannel</code> objects, using the following <code>Synthesizer</code> method:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">public MidiChannel[] getChannels()</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>after which you can invoke the desired <code>MidiChannel</code> methods directly. This is a more immediate route than sending the corresponding <code>MidiMessages</code> to the synthesizer’s <code>Receiver</code> and letting the synthesizer handle the communication with its own <code>MidiChannels</code>. For example, the code corresponding to the preceding example would be:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">Synthesizer synth &#x3D; MidiSystem.getSynthesizer();</span><br><span class="line">MidiChannel chan[] &#x3D; synth.getChannels(); </span><br><span class="line">&#x2F;&#x2F; Check for null; maybe not all 16 channels exist.</span><br><span class="line">if (chan[4] !&#x3D; null) &#123;</span><br><span class="line">     chan[4].noteOn(60, 93); </span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="Getting-a-Channel’s-Current-State"><a href="#Getting-a-Channel’s-Current-State" class="headerlink" title="Getting a Channel’s Current State"></a>Getting a Channel’s Current State</h3><p><a name="121939" id="121939"></a> The <code>MidiChannel</code> interface provides methods that correspond one-to-one to each of the “channel voice” or “channel mode” messages defined by the MIDI specification. We saw one case with the use of the noteOn method in the previous example. However, in addition to these canonical methods, the Java Sound API’s <code>MidiChannel</code> interface adds some “get” methods to retrieve the value most recently set by corresponding voice or mode “set” methods:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">int       getChannelPressure()</span><br><span class="line">int       getController(int controller)</span><br><span class="line">boolean   getMono()</span><br><span class="line">boolean   getOmni() </span><br><span class="line">int       getPitchBend() </span><br><span class="line">int       getPolyPressure(int noteNumber)</span><br><span class="line">int       getProgram()</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>These methods might be useful for displaying channel state to the user, or for deciding what values to send subsequently to the channel. <a name="121953" id="121953"></a></p>
+<h3 id="Muting-and-Soloing-a-Channel"><a href="#Muting-and-Soloing-a-Channel" class="headerlink" title="Muting and Soloing a Channel"></a>Muting and Soloing a Channel</h3><p><a name="123492" id="123492"></a> The Java Sound API adds the notions of per-channel solo and mute, which are not required by the MIDI specification. These are similar to the solo and mute on the tracks of a MIDI sequence.</p>
+<p><a name="123493" id="123493"></a> If mute is on, this channel will not sound, but other channels are unaffected. If solo is on, this channel, and any other soloed channel, will sound (if it isn’t muted), but no other channels will sound. A channel that is both soloed and muted will not sound. The <code>MidiChannel</code> API includes four methods:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">boolean      getMute() </span><br><span class="line">boolean      getSolo()</span><br><span class="line">void         setMute(boolean muteState) </span><br><span class="line">void         setSolo(boolean soloState)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="Permission-to-Play-Synthesized-Sound"><a href="#Permission-to-Play-Synthesized-Sound" class="headerlink" title="Permission to Play Synthesized Sound"></a>Permission to Play Synthesized Sound</h2><p><a name="123505" id="123505"></a> The audio produced by any installed MIDI synthesizer is typically routed through the sampled-audio system. If your program doesn’t have permission to play audio, the synthesizer’s sound won’t be heard, and a security exception will be thrown. For more information on audio permissions, see the previous discussion of Permission to Use Audio Resources<br><a href="accessing.html#113223">Permission to Use Audio Resources</a>.</p>
+<p><a name="121968" id="121968"></a></p>
+
+            </div>
+        
+        <footer class="article-footer">
+        </footer>
+    </div>
+</article>
+
+
+    
+<nav id="article-nav">
+    
+        <a href="/wiki/2021-03-03-Introduction%20to%20the%20Service%20Provider%20Interfaces/" id="article-nav-newer" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Newer</strong>
+            <div class="article-nav-title">
+                
+                    Introduction to the Service Provider Interfaces
+                
+            </div>
+        </a>
+    
+    
+        <a href="/wiki/2021-03-03-Using%20Advanced%20Sequencer%20Features/" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Older</strong>
+            <div class="article-nav-title">Using Advanced Sequencer Features</div>
+        </a>
+    
+</nav>
+
+
+
+
+
+    
+    
+
+
+
+
+<!-- baidu url auto push script -->
+<script type="text/javascript">
+    !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=window.location.href,o=document.referrer;if(!e.test(r)){var n="//api.share.baidu.com/s.gif";o?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var t=new Image;t.src=n}}(window);
+</script>     
+</section>
+        </div>
+        <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            John Doe &copy; 2021 
+            <a rel="external nofollow noopener noreferrer" target="_blank" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png"></a>
+            <br> Powered by <a href="http://hexo.io/" target="_blank" rel="external nofollow noopener noreferrer">Hexo</a>. Theme - <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/zthxxx/hexo-theme-Wikitten">wikitten</a>
+            
+                <br>
+                <span id="busuanzi_container_site_pv"><i class="fa fa-eye"></i> <span id="busuanzi_value_site_pv"></span></span>
+                &nbsp;|&nbsp;
+                <span id="busuanzi_container_site_pv"><i class="fa fa-user"></i> <span id="busuanzi_value_site_uv"></span></span>
+            
+        </div>
+    </div>
+</footer>
+
+        
+
+    
+        
+<script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-share.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-video.min.js"></script>
+
+    
+    
+        
+<script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+
+    
+    
+
+
+
+<!-- Custom Scripts -->
+
+<script src="/js/main.js"></script>
+
+
+    </div>
+</body>
+</html>

@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-03-03T02:52:49.700Z</updated>
+  <updated>2021-03-03T07:30:49.597Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,124 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://example.com/wiki/2021-03-03-hhh/"/>
+    <id>http://example.com/wiki/2021-03-03-hhh/</id>
+    <published>2021-03-03T07:30:49.597Z</published>
+    <updated>2021-03-03T07:30:49.597Z</updated>
+    
+    <content type="html"><![CDATA[<p>ffff</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;ffff&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://example.com/wiki/2021-03-03-IO%20Operation/"/>
+    <id>http://example.com/wiki/2021-03-03-IO%20Operation/</id>
+    <published>2021-03-03T07:30:49.594Z</published>
+    <updated>2021-03-03T07:30:49.594Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://example.com/wiki/2021-03-03-Local%20class/"/>
+    <id>http://example.com/wiki/2021-03-03-Local%20class/</id>
+    <published>2021-03-03T07:30:49.594Z</published>
+    <updated>2021-03-03T07:30:49.594Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://example.com/wiki/2021-03-03-Annoymous%20class/"/>
+    <id>http://example.com/wiki/2021-03-03-Annoymous%20class/</id>
+    <published>2021-03-03T07:30:49.591Z</published>
+    <updated>2021-03-03T07:30:49.591Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://example.com/wiki/2021-03-03-Concurrency/"/>
+    <id>http://example.com/wiki/2021-03-03-Concurrency/</id>
+    <published>2021-03-03T07:30:49.591Z</published>
+    <updated>2021-03-03T07:30:49.591Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://example.com/wiki/2020-12-06-Modifying-a-Manifest-File/"/>
+    <id>http://example.com/wiki/2020-12-06-Modifying-a-Manifest-File/</id>
+    <published>2021-03-03T07:30:49.591Z</published>
+    <updated>2021-03-03T07:30:49.591Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Modifying-a-Manifest-File"><a href="#Modifying-a-Manifest-File" class="headerlink" title="Modifying a Manifest File"></a>Modifying a Manifest File</h1><p>You use the <tt>m</tt> command-line option to add custom information to the manifest during creation of a JAR file. This section describes the <tt>m</tt> option.</p><p>The Jar tool automatically puts a <a href="defman.html">default manifest</a> with the pathname <tt>META-INF/MANIFEST.MF</tt> into any JAR file you create. You can enable special JAR file functionality, such as <a href="sealman.html">package sealing</a>, by modifying the default manifest. Typically, modifying the default manifest involves adding special-purpose <em>headers</em> to the manifest that allow the JAR file to perform a particular desired function.</p><p>To modify the manifest, you must first prepare a text file containing the information you wish to add to the manifest. You then use the Jar tool’s <tt>m</tt> option to add the information in your file to the manifest.</p><p>The basic command has this format:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">jar cfm *jar-file manifest-addition input-file(s)*</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>Let’s look at the options and arguments used in this command:</p><ul><li>The <tt>c</tt> option indicates that you want to <strong>create</strong> a JAR file.</li><li>The <tt>m</tt> option indicates that you want to merge information from an existing file into the manifest file of the JAR file you’re creating.</li><li>The <tt>f</tt> option indicates that you want the output to go to a <strong>file</strong> (the JAR file you’re creating) rather than to standard output.</li><li><strong><tt>manifest-addition</tt></strong> is the name (or path and name) of the existing text file whose contents you want to add to the contents of JAR file’s manifest.</li><li><strong><tt>jar-file</tt></strong> is the name that you want the resulting JAR file to have.</li><li>The <strong><tt>input-file(s)</tt></strong> argument is a space-separated list of one or more files that you want to be placed in your JAR file.</li></ul><p>The <tt>m</tt> and <tt>f</tt> options must be in the same order as the corresponding arguments.</p><p>The remaining sections of this lesson demonstrate specific modifications you may want to make to the manifest file.</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;Modifying-a-Manifest-File&quot;&gt;&lt;a href=&quot;#Modifying-a-Manifest-File&quot; class=&quot;headerlink&quot; title=&quot;Modifying a Manifest File&quot;&gt;&lt;/a&gt;Modifying a</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Class</title>
+    <link href="http://example.com/wiki/2021-03-03-Class/"/>
+    <id>http://example.com/wiki/2021-03-03-Class/</id>
+    <published>2021-03-03T05:46:28.651Z</published>
+    <updated>2021-03-03T07:30:49.591Z</updated>
+    
+    <content type="html"><![CDATA[<p>getClass()方法查找的是对象的类，不是通过类变量去查找的，这个和动态绑定确定类型的时候是一致的。<br>Field、Method、Constructor也是类</p><h4 id="Class类"><a href="#Class类" class="headerlink" title="Class类"></a>Class类</h4><p>Class是一个类（类本身也对象，原始数据类型不是），这个类中包含了众多的方法，这些方法可以用来获取其他对象的信息<br><strong>反射</strong>：利用Class类==从对象获取类的信息、初始化或者调用等操作==的这一过程叫做反射reflection<br><strong>正射</strong>：是指从类获取对象的这一过程，也就是类实例化这一过程。这一过程的具体流程：==JVM首先会加载ClassName.class，加载到内存之后，在方法区/堆（具体哪一个有争议）中，在方法区/堆中创建一个Class对象对应ClassName类==</p><p>==获取Class对象==：</p><ul><li>Class.forName(“com.Student”)==参数传递完整的包加类名==</li><li>obj.getClass()</li><li>ClassName.class</li></ul><h4 id="Class对象提供的一些功能："><a href="#Class对象提供的一些功能：" class="headerlink" title="Class对象提供的一些功能："></a>Class对象提供的一些功能：</h4><ul><li><p>运行时判断对象所属类和父类以及包<br><code>obj.getClass(); // 获取Class类</code><br><code>obj.getClass().getSimpleName(); // 获取类名</code><br><code>obj.getClass().getName(); // 获取完整路径的类名</code><br><code>obj.getClass().getPackage(); //获取包名</code><br><code>obj.getSuperClass(); // 获取父类，返回的也是Class对象</code><br><code>obj.getInterfaces();obj.getInterface(); //返回接口的Class对象，可以调用getMethods()等方法</code></p></li><li><p>运行时创建任意类的一个类对象</p></li></ul><ol><li><p>可以使用getInstance()或者newInstance()<br><code>ClassType obj = ClassObj.newInstance();</code>使用Class对象中的newInstance()返回类对象。但是如果==类没有无参数构造方法，会报错==。因为newInstance()==调用的时类的无参数构造方法==</p></li><li><p>还可使用getConstructor()方法获取构造器后调用newInstance()传入对应参数构造对象</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Constructor&lt;?&gt; [] cons = ClassObj.getConstructors();</span><br><span class="line"><span class="comment">// 获取类下面的构造方法列表</span></span><br><span class="line"><span class="comment">// 获取到的方法还能使用getParameterType()等获取方法的详情</span></span><br><span class="line">`ClassName obj = (ClassName)cons[<span class="number">0</span>].newInstance(); </span><br><span class="line"><span class="comment">// 需要进行强制类型转换，不然可能报错，而且这里面的newInstance</span></span><br><span class="line"><span class="comment">// 是可以传参数的只是需要依据是哪一个构造方法来确定传入的参数个数和顺序.</span></span><br></pre></td></tr></table></figure></li></ol><ul><li><p>运行时获取类定义的成员变量和方法<br>Field、Method、Constructor是类，代表的类中的fields，methods和constructors<br><code>getFields(); // 获取public字段，静态和非静态在这里没有区别</code><br><code>getDeclaredFields(); // 获取所有的字段</code><br><code>field.get(object); // 获取属性值</code><br><code>field.set(object, value); // 设置修改public</code><br><code>field.setAccessible(true); // 设置了权限后可以修改访问private属性和方法</code><br><code>getMethods(); // 获取所有的共有方法，或访问到父类的</code><br><code>getDeclaredMethods(); 获取所有的方法，不会获取到父类的</code><br>调用获取到的方法<br><code>method.invoke(obj, parameter); // 使用invoke方法，传入对象和参数，无参数就传入null，即可调用方法，对于private方法，可以修改权限后调用，setAccessible(true).</code></p></li><li><p>在运行时调用任意一个类对象的方法</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">Class&lt;?&gt; clObj = Class.forName(<span class="string">&quot;Person&quot;</span>);</span><br><span class="line">Method[] methods = clObj.getDeclaredMethods(); </span><br><span class="line"><span class="comment">// 获取所有的方法，没有父类的</span></span><br><span class="line"><span class="keyword">for</span> (Method method: methods)&#123;</span><br><span class="line">method.setAccessible(<span class="keyword">true</span>);  </span><br><span class="line"><span class="comment">// 设置true，所有方法都有权限访问了</span></span><br><span class="line">methos.invoke(person, ...args: <span class="keyword">null</span>);  <span class="comment">// 调用方法</span></span><br><span class="line">&#125;</span><br><span class="line">Method method = clObj.getMethod(<span class="string">&quot;methodName&quot;</span>, String.class);  </span><br><span class="line"><span class="comment">// 获取特定的方法，第一个参数方法名</span></span><br><span class="line"><span class="comment">// 第二个参数，参数类型的class对象或者无参数时null。</span></span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure></li><li><p>生成动态代理</p></li></ul><h4 id="反射reflection的优缺点"><a href="#反射reflection的优缺点" class="headerlink" title="反射reflection的优缺点"></a>反射reflection的优缺点</h4><h5 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h5><p>反射可以在不知道运行哪一个类的情况下，获取到类的信息，创建对象以及操作对象，==方便扩展==，是框架设计的灵魂，框架在设计的时候，为了降低耦合度，不能将类型写死，需要考虑扩展功能<br>==降低了耦合度==，变得更加灵活，在==运行时去确定类型==，绑定对象，体现了==多态==的特性</p><h5 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h5><p>反射需要动态类型，JVM没办法优化这部分代码，==执行效率或相对直接初始化对象而有所降低==，业务代码不建议使用。<br>反射可以访问到private的属性和方法，会==破坏封装性==，有安全隐患，还会==破坏单例==的设计。<br>反射会使得==代码变得复杂，不容易维护==。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;getClass()方法查找的是对象的类，不是通过类变量去查找的，这个和动态绑定确定类型的时候是一致的。&lt;br&gt;Field、Method、Constructor也是类&lt;/p&gt;
+&lt;h4 id=&quot;Class类&quot;&gt;&lt;a href=&quot;#Class类&quot; class=&quot;headerli</summary>
+      
+    
+    
+    
+    <category term="JavaNotebook" scheme="http://example.com/categories/JavaNotebook/"/>
+    
+    
+    <category term="JavaNotebook" scheme="http://example.com/tags/JavaNotebook/"/>
+    
+  </entry>
   
   <entry>
     <title>Linux</title>
@@ -62,6 +180,275 @@
     
     
     <category term="Start" scheme="http://example.com/tags/Start/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>jekyll语法</title>
+    <link href="http://example.com/wiki/2021-03-03-jekyll%E8%AF%AD%E6%B3%95/"/>
+    <id>http://example.com/wiki/2021-03-03-jekyll%E8%AF%AD%E6%B3%95/</id>
+    <published>2021-03-01T16:34:31.896Z</published>
+    <updated>2021-03-03T07:30:49.597Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="语法规则"><a href="#语法规则" class="headerlink" title="语法规则"></a>语法规则</h4><p><code>&#123;&#123; page.title &#125;&#125;</code>输出预先定义好的变量，作为页面的content内容，示例展示的page.title变量的值</p><p><code>&#123;% control/logic flow%&#125;</code>这个标签包裹的是逻辑流或者控制结构，下面是两个示例：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&#123;% if page.show_sidebar %&#125;</span><br><span class="line">&lt;div class&#x3D;&quot;sidebar&quot;&gt;</span><br><span class="line">sidebar content</span><br><span class="line">&lt;&#x2F;div&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% for url in site.urls %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% endfor %&#125;</span><br></pre></td></tr></table></figure><h5 id="Filter"><a href="#Filter" class="headerlink" title="Filter"></a>Filter</h5><p><code>&#123;&#123; "hi" | capitalize &#125;&#125;</code>展示大写的HI而不是小写的<br><code>&#123;&#123; "/assets/style.css" | relative_url&#125;&#125;</code>使用相对路径，抹除掉<code>baseurl</code>变量值，在网站布置在子域名下的时候很有用<br><code>&#123;&#123; "/assets/style.css" | absolute_url`展示绝对路径`&#123;&#123; site.members | group_by:"graduation_year" &#125;&#125;</code>根据特定的内容进行分组，还可以用正则匹配，<code>group_by_exp</code><br><code>&#123;&#123; site.members | find/find_exp:"item","item.graduation_year < 2014" &#125;&#125;</code>查找命令</p><h5 id="use-liquid"><a href="#use-liquid" class="headerlink" title="use liquid"></a>use liquid</h5><p>在page的开头加上：Front Matter</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line"># 加上这个是为了告诉jekyll处理liquid</span><br><span class="line">mynumber: 5</span><br><span class="line"># 可以使用page.mynumber来访问这个变量</span><br><span class="line">---</span><br><span class="line"></span><br></pre></td></tr></table></figure><h5 id="Layout"><a href="#Layout" class="headerlink" title="Layout"></a>Layout</h5>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h4 id=&quot;语法规则&quot;&gt;&lt;a href=&quot;#语法规则&quot; class=&quot;headerlink&quot; title=&quot;语法规则&quot;&gt;&lt;/a&gt;语法规则&lt;/h4&gt;&lt;p&gt;&lt;code&gt;&amp;#123;&amp;#123; page.title &amp;#125;&amp;#125;&lt;/code&gt;输出预先定义好的变量，作为</summary>
+      
+    
+    
+    
+    <category term="Blog" scheme="http://example.com/categories/Blog/"/>
+    
+    
+    <category term="Blog" scheme="http://example.com/tags/Blog/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用jekyll主题</title>
+    <link href="http://example.com/wiki/2021-03-03-%E4%BD%BF%E7%94%A8jekyll%E4%B8%BB%E9%A2%98/"/>
+    <id>http://example.com/wiki/2021-03-03-%E4%BD%BF%E7%94%A8jekyll%E4%B8%BB%E9%A2%98/</id>
+    <published>2021-03-01T14:22:26.931Z</published>
+    <updated>2021-03-03T07:30:49.597Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="主题安装"><a href="#主题安装" class="headerlink" title="主题安装"></a>主题安装</h3><h4 id="网上下载配置"><a href="#网上下载配置" class="headerlink" title="网上下载配置"></a>网上下载配置</h4><ol><li><p>在主题官网下载：<a href="http://jekyllthemes.org/">1.org</a> <a href="http://jekyllthemes.com/">2.com</a> <a href="https://jekyllthemes.dev/">3.dev</a></p></li><li><p>解压到需要的目录下</p></li><li><p>进入到该目录下，执行<code>bundle</code>安装所需的依赖和主题</p></li></ol><p>4.执行：<code>bundle exec jekyll server</code> 可以在<code>http//localhost:4000</code>查看主题情况</p><h4 id="gem下载主题"><a href="#gem下载主题" class="headerlink" title="gem下载主题"></a>gem下载主题</h4><ol><li><p>在你的jekyll站点的<code>Gemfile</code>中添加：<code>gem &quot;jekyll-theme-chirpy&quot;</code></p></li><li><p>然后在你的配置文件： <code>_config.yml</code>:中加入：<code>theme: jekyll-theme-chirpy</code></p></li><li><p>然后在命令行下执行：<code>bundle</code></p></li><li><p>从gem下载下来的主题文件复制到你的站点目录下面<br>找到主题文件位置的命令：<code>bundle info --path jekyll-theme-chirpy</code></p></li></ol><p>一般主题文件的git repository中都有详细的安装教程，可以按照安装教程来执行</p><h4 id="github-pages配置jekyll主题"><a href="#github-pages配置jekyll主题" class="headerlink" title="github pages配置jekyll主题"></a>github pages配置jekyll主题</h4><h5 id="devepr主题"><a href="#devepr主题" class="headerlink" title="devepr主题"></a>devepr主题</h5><p>首先进入到主题的github主题repository当中，然后查看READMME.md文档，学习怎么配置</p><p>一般是首先fork目录到自己的github中，然后在该repository中点击使用这个为模板创建自己的repositroy。等待创建完成，然后便可以将这个目录克隆到本地中，然后在本地进行修改配置并且进行jekyll的本地配置查看，当然如果非常了解jekyll的使用配置的话，将会非常容易的定制化自己的博客界面。</p><p>克隆到本地之后，需要进行下列的操作：</p><ol><li><code>git clone https://github.com/your_github_username/your_github_username.github.io.git</code></li><li><code>cd your_github_username</code></li><li><code>ruby -v</code></li><li><code>gem install bundler</code></li><li><code>bundler -v</code></li><li><code>bundle add jekyll</code></li><li><code>bundle exec jekyll -v</code></li><li><code>bundle update</code></li><li><code>bundle install</code></li><li><code>bundle exec jekyll serve --watch</code></li></ol><p>更新：</p><ol><li><code>git remote -v</code></li><li><code>git remote add upstream https://github.com/sujaykundu777/devlopr-jekyll.git</code></li><li><code>git fetch upstream</code></li><li><code>git checkout master</code></li><li><code>git merge upstream/master</code></li><li><code>git push</code></li></ol><h5 id="很多主题类似"><a href="#很多主题类似" class="headerlink" title="很多主题类似"></a>很多主题类似</h5>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;主题安装&quot;&gt;&lt;a href=&quot;#主题安装&quot; class=&quot;headerlink&quot; title=&quot;主题安装&quot;&gt;&lt;/a&gt;主题安装&lt;/h3&gt;&lt;h4 id=&quot;网上下载配置&quot;&gt;&lt;a href=&quot;#网上下载配置&quot; class=&quot;headerlink&quot; title=&quot;网上下载配</summary>
+      
+    
+    
+    
+    <category term="Blog" scheme="http://example.com/categories/Blog/"/>
+    
+    
+    <category term="Blog" scheme="http://example.com/tags/Blog/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>jekyll配置管理博客</title>
+    <link href="http://example.com/wiki/2021-03-03-jekyll%E9%85%8D%E7%BD%AE%E7%AE%A1%E7%90%86%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://example.com/wiki/2021-03-03-jekyll%E9%85%8D%E7%BD%AE%E7%AE%A1%E7%90%86%E5%8D%9A%E5%AE%A2/</id>
+    <published>2021-02-28T17:07:50.045Z</published>
+    <updated>2021-03-03T07:30:49.597Z</updated>
+    
+    <content type="html"><![CDATA[<p>由于jekyll是ruby语言开发的，因此需要先配置ruby环境</p><h4 id="安装ruby并配置"><a href="#安装ruby并配置" class="headerlink" title="安装ruby并配置"></a>安装ruby并配置</h4><p><code>sudo pacman -S ruby</code></p><p><code>gem sources --add https://gems.ruby-china.com/ --remove https://rubygems.org/</code>配置ruby中国镜像源<br><code>gem sources --add https://mirrors.tuna.tsinghua.edu.cn/rubygems/ --remove https://rubygems.org/</code>配置清华镜像源</p><h5 id="安装jekyll和buddle"><a href="#安装jekyll和buddle" class="headerlink" title="安装jekyll和buddle"></a>安装jekyll和buddle</h5><p><code>gem install jekyll bundle</code></p><p>配置环境变量，安装的需要配置环境变量的文件在<code>~/.local/share/gem/ruby/gem/2.7.0/bin</code></p><p>配置buddle镜像：</p><p><code>bundle config mirror.https://rubygems.org https://gems.ruby-china.com</code><br>这一步之后不用修改Gemfile中的source了</p><p>生成博客文件<code>jekyll new blog_name</code><br>进入博客文件：<code>cd blog_name</code><br>开启server检查配置：<code>bundle exec jekyll server</code></p><h5 id="SSL-证书错误"><a href="#SSL-证书错误" class="headerlink" title="SSL 证书错误"></a>SSL 证书错误</h5><p>正常情况下，你是不会遇到 SSL 证书错误的，除非你的 Ruby 安装方式不正确。</p><p>如果遇到 SSL 证书问题，你又无法解决，请修改 <code>~/.gemrc</code> 文件，增加 <code>ssl_verify_mode: 0</code> 配置，以便于 RubyGems 可以忽略 SSL 证书错误。</p><p>-–<br>:sources:</p><ul><li><a href="https://gems.ruby-china.com/">https://gems.ruby-china.com</a><br>:ssl_verify_mode: 0</li></ul><p>如果你在意 Gem 下载的安全问题，请正确安装 Ruby、OpenSSL，建议部署 Linux 服务器的时候采用 <a href="https://github.com/huacnlee/init.d/blob/master/install_rvm">这个 RVM 安装脚本</a> 的方式安装 Ruby。</p><h5 id="其他说明"><a href="#其他说明" class="headerlink" title="其他说明"></a>其他说明</h5><ul><li>  <code>Bundler::GemspecError: Could not read gem at /home/xxx/.rvm/gems/ruby-2.1.8/cache/rugged-0.23.3.gem. It may be corrupted.</code>，这类错误是网络原因下载到了坏掉的文件到本地，请直接删除那个文件。</li><li>  请珍惜社区资源，勿基于本镜像做二次镜像网站，我们会定期检查 CDN 请求量统计，单日请求量过大（流量超过 20 G） 的 IP 将会被永久屏蔽。</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;由于jekyll是ruby语言开发的，因此需要先配置ruby环境&lt;/p&gt;
+&lt;h4 id=&quot;安装ruby并配置&quot;&gt;&lt;a href=&quot;#安装ruby并配置&quot; class=&quot;headerlink&quot; title=&quot;安装ruby并配置&quot;&gt;&lt;/a&gt;安装ruby并配置&lt;/h4&gt;&lt;p&gt;&lt;c</summary>
+      
+    
+    
+    
+    <category term="Blog" scheme="http://example.com/categories/Blog/"/>
+    
+    
+    <category term="Blog" scheme="http://example.com/tags/Blog/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>网络设置</title>
+    <link href="http://example.com/wiki/2021-03-03-%E7%BD%91%E7%BB%9C%E8%AE%BE%E7%BD%AE/"/>
+    <id>http://example.com/wiki/2021-03-03-%E7%BD%91%E7%BB%9C%E8%AE%BE%E7%BD%AE/</id>
+    <published>2021-02-28T16:08:57.012Z</published>
+    <updated>2021-03-03T07:30:49.597Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="网络设置"><a href="#网络设置" class="headerlink" title="网络设置"></a>网络设置</h4><p>安装一些配置网络必须的包</p><p><code>sudo pacman -S networkmanager network-manager-applet iw ppp rp-pppoe</code></p><p>后面的两个软件包在设置pppoe连接时必须的包，前面的两个是网络管理包，iw也是一个网络管理的连接包</p><p>进入配置界面：命令行下输入：<code>nmtui</code>就可以进入网络选择配置的界面，选择自己想要的网络配置项进去连接就好了</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h4 id=&quot;网络设置&quot;&gt;&lt;a href=&quot;#网络设置&quot; class=&quot;headerlink&quot; title=&quot;网络设置&quot;&gt;&lt;/a&gt;网络设置&lt;/h4&gt;&lt;p&gt;安装一些配置网络必须的包&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;sudo pacman -S networkmanager networ</summary>
+      
+    
+    
+    
+    <category term="Archlinux配置" scheme="http://example.com/categories/Archlinux%E9%85%8D%E7%BD%AE/"/>
+    
+    
+    <category term="Archlinux配置" scheme="http://example.com/tags/Archlinux%E9%85%8D%E7%BD%AE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>免费代理配置</title>
+    <link href="http://example.com/wiki/2021-03-03-%E5%85%8D%E8%B4%B9%E4%BB%A3%E7%90%86%E9%85%8D%E7%BD%AE/"/>
+    <id>http://example.com/wiki/2021-03-03-%E5%85%8D%E8%B4%B9%E4%BB%A3%E7%90%86%E9%85%8D%E7%BD%AE/</id>
+    <published>2021-02-27T13:40:24.168Z</published>
+    <updated>2021-03-03T07:30:49.597Z</updated>
+    
+    <content type="html"><![CDATA[<p>免费代理除了免费之外，没有什么有点，速度满，不安全，但是只在某些情况下使用的话还是可以考虑使用的</p><h3 id="v2ray"><a href="#v2ray" class="headerlink" title="v2ray"></a>v2ray</h3><h4 id="下载安装"><a href="#下载安装" class="headerlink" title="下载安装"></a>下载安装</h4><p>archlinu：<br><code>sudo pacman -S v2ray qv2ray</code><br>安装完成之后便可以打开软件了<br>进入软件之后，需要进行两步设置：</p><ol><li>在首选项的入站设置中勾选系统代理，并在连接设置取消勾选绕过中国大陆</li><li>选中群组，点击分组进入到分组设置，然后有好几种添加代理的方式，一种是复制vmess://或者ssr等开头的文本，第二种是通过分享二维码，第三种是设置订阅设置，复制订阅节点链接即可<br>设置好了之后，便可以测试代理是否可用以及速度。<br>就算上述步骤设置好了之后，并不像windows下面一样，选中全局配置即可在所有的软件中使用代理，而是需要在chromium等软件中利用ghelper设置代理。</li><li>进入ghelper插件，点击进入管理界面，选择代理</li><li>输入代理的ip和port以及协议，然后在插件管理中打开即可</li></ol><p>在linux的i3桌面下也是支持右击设置系统代理的，为什么需要设置ghlepe的代理是因为chromium的代理不支持，而google-chrome是可以的</p><p>manjaro系统下面不需要设置ghelper也可以访问，因为KDE/GONME桌面环境支持在通知栏中来管理V2RAY的系统代理设置，因此全局系统代理，是否在环境中设置好就可以，这个有待考量，反正manjaro下面可以不设置ghelper的代理，在满就爱如哦系统代理设置中的vpn界面已经为我们设置好了全局系统代理，和window下类似的</p><h4 id="windows"><a href="#windows" class="headerlink" title="windows"></a>windows</h4><p>下载好v2ray软件之后，打开软件进入，选择从剪切板导入或者其他方式导入，然后导入之后便可以看到代理的详细信息，然后便可以进行测速，想要全局可用或者打开代理，还得在右下角右击该v2ray图表，然后选择http代理，打开全全局代理，就可以开始使用了</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;免费代理除了免费之外，没有什么有点，速度满，不安全，但是只在某些情况下使用的话还是可以考虑使用的&lt;/p&gt;
+&lt;h3 id=&quot;v2ray&quot;&gt;&lt;a href=&quot;#v2ray&quot; class=&quot;headerlink&quot; title=&quot;v2ray&quot;&gt;&lt;/a&gt;v2ray&lt;/h3&gt;&lt;h4 i</summary>
+      
+    
+    
+    
+    <category term="Web相关" scheme="http://example.com/categories/Web%E7%9B%B8%E5%85%B3/"/>
+    
+    
+    <category term="Web相关" scheme="http://example.com/tags/Web%E7%9B%B8%E5%85%B3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>YouCompleteMe插件</title>
+    <link href="http://example.com/wiki/2021-03-03-YouCompleteMe%E6%8F%92%E4%BB%B6/"/>
+    <id>http://example.com/wiki/2021-03-03-YouCompleteMe%E6%8F%92%E4%BB%B6/</id>
+    <published>2021-02-27T13:05:55.821Z</published>
+    <updated>2021-03-03T07:30:49.597Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="安装前准备"><a href="#安装前准备" class="headerlink" title="安装前准备"></a>安装前准备</h4><p><code>sudo pacman -S base-devel git java python npm nodejs go cmake</code><br>安装一些安装所需的包</p><h4 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h4><p>找到官网的仓库地址，克隆到本地的vim插件文件夹下面，<code>~/.vim/pack/vendor/start/</code></p><h4 id="子模块更新"><a href="#子模块更新" class="headerlink" title="子模块更新"></a>子模块更新</h4><p><code>git submodule update --init --recursive</code><br>同步放在该仓库下的其他子模块仓库，并更新</p><h4 id="completer安装"><a href="#completer安装" class="headerlink" title="completer安装"></a>completer安装</h4><p>根据自己的需要，安装需要的补全插件模块<br>Cfamily：<code>./installer.py --cland-completer</code><br>java：<code>./installer.py --java-completer</code><br>类似，还可以直接安装全部的补全插件<code>./installer.py --all</code></p><h4 id="速度慢的问题"><a href="#速度慢的问题" class="headerlink" title="速度慢的问题"></a>速度慢的问题</h4><p>go：<code>export GOPROXY=https://goproxy.io</code>设置go的代理设置<br>npm：<code>npm config set registry https://registry.npm.taobao.org</code>设置npm镜像<br>java的补全jdt下载慢：自己手动下载下来对应的版本放在对应的目录下面即可<br>cland下载慢：也可以自己手动下载对应版本</p><h4 id="安装完成的配置"><a href="#安装完成的配置" class="headerlink" title="安装完成的配置"></a>安装完成的配置</h4><p>配置global ycm_extra_conf：<code>let g:ycm_global_ycm_extra_conf=&#39;file_path&#39;</code><br>开启vim文件甄别：<code>:filetype indent plugin on</code><br>一般这一步完成之后，应该可以补全了</p><p>之后便可以按照自己的需求去进行相关的配置了</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h4 id=&quot;安装前准备&quot;&gt;&lt;a href=&quot;#安装前准备&quot; class=&quot;headerlink&quot; title=&quot;安装前准备&quot;&gt;&lt;/a&gt;安装前准备&lt;/h4&gt;&lt;p&gt;&lt;code&gt;sudo pacman -S base-devel git java python npm nodejs</summary>
+      
+    
+    
+    
+    <category term="vim使用" scheme="http://example.com/categories/vim%E4%BD%BF%E7%94%A8/"/>
+    
+    
+    <category term="vim使用" scheme="http://example.com/tags/vim%E4%BD%BF%E7%94%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>trojan代理配置</title>
+    <link href="http://example.com/wiki/2021-03-03-trojan%E4%BB%A3%E7%90%86%E9%85%8D%E7%BD%AE/"/>
+    <id>http://example.com/wiki/2021-03-03-trojan%E4%BB%A3%E7%90%86%E9%85%8D%E7%BD%AE/</id>
+    <published>2021-02-27T12:45:22.953Z</published>
+    <updated>2021-03-03T07:30:49.597Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h4><h5 id="安装配置nginx："><a href="#安装配置nginx：" class="headerlink" title="安装配置nginx："></a>安装配置nginx：</h5><p><code>sudo pacman -S nginx-mainline</code><br>nginx的配置文件在<code>/etc/nginx/nginx.conf</code><br>配置如下：</p><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">user  root;</span><br><span class="line">worker_processes  1;</span><br><span class="line">error_log  /var/log/nginx/error.log warn;</span><br><span class="line"># pid        /var/run/nginx.pid;  # 多余pidduplicate的情况，注释掉这一行</span><br><span class="line">events &#123;</span><br><span class="line">    worker_connections  1024;</span><br><span class="line">&#125;</span><br><span class="line">http &#123;</span><br><span class="line">    include       /etc/nginx/mime.types;</span><br><span class="line">    default_type  application/octet-stream;</span><br><span class="line">    log_format  main  &#x27;/$remote_addr - /$remote_user [/$time_local] &quot;/$request&quot; &#x27;</span><br><span class="line">                      &#x27;/$status /$body_bytes_sent &quot;/$http_referer&quot; &#x27;</span><br><span class="line">                      &#x27;&quot;/$http_user_agent&quot; &quot;/$http_x_forwarded_for&quot;&#x27;;</span><br><span class="line">    access_log  /var/log/nginx/access.log  main;</span><br><span class="line">    sendfile        on;</span><br><span class="line">    #tcp_nopush     on;</span><br><span class="line">    keepalive_timeout  120;</span><br><span class="line">    client_max_body_size 20m;</span><br><span class="line">    #gzip  on;</span><br><span class="line">    server &#123;</span><br><span class="line">        listen       80;</span><br><span class="line">        server_name  $your_domain;</span><br><span class="line">        root /usr/share/nginx/html;</span><br><span class="line">        index index.php index.html index.htm;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h5 id="设置伪装站点"><a href="#设置伪装站点" class="headerlink" title="设置伪装站点"></a>设置伪装站点</h5><p>rm -rf /usr/share/nginx/html/*   #删除目录原有文件<br>cd /usr/share/nginx/html/    #进入站点更目录<br>wget <a href="https://github.com/V2RaySSR/Trojan/raw/master/web.zip">https://github.com/V2RaySSR/Trojan/raw/master/web.zip</a><br>unzip web.zip<br>systemctl restart nginx.service</p><h4 id="配置trojan"><a href="#配置trojan" class="headerlink" title="配置trojan"></a>配置trojan</h4><p>配置文件在：<code>/etc/nginx/xxx.json</code>的形式<br>配置文件示例在<code>/usr/share/trojan/examples/***</code>也是json文件，复制到配置文件目录下，再按自己情况进行相应的修改就好，下面是服务器的配置文件示例：</p><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">&quot;run_type&quot;</span>: <span class="string">&quot;server&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;local_addr&quot;</span>: <span class="string">&quot;0.0.0.0&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;local_port&quot;</span>: <span class="number">443</span>,</span><br><span class="line">    &quot;remote_addr&quot;: &quot;127.0.0.1&quot;,    # 伪装用的话，需要指向webserverip和port</span><br><span class="line">    &quot;remote_port&quot;: 80,</span><br><span class="line">    &quot;password&quot;: [</span><br><span class="line">        <span class="string">&quot;00000000&quot;</span></span><br><span class="line">    ],</span><br><span class="line">    &quot;log_level&quot;: 1,</span><br><span class="line">    &quot;ssl&quot;: &#123;</span><br><span class="line">        &quot;cert&quot;: &quot;/usr/src/trojan-cert/fullchain.cer&quot;,</span><br><span class="line">        &quot;key&quot;: &quot;/usr/src/trojan-cert/private.key&quot;,</span><br><span class="line">        &quot;key_password&quot;: &quot;&quot;,</span><br><span class="line">        &quot;cipher_tls13&quot;:&quot;TLS_AES_128_GCM_SHA256:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_256_GCM_SHA384&quot;,</span><br><span class="line">&quot;prefer_server_cipher&quot;: true,</span><br><span class="line">        &quot;alpn&quot;: [</span><br><span class="line">            <span class="string">&quot;http/1.1&quot;</span></span><br><span class="line">        ],</span><br><span class="line">        &quot;reuse_session&quot;: true,</span><br><span class="line">        &quot;session_ticket&quot;: false,</span><br><span class="line">        &quot;session_timeout&quot;: 600,</span><br><span class="line">        &quot;plain_http_response&quot;: &quot;&quot;,</span><br><span class="line">        &quot;curves&quot;: &quot;&quot;,</span><br><span class="line">        &quot;dhparam&quot;: &quot;&quot;</span><br><span class="line">    &#125;,</span><br><span class="line">    &quot;tcp&quot;: &#123;</span><br><span class="line">        &quot;no_delay&quot;: true,</span><br><span class="line">        &quot;keep_alive&quot;: true,</span><br><span class="line">        &quot;fast_open&quot;: false,</span><br><span class="line">        &quot;fast_open_qlen&quot;: 20</span><br><span class="line">    &#125;,</span><br><span class="line">    &quot;mysql&quot;: &#123;</span><br><span class="line">        &quot;enabled&quot;: false,</span><br><span class="line">        &quot;server_addr&quot;: &quot;127.0.0.1&quot;,</span><br><span class="line">        &quot;server_port&quot;: 3306,</span><br><span class="line">        &quot;database&quot;: &quot;trojan&quot;,</span><br><span class="line">        &quot;username&quot;: &quot;trojan&quot;,</span><br><span class="line">        &quot;password&quot;: &quot;&quot;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h4 id="安全证书TSL配置"><a href="#安全证书TSL配置" class="headerlink" title="安全证书TSL配置"></a>安全证书TSL配置</h4><h5 id="手动的方式"><a href="#手动的方式" class="headerlink" title="手动的方式"></a>手动的方式</h5><p>在<a href="%5Bhttps://freessl.cn/%5D(https://freessl.cn/">证书配置网站</a><br>按照指示完成申请之后，就可以下载证书，然后在配置文件中指向证书文件路径即可</p><h6 id="下载并解压证书"><a href="#下载并解压证书" class="headerlink" title="下载并解压证书"></a>下载并解压证书</h6><p>得到两个文件。<br>一个是<code>xxx.xxx.xxx_chain.crt</code> 文件<br>一个是<code>xxx.xxx.xxx_key.key</code> 文件<br>把<code>xxx.xxx.xxx_chain.crt</code>改名为<code>fullchain.cer</code>备用<br>把<code>xxx.xxx.xxx_key.key</code>改名为<code>private.key</code>备用</p><h6 id="移动证书文件"><a href="#移动证书文件" class="headerlink" title="移动证书文件"></a>移动证书文件</h6><p>创建存放证书的文件夹<code>trojan-cert</code> 完整路径为 <code>/usr/src/trojan-cert</code><br>把刚才改名的2个文件（<code>fullchain.cer</code>和<code>private.key</code>）放到VPS <code>/usr/src/trojan-cert</code>目录下面</p><p>然后在配置文件的证书目录指向这两个文件</p><h6 id="启动Trojan服务"><a href="#启动Trojan服务" class="headerlink" title="启动Trojan服务"></a>启动Trojan服务</h6><p>设置启动Trojan服务<br>xxx是配置文件的文件名，按照配置文件开启不同的服务<br>systemctl start <a href="mailto:&#116;&#114;&#x6f;&#x6a;&#97;&#110;&#64;&#x78;&#120;&#x78;&#46;&#x73;&#x65;&#114;&#x76;&#x69;&#99;&#101;">&#116;&#114;&#x6f;&#x6a;&#97;&#110;&#64;&#x78;&#120;&#x78;&#46;&#x73;&#x65;&#114;&#x76;&#x69;&#99;&#101;</a>  #启动Trojan<br>systemctl enable <a href="mailto:&#116;&#x72;&#111;&#x6a;&#97;&#x6e;&#x40;&#x78;&#120;&#120;&#x2e;&#x73;&#x65;&#x72;&#118;&#105;&#x63;&#x65;">&#116;&#x72;&#111;&#x6a;&#97;&#x6e;&#x40;&#x78;&#120;&#120;&#x2e;&#x73;&#x65;&#x72;&#118;&#105;&#x63;&#x65;</a>  #设置Trojan服务开机自启</p><h6 id="验证证书"><a href="#验证证书" class="headerlink" title="验证证书"></a>验证证书</h6><p>进入网址看是否有小锁</p><h5 id="自动的方式"><a href="#自动的方式" class="headerlink" title="自动的方式"></a>自动的方式</h5><p>下载：<code>sudo pacman -S acme.sh</code></p><p><code>acme.sh --help</code>查看配置文档进行学习配置即可</p><h4 id="TCP-Fast-Open"><a href="#TCP-Fast-Open" class="headerlink" title="TCP Fast Open"></a>TCP Fast Open</h4><p>For <a href="https://en.wikipedia.org/wiki/TCP_Fast_Open" title="wikipedia:TCP Fast Open">TCP Fast Open</a> on servers to work, you’ll need to turn it on in your OS:</p><p><code>echo 3 &gt; /proc/sys/net/ipv4/tcp_fastopen</code></p><h4 id="Disguise"><a href="#Disguise" class="headerlink" title="Disguise"></a>Disguise</h4><p>Trojan servers can be disguised as other services over TLS to prevent active probing. This can be done by, for example, running a <a href="https://wiki.archlinux.org/index.php/Web_server" title="Web server">web server</a> with <a href="https://wiki.archlinux.org/index.php/Nginx" title="Nginx">nginx</a> and pointing <code>remote_addr</code> and <code>remote_port</code> fields to the server address and port.</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h4 id=&quot;准备工作&quot;&gt;&lt;a href=&quot;#准备工作&quot; class=&quot;headerlink&quot; title=&quot;准备工作&quot;&gt;&lt;/a&gt;准备工作&lt;/h4&gt;&lt;h5 id=&quot;安装配置nginx：&quot;&gt;&lt;a href=&quot;#安装配置nginx：&quot; class=&quot;headerlink&quot; titl</summary>
+      
+    
+    
+    
+    <category term="Web相关" scheme="http://example.com/categories/Web%E7%9B%B8%E5%85%B3/"/>
+    
+    
+    <category term="Web相关" scheme="http://example.com/tags/Web%E7%9B%B8%E5%85%B3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>VPN工作原理</title>
+    <link href="http://example.com/wiki/2021-03-03-VPN%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86/"/>
+    <id>http://example.com/wiki/2021-03-03-VPN%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86/</id>
+    <published>2021-02-25T17:01:32.054Z</published>
+    <updated>2021-03-03T07:30:49.597Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="vpn工作原理和搭建方法"><a href="#vpn工作原理和搭建方法" class="headerlink" title="vpn工作原理和搭建方法"></a>vpn工作原理和搭建方法</h2><p><a href="https://yuerblog.cc/2017/01/03/how-vpn-works-and-how-to-setup-pptp/#comments">31条回复</a></p><p>之前为了翻墙，专门写过一篇<a href="http://yuerblog.cc/2016/11/23/the-principles-of-shadowsocks/">《关于shadowsocks的一些思考》</a>来说明它的工作原理，借助博客深入原理沉淀下来，对自己对他人都会有很大的帮助。</p><p>ss翻墙有一个必要的前提就是客户端本身必须支持socks5协议（比如浏览器一般都支持socks5配置），这样才能将和客户端本地的shadowsocks socks5代理进程互换数据，不过这也造成了很多软件是没法通过ss实现翻墙的，因此，我需要vpn来解决这个问题。</p><h2 id="vpn的原理"><a href="#vpn的原理" class="headerlink" title="vpn的原理"></a>vpn的原理</h2><p>vpn：英文_全称_是“Virtual Private Network”，翻译过来就是“虚拟专用网络”。vpn通常拿来做2个事情，一个是可以让世界上任意2台机器进入一个虚拟的局域网中（当然这个局域网的数据通讯是加密的，很安全，用起来和一个家庭局域网没有区别），一个是可以用来翻墙。</p><p>vpn比ss更加底层，它通过操作系统的接口直接虚拟出一张网卡，后续整个操作系统的网络通讯都将通过这张虚拟的网卡进行收发。这和任何一个代理的实现思路都差不多，应用层并不知道网卡是虚拟的，这样vpn虚拟网卡将以中间人的身份对数据进行加工，从而实现各种神奇的效果。具体来说，vpn是通过编写一套网卡驱动并注册到操作系统实现的虚拟网卡，这样数据只要经过网卡收发就可以进行拦截处理。</p><p>一句话，vpn在IP层工作，而ss在TCP层工作。</p><h3 id="翻墙用途"><a href="#翻墙用途" class="headerlink" title="翻墙用途"></a>翻墙用途</h3><p>![[Pasted image 20210226010054.png]]</p><p>需要在vps上部署vpn server，客户端所有数据将经过虚拟网卡的加密封装后都转发给vps上的vpn server，由它来转发给目标服务器，这和ss server原理类似，由vpn协议加密从而绕过GFW实现访问墙外网站，下面将以pptp vpn协议为例说明。</p><p>假设要访问谷歌，那么客户端发出的数据包首先通过协议栈处理封装成IP包，其源地址是虚拟网卡的地址，例如：192.168.0.2，而目标地址是谷歌的IP。</p><p>原始IP包交给虚拟网卡发送时，PPTP网卡驱动会按PPP协议对这个IP包整体加密封装作为新的payload，用一层新的IP头封装这个payload发送出去，这个新IP头的目标地址是vpn server，源地址是客户端的外网IP。</p><p>vpn server的协议栈会剥离掉新IP头，将内部PPP协议的payload交给pptpd进程处理，pptpd进程会按PPP协议解包得到原始的IP包，我们知道这个IP包的源地址是192.168.0.2，目标地址google。因此，pptpd进程需要做的是将这个IP包的源IP地址改为vps的地址，然后将IP包发给谷歌，从而和谷歌进行数据交换。最终，pptpd理所应当将谷歌的应答IP包的目标IP地址换成192.168.0.2，然后经过PPP协议封装并添加新的IP头后发回给客户端既可。</p><p>不过要注意在pptpd的实现里，这个源地址修改是通过iptables实现的，也就是添加通过iptables添加一个NAT规则，实现来源地址的映射转换，这个在你配置pptp的过程中就会看到。</p><h3 id="局域网用途"><a href="#局域网用途" class="headerlink" title="局域网用途"></a>局域网用途</h3><p>![[Pasted image 20210226010117.png]]</p><p>大家知道，玩CS的时候都是局域网搜索房间的，要求大家坐在一个网吧里连着一台交换机。如果大家各自坐在家里玩CS想联机，通常要登录一个对战平台，其实对战平台做的事情就是VPN，也就是虚拟一个局域网，大家感受起来就和坐在一起一样。</p><p>虚拟网卡的驱动会尽力伪装成一个物理网卡的样子，我们知道DHCP协议是局域网动态分配客户端IP的协议，那么VPN的虚拟网卡其实也会和vpn server进行一些协商得到一个虚拟局域网的IP，比如192.168.0.2。得到虚拟IP后，后续数据将通过虚拟网卡发送至vpn server所在的IP，最终被pptpd进程处理。</p><p>既然各个客户端的虚拟网卡都是和同一个pptpd进程交互，那么这个pptpd进程自然知道这个虚拟的局域网内有哪些局域网用户，因此当2个虚拟局域网用户192.168.0.2和192.168.0.3之间想互相通讯的时候，pptpd会完成数据的中转。不过要注意，虚拟局域网用户间的通讯是不需要像访问谷歌那样修改数据包的源IP地址的，这个很容易想明白。</p><p>上面只是站在一个小白的角度理解这个过程，真实的pptp协议还用到了GRE协议，但并不是理解的重点。一个真实的pptpd进程包含一个在端口1723上tcp监听的父进程用来与各vpn client协商隧道信息，pptpd后续会给每个client创建一个子进程专门负责client的数据交互，而这个交互的协议就是GRE协议。</p><p>GRE直接在IP层之上实现，内核剥离IP透之后会解析GRE协议并根据GRE中的隧道ID将数据包分派给对应的pptpd子进程。子进程则通过raw socket对GRE包进行读写，利用raw socket可以方便的向任何隧道写出数据和读入数据，可以说pptpd的vpn隧道是直接依赖GRE协议的，有了GRE协议可以很方便的实现不同隧道间的数据交互，因为每个隧道的数据在GRE头中都有唯一ID标识（ID是1723端协商而来的），这就是虚拟局域网的大概实现原理。</p><p>当然，就像上面的图片描述的那样，VPN也常用于在家连接办公网，这是因为VPN server有另外一张网卡与办公网是局域网的关系，因此可以通过VPN server间接的访问到办公网，此时vpn server的帐号密码鉴权系统就显得尤为重要了。</p><h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>由上可知，pptpd工作起来很像一个路由器，除了能访问谷歌，还能实现虚拟局域网。同时，由于其实现上是一张虚拟网卡，因此对所有应用都可以适用。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;vpn工作原理和搭建方法&quot;&gt;&lt;a href=&quot;#vpn工作原理和搭建方法&quot; class=&quot;headerlink&quot; title=&quot;vpn工作原理和搭建方法&quot;&gt;&lt;/a&gt;vpn工作原理和搭建方法&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://yuerblog.cc/2</summary>
+      
+    
+    
+    
+    <category term="Web相关" scheme="http://example.com/categories/Web%E7%9B%B8%E5%85%B3/"/>
+    
+    
+    <category term="Web相关" scheme="http://example.com/tags/Web%E7%9B%B8%E5%85%B3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>DDNS与端口转发</title>
+    <link href="http://example.com/wiki/2021-03-03-DDNS%E4%B8%8E%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91/"/>
+    <id>http://example.com/wiki/2021-03-03-DDNS%E4%B8%8E%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91/</id>
+    <published>2021-02-25T16:57:40.681Z</published>
+    <updated>2021-03-03T07:30:49.591Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="DDNS与端口转发"><a href="#DDNS与端口转发" class="headerlink" title="DDNS与端口转发"></a>DDNS与端口转发</h2><h3 id="公网-IP"><a href="#公网-IP" class="headerlink" title="公网 IP"></a>公网 IP</h3><h4 id="怎样确定自己有没有公网-IP"><a href="#怎样确定自己有没有公网-IP" class="headerlink" title="怎样确定自己有没有公网 IP"></a>怎样确定自己有没有公网 IP</h4><p>　　当然，这里讲到的公网 IP 都是指的动态公网，重新拨号这个 IP 就会变化。<br>　　我们可以通过一些 IP 地址查询的网站查询到自己当前的 IP，Alliot 一般使用 <a href="https://ip.sb/">IP.SB</a> ，访问这个网站可以得到自己当前在公网的 IP，对比自家光猫或路由器（这取决于你使用哪个拨号）显示的外网 IP 或 WAN 口 IP，如果相同则为已有公网 IP，否则，需要向运营商申请。</p><h4 id="怎样申请动态公网-IP"><a href="#怎样申请动态公网-IP" class="headerlink" title="怎样申请动态公网 IP"></a>怎样申请动态公网 IP</h4><p>　　一般来说，即便你是电信或联通的宽带，运营商默认也是不会给你分配动态公网 IP 的，需要向运营商提出申请，根据地区不同，申请难易程度不同。<br>　　少数地区可以通过公众号或装维师父直接联系申请，大部分地区需要拨打人工客服（电信 10000，联通 10010）以“家中要安装家庭网络摄像头”为理由申请动态公网 IP（千万不能说是服务器或其他设备），少数地区可能一次无法申请成功（很多客服不清楚动态公网 IP，所以可以尝试多换几个客服），申请成功后重启光猫即可。 　　</p><h3 id="光猫改桥接"><a href="#光猫改桥接" class="headerlink" title="光猫改桥接"></a>光猫改桥接</h3><p>　　一般来说，运营商为了减少报障率，默认的宽带拨号都是在光猫里，且锁了光猫超级管理员，防止用户私自更改配置导致宽带故障。为了后面我们的 DDNS 与端口转发，我们最好将宽带拨号的任务交给我们的路由器。这一个步骤也有些麻烦，能不能改桥接得看你的光猫型号或是地区运营商的策略。如果你的光猫型号是较为老的光猫，网上有如何破解超级管理员密码的方案了，那么直接按照教程关闭 DHCP 改为桥接模式即可（记得记录光猫里的宽带账号信息，密码可以通过人工客服重置）。但是如果是较新的光猫，暂时没有破解的方案的，除了换光猫以外，最简单的方法就是直接拨打人工客服（电信 10000，联通 10010）让其将光猫改为桥接模式，这和申请公网 IP 一样，也看地区，看客服，部分地区很爽快直接就给改了，部分地区也需要软磨硬泡。成功改桥接后也需要重启光猫生效。</p><h3 id="路由器拨号"><a href="#路由器拨号" class="headerlink" title="路由器拨号"></a>路由器拨号</h3><p>　　Alliot 的路由器是前些日子 80 包邮淘的“友华 WR1200JS”，使用的是 hiboy（H 大）的 <a href="http://opt.cn2qq.com/padavan/">padavan</a> 固件，所以以 padavan 为例（其他路由器基本都是打大同小异，甚至更简单）：<br>　　在“外部网络(WAN)”中填入家里的宽带拨号账户与密码，应用即可。<br>　　<img src="https://static.iots.vip/%E7%BE%A4%E6%99%96-%E8%B7%AF%E7%94%B1%E5%99%A8%E6%8B%A8%E5%8F%B7.png" alt="群晖-路由器拨号.png"></p><h3 id="端口转发"><a href="#端口转发" class="headerlink" title="端口转发"></a>端口转发</h3><h4 id="为什么需要端口转发"><a href="#为什么需要端口转发" class="headerlink" title="为什么需要端口转发"></a>为什么需要端口转发</h4><p>　　拥有公网 IP 后，我们还不能够直接访问到我们的群晖服务器，因为拥有公网 IP 的是我们的拨号设备，也就是路由器，路由器会通过 DHCP 分配内网 IP 给我们的设备，这样一来，在公网仅仅只是能够访问到路由器，我们需要在路由器与群晖服务器之间建立一个桥梁，让我们通过公网 IP 就能访问到内网的群晖等服务器，这就有了端口转发，端口转发简单来说就是将一个 IP 的端口与另外一个 IP 的端口对应起来（这个端口可以自定义），建立了从这个端口到那个端口之间的通道。<br>　　此外，端口转发也能够将一些常用服务的端口转发到不常用的端口，避免被机器批量扫描，起到一定的安全保护作用。</p><h4 id="配置静态-ARP-绑定"><a href="#配置静态-ARP-绑定" class="headerlink" title="配置静态 ARP 绑定"></a>配置静态 ARP 绑定</h4><p>　　静态 ARP 绑定的作用是将内网的机器 MAC 地址与对应的 IP 固定起来，方便我们做端口转发，依旧以 padavan 为例：<br>　　在 “内部网络(LAN)” 的 “DHCP服务器” 页，勾选底部如图中的“启动手动设置功能”，选择群晖的 MAC 地址、填入 IP 地址，点击 + 号（很重要），再“应用本页面设置”即可：<br><img src="https://static.iots.vip/%E7%BE%A4%E6%99%96-%E8%B7%AF%E7%94%B1%E5%99%A8arp%E7%BB%91%E5%AE%9A.png" alt="群晖-路由器arp绑定.png"></p><h4 id="配置端口转发"><a href="#配置端口转发" class="headerlink" title="配置端口转发"></a>配置端口转发</h4><p>　　在 “外部网络(WAN)” 的 “端口转发(UPnP)” 页，依图所示开启 UPnP 以及手动端口映射，添加需要映射的端口：<br><img src="https://static.iots.vip/%E7%BE%A4%E6%99%96-%E8%B7%AF%E7%94%B1%E5%99%A8%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91.png" alt="群晖-路由器端口转发.png"><br>　　这里的外部端口可以自己定义，内部端口则应该对应群晖对应的服务所用的端口。<br>　　下面列举群晖常用的几个端口：</p><p>服务名</p><p>端口</p><p>DSM控制台（HTTP）（不建议转发）</p><p>5000</p><p>DSM控制台（HTTPS）</p><p>5001</p><p>Active-Backup</p><p>5510</p><p>Drive同步端口</p><p>6690</p><p>WebDAV</p><p>5006</p><p>ssh/sftp（不建议转发）</p><p>22</p><p>注： 在我们天朝，Web 等服务是收到严格管控的，因此，Web 服务用到的 80/8080/443 端口以及其他一些端口都是处于封锁状态（当然，部分地区可能没有，但是一旦被扫描到有架设 Web 服务，轻则封端口、收回公网 IP，重则断宽带、有关部门请喝茶），所以不要在公网转发使用这些敏感端口。</p><h3 id="DDNS"><a href="#DDNS" class="headerlink" title="DDNS"></a>DDNS</h3><h4 id="什么是-DDNS"><a href="#什么是-DDNS" class="headerlink" title="什么是 DDNS"></a>什么是 DDNS</h4><p>　　这里首先我们要了解域名与域名解析的概念。什么是域名呢？现在你浏览器的顶栏显示的 <a href="http://www.iots.vip/">www.iots.vip</a> 就是 Alliot’s blog 的域名，通过 ping 域名，会发现返回信息的实际上是个 IP，域名与 IP 的关系，就好比你的姓名与身份证号码（可能用门牌号更贴切）的关系，目的是为了方便记忆（当然还有其他更多的作用，但是在我们这里最大的作用就是方便记忆），你想象一下如果这个世界用的都是身份证号码来叫人，那老师上课点名就会变成 “110101995XXXXXXX1” “到”，非常的不方便。<br>　　那什么是 DNS 呢？DNS 即域名系统，还是以姓名、身份证号码为例，DNS 就好比公安局的身份证信息数据库，利用这个数据库你能够通过某人的姓名找到他的身份证号码。 而 DDNS 动态域名解析就像是你的身份证号码变了，你要向公安局的这个数据库更新你的新身份证号码，我们所说的域名解析就是将 IP 提交给域名系统。<br>　　前面讲到我们的公网 IP 是动态的，每次重新拨号（运营商也会定期更改）都会变化，我们在外网通过这个 IP 来访问自己内网的服务器的时候，总不能每次都让家里人去路由器确认一下当前的 IP 再手动将 IP 做新的域名解析。<br>　　这时候就出现了一种叫 DDNS 的方法，DDNS(Dynamic Domain Name Server) 即动态域名解析服务，就是利用程序获取当前的 IP 并调用域名解析的接口来自动解析新 IP 到域名，有了 DDNS，不管家里的公网 IP 怎么变，我们都能够利用域名来访问到家里的群晖服务器。</p><h4 id="域名注册"><a href="#域名注册" class="headerlink" title="域名注册"></a>域名注册</h4><p>　　要做域名解析当然先得有域名，域名注册商很多，这里以阿里云万网为例。<br>　　登录 <a href="https://wanwang.aliyun.com/domain/">阿里云万网域名注册</a>，挑选一个你所容易记忆的域名，后缀选择一个冷门便宜的即可，最便宜几块钱一年。<br><img src="https://static.iots.vip/%E7%BE%A4%E6%99%96-%E4%B8%87%E7%BD%91%E5%9F%9F%E5%90%8D%E6%B3%A8%E5%86%8C.png" alt="群晖-万网域名注册.png"></p><h4 id="获取access-key"><a href="#获取access-key" class="headerlink" title="获取access key"></a>获取access key</h4><p>　　access key 是调用解析 API 的时候需要用到的，打开阿里云控制台的 <a href="https://ram.console.aliyun.com/overview">RAM访问控制</a>，如图处新建一个阿里云子用户，记得勾选编程访问：<br>　　<img src="https://static.iots.vip/%E7%BE%A4%E6%99%96-%E8%8E%B7%E5%8F%96%E9%98%BF%E9%87%8C%E4%BA%91accesskey1.png" alt="群晖-获取阿里云accesskey1.png"><br>　　<img src="https://static.iots.vip/%E7%BE%A4%E6%99%96-%E8%8E%B7%E5%8F%96%E9%98%BF%E9%87%8C%E4%BA%91accesskey2.png" alt="群晖-获取阿里云accesskey2.png"><br>　　创建完子用户后，点击子用户名，创建新的 AccessKey：<br>　　<img src="https://static.iots.vip/%E7%BE%A4%E6%99%96-%E8%8E%B7%E5%8F%96%E9%98%BF%E9%87%8C%E4%BA%91accesskey3.png" alt="群晖-获取阿里云accesskey3.png"><br>　　之后将得到的 AccessKey ID 与 secret 保存备用。 　　</p><h4 id="配置-DDNS"><a href="#配置-DDNS" class="headerlink" title="配置 DDNS"></a>配置 DDNS</h4><p>　　DDNS 可以在内网的任意一个设备上做，因为我们的设备都处于同一个拨号环境下，得到的公网 IP 都是一样的。但是出于方便，Alliot 还是推荐在路由器上做 DDNS，因为只有路由器才是真正的 7*24 运行，而且 DDNS 配置完基本就不用动了，省去以后折腾过程中断网的风险，而且，在路由器上做 DDNS，可以实现在外网登录路由器唤醒我们的群晖。当然，部分朋友的路由器没有 DDNS 功能，后面 Docker 篇也会讲到如何使用群晖做 DDNS。<br>　　依旧以 H 大的 padavan 为例，在“拓展功能”的“花生壳内网版”的“Aliddns”页，按照指引填写前面获取的 Accesskey ID 与 secret，以及我们想要解析的域名，假设我要解析的是 <code>synology.iots.vip</code> ，则“顶级域名”第一个框填入 <code>synology</code>，第二个框填入 <code>iots.vip</code>：<br>　　<img src="https://static.iots.vip/%E7%BE%A4%E6%99%96-%E9%98%BF%E9%87%8CDDNS.png" alt="群晖-阿里DDNS.png"><br>　　保存应用配置后，我们还需要手动在<a href="https://dns.console.aliyun.com/">阿里云解析</a> 添加解析，DDNS 才能工作：<br>　　<img src="https://static.iots.vip/%E7%BE%A4%E6%99%96-%E9%98%BF%E9%87%8C%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90.png" alt="群晖-阿里域名解析.png"><br>注： 域名解析设置完成后，由于 DNS 缓存等原因，需要等待5 - 10 分钟去刷新缓存。<br>　　然后重启我们的路由器，约两至三分钟后，可以通过 ping 我们的域名来确认域名是否成功解析为我们的公网 IP： \  </p><p>1</p><p>2</p><p>3</p><p># 按住 win 键 + R 输入 cmd  </p><p>ipconfig /flushdns # 刷新dns解析缓存</p><p>ping synology.iots.vip</p><h3 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h3><p>　　至此，我们已经了解了怎样配置端口转发，并利用 DDNS 完成了公网 IP 解析的问题，下一篇将介绍针对 DSM 的一些小优化。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;DDNS与端口转发&quot;&gt;&lt;a href=&quot;#DDNS与端口转发&quot; class=&quot;headerlink&quot; title=&quot;DDNS与端口转发&quot;&gt;&lt;/a&gt;DDNS与端口转发&lt;/h2&gt;&lt;h3 id=&quot;公网-IP&quot;&gt;&lt;a href=&quot;#公网-IP&quot; class=&quot;header</summary>
+      
+    
+    
+    
+    <category term="Web相关" scheme="http://example.com/categories/Web%E7%9B%B8%E5%85%B3/"/>
+    
+    
+    <category term="Web相关" scheme="http://example.com/tags/Web%E7%9B%B8%E5%85%B3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git常用命令</title>
+    <link href="http://example.com/wiki/2021-03-03-Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+    <id>http://example.com/wiki/2021-03-03-Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</id>
+    <published>2021-02-25T16:53:01.238Z</published>
+    <updated>2021-03-03T07:30:49.594Z</updated>
+    
+    <content type="html"><![CDATA[<p>如果不了解具体命令的使用，可以使用<code>--help</code>选项查看使用帮助</p><h4 id="实用命令"><a href="#实用命令" class="headerlink" title="实用命令"></a>实用命令</h4><p>配置命令：<code>git config</code></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">git config --list   # 列出所有的配置</span><br><span class="line"></span><br><span class="line">git config --global&#x2F;system&#x2F;local --list    # 列出所有的全局&#x2F;系统&#x2F;本地配置</span><br><span class="line"></span><br><span class="line">git config --global user.name &quot;name&quot;  </span><br><span class="line"># 添加用户名配置,添加配置就是类似的操作,只是对应的值和键名不同</span><br></pre></td></tr></table></figure><p><code>.gitignore配置文件</code>设置哪些文件不需要推送到服务器</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 配置文件示例</span><br><span class="line"># 每一行防止需要忽略传送到服务器的文件,支持通配符</span><br><span class="line"></span><br><span class="line">CNAME</span><br><span class="line"></span><br><span class="line">*.java</span><br></pre></td></tr></table></figure><h5 id="和仓库对接的命令"><a href="#和仓库对接的命令" class="headerlink" title="和仓库对接的命令"></a>和仓库对接的命令</h5><p><code>git add file/当前路径</code>添加文件到缓存区，选项有<code>-i（交互式命令子系统） -u（交互式命令系统的update模式） -p（交互式命令子系统的patch模式）</code></p><p>文件的增删改查：在Linux命令的增删改查前面加上git，就可免去<code>git add</code>操作</p><p><code>git commit -m &quot;提交原因&quot;</code>提交添加的文件到版本库中<br><code>git commint --amend -m &quot;提交原因&quot;</code>提交最新一条记录的更新原因<br><code>git commit -C HEAD</code>将当前文件改动提交到head或者当前分支的历史id</p><p><code>git push rep_name [branch_name]</code> 推送到远程仓库</p><p><code>git clone/fetch remote-rep-addr</code> 获取git服务器的远程仓库到本地</p><p><code>git pull</code>将远程仓库拉回到本地工作区</p><p><code>git checkout</code>恢复正在工作的工作区tree file</p><p><code>git status</code>查看文件变动状态选项<code>-s（简短记录查看） --ignored（包括被忽略的文件）</code></p><p><code>git log</code>查看本地的提交记录</p><p><code>git tag</code>为项目标记里程碑</p><h5 id="分支命令"><a href="#分支命令" class="headerlink" title="分支命令"></a>分支命令</h5><p><code>git branch -a</code>查看本地和远程的分支列表<br><code>git branch -r</code>查看远程的分支列表，加-d参数可以删除远程版本库的分支</p><p><code>git branch [branch_name]</code>新建分支<br><code>git branch -m origin_name new_name</code>用于更改分支名字<br><code>git branch</code>查看当前分支<br><code>git branch -d [branch_name]</code>删除分支<br><code>git branch -D</code>分支未提交到本地版本库前强行删除分支<br><code>git branch -vv</code>查看详细信息</p><p><strong>合并分支</strong><br>这个命令是用来合并分支到当前分支<br>默认的分支合并命令执行快进式合并，直接将master分支指向devel分支</p><p><code>git merge --no-ff</code><br>使用了这个参数之后，在master分支上会生成一个新节点，保证版本演进更加清晰</p><p><code>git merge --no-edit</code><br>在没有冲突的情况下合并，不想手动编辑提交原因，自动生成提交原因</p><p><strong>切换分支</strong></p><p><code>git checkout [branch_name</code>用来切换到分支</p><p><code>git checkout -b [branch_name]</code>创建分支并切换到这个分支</p><p><code>git checkout HEAD demo.html</code><br>从本地版本库中的HEAD历史找出文件并覆盖当前工作的文件，没有HEAD就从暂存区寻找</p><p><code>git checkout --orphan new_branch</code><br>创建出一个全新的完全没有历史记录的分支，但当前源分支上的最新文件都在，但是这个分支需要commit之后才正式成为分支</p><p><code>git checkout -p other_branch</code><br>用来查看两个分支之间的差异</p><h4 id="栈命令"><a href="#栈命令" class="headerlink" title="栈命令"></a>栈命令</h4><p>在git的栈中保存当前修改或者删除的工作进度，当你在一个分支里面做某项功能开发时，接到通知把昨天测试完没问题的代码提交发布到线上，但这时候，你已经在这个分支里面加入了其他未提交 的代码，这个时候，就可以把这些未提交的代码存到栈里面</p><p><code>git stash</code>将未提交的文件提交到栈中<br><code>git stash list</code>查看栈中保存的内容<br><code>git stash show stash@&#123;0&#125;</code>显示栈中的一条记录<br><code>git stash drop stash@&#123;0&#125;</code>移除一条记录<br><code>git stash pop</code>检出最新的一条记录，并移除<br><code>git stash apply stash@&#123;0&#125;</code>检出一条记录不删除<br><code>git stash branch new_branch </code>当前栈中最新一条记录检出，并创建一个新分支<br><code>git stash clear</code>清空<br><code>git stash create</code>创建一个自定义的栈，并且返回一个ID，此时并未真正存储到栈中<br><code>git stash store ID</code>真正的创建一条记录</p><h4 id="操作历史"><a href="#操作历史" class="headerlink" title="操作历史"></a>操作历史</h4><p>显示历史提交记录</p><p><code>git log -p</code>显示提交历史差异对比的记录<br><code>git log file</code>查看文件的历史记录<br><code>git log --since=&quot;2 weeks ago&quot;</code>2周前到现在的历史记录<br><code>git log --before=&quot;2 weeks ago&quot;</code>截止到2周前的历史记录<br><code>git log -10</code>查看10条记录<br><code>git log --pretty=oneline</code>一行中输出简短历史记录<br><code>git log --pretty=format:&quot;%h&quot;</code>指出自定义格式</p><h4 id="重置分支"><a href="#重置分支" class="headerlink" title="重置分支"></a>重置分支</h4><p>将当前分支重设到指定的commit或者HEAD</p><h4 id="撤销"><a href="#撤销" class="headerlink" title="撤销"></a>撤销</h4><p>撤销某次操作，此次操作前后的记录都会保留，并且把这次撤销作为一次最新的提交</p><p><code>git revert -n HEAD</code>撤销前一次的提交操作，n可以指定多次记录</p><h4 id="diff命令"><a href="#diff命令" class="headerlink" title="diff命令"></a>diff命令</h4><p>查看工作区，暂存区，本地库和远程库之间的文件差异</p><p><code>git diff</code><br>–stat参数可以用来查看变更统计数据</p><h4 id="查看所有记录"><a href="#查看所有记录" class="headerlink" title="查看所有记录"></a>查看所有记录</h4><p><code>git reflog</code>查看所有分支的所有操作记录</p><h4 id="远程版本库连接"><a href="#远程版本库连接" class="headerlink" title="远程版本库连接"></a>远程版本库连接</h4><p>如果在创建远程版本库之前，文件已经存在本地文件库中，可以使用<code>git init</code>本地初始化本地版本库，之后再将其与远程版本库连接<br>具体流程：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># 已有本地文件的初始化和远程库连接</span><br><span class="line">git init</span><br><span class="line">touch README.md</span><br><span class="line">git add README.md</span><br><span class="line">git commit -m &quot;first commit&quot;</span><br><span class="line">git remote add rep_name https:&#x2F;&#x2F;gitee.com&#x2F;Jia_bao_Li&#x2F;repository_name.git</span><br><span class="line">git push -u origin_name master </span><br></pre></td></tr></table></figure><p><code>git init</code>在本地目录内部生成.git文件夹<br><code>git remote -v</code>列出远程分支<br><code>git remote add origin repo-addr</code>添加一个新的远程仓库，指定名字为origin，以便引用后面的url远程仓库<br><code>git fetch origin branch_name</code>指定分支名时只取出这个分支的更新到本地，不指定分支，默认拉取所有分支更新到本地版本库</p><h4 id="问题排查"><a href="#问题排查" class="headerlink" title="问题排查"></a>问题排查</h4><p><code>git blame</code>查看文件每行代码块的历史信息</p><p><code>git bisect</code>二分查找历史记录，排查bug<br>后面加的参数：start开始查找，good没问题的点，bad有问题的点，reset回到原分支</p><h4 id="其他操作"><a href="#其他操作" class="headerlink" title="其他操作"></a>其他操作</h4><p><code>git submodule</code><br>git子模块跟踪外部版本库，允许在一个版本库中存储例外的版本库，并且可以保持两个版本库完全独立，参考Youcompleteme的安装时，他的版本库</p><p><code>git gc</code> 运行git的垃圾回收机制，清理冗余的历史快照</p><p><code>git archive</code>将加了某个tag的某个版本进行打包<br><code>git archive -v --fromat=zip v0.1 &gt; v0.1.zip</code></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;如果不了解具体命令的使用，可以使用&lt;code&gt;--help&lt;/code&gt;选项查看使用帮助&lt;/p&gt;
+&lt;h4 id=&quot;实用命令&quot;&gt;&lt;a href=&quot;#实用命令&quot; class=&quot;headerlink&quot; title=&quot;实用命令&quot;&gt;&lt;/a&gt;实用命令&lt;/h4&gt;&lt;p&gt;配置命令：&lt;code</summary>
+      
+    
+    
+    
+    <category term="git使用" scheme="http://example.com/categories/git%E4%BD%BF%E7%94%A8/"/>
+    
+    
+    <category term="git使用" scheme="http://example.com/tags/git%E4%BD%BF%E7%94%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>git原理</title>
+    <link href="http://example.com/wiki/2021-03-03-git%E5%8E%9F%E7%90%86/"/>
+    <id>http://example.com/wiki/2021-03-03-git%E5%8E%9F%E7%90%86/</id>
+    <published>2021-02-25T16:00:51.864Z</published>
+    <updated>2021-03-03T07:30:49.597Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="几个区域分类"><a href="#几个区域分类" class="headerlink" title="几个区域分类"></a>几个区域分类</h4><ul><li>工作区，执行文件添加修改的区域，就是看得到的克隆下来的仓库目录文件，工作区添加到暂存区的命令，<code>git add filename/directory</code>反过来的一个命令：<code>git checkout</code></li><li>暂存区：代码提交的暂时存放区域，暂存区到本地仓库的命令，<code>git commit -m &quot;message&quot;</code>，本地仓库到暂存区的命令<code>git reset</code></li><li>本地仓库：存放需要和远程仓库进行交互的文件的地方，就是文件中的<code>.git</code>文件夹，本地仓库中有stage暂存区，还有git自动创建的第一个分支master，以及只想master的HEAD指针。<br>本地仓库到远程仓库的命令<code>git push origin master</code>，远程仓库到本地仓库的命令<code>git clone/fetch remoterep</code></li><li>远程仓库：存放文件与别人共享的地方，也就是git服务器上对应的仓库，远程仓库到工作区<code>git pull</code></li></ul><h4 id="branch分支介绍"><a href="#branch分支介绍" class="headerlink" title="branch分支介绍"></a>branch分支介绍</h4><p>前面提到的master就是GitHub的主分支，也是git为我们创的第一个分支，其他分支开发完成后都会合并到这个主分支，合并分支到当前分支的命令<code>git merge  [branch_name] </code></p><h4 id="tag标签介绍"><a href="#tag标签介绍" class="headerlink" title="tag标签介绍"></a>tag标签介绍</h4><p>标签是用来标记特定的点或提交的历史，通常会用来标记特定的点或者提交的历史，一般用来标记发布版本的名称或者版本号，标签是固定的不能随意改动</p><h4 id="HEAD指针"><a href="#HEAD指针" class="headerlink" title="HEAD指针"></a>HEAD指针</h4><p>指向的是当前分支的最新提交</p><h4 id="工作流程"><a href="#工作流程" class="headerlink" title="工作流程"></a>工作流程</h4><ol><li>克隆git资源作为本地工作目录</li><li>在克隆的资源上添加或者修改文件</li><li>如果其他人修改了，你可以更新资源</li><li>在提交前查看修改</li><li>提交修改</li></ol><p>![[Pasted image 20210223060940.png]]<br>![[Pasted image 20210223062217.png]]<br>![[Pasted image 20210223062505.png]]</p><h4 id="本地仓库新建"><a href="#本地仓库新建" class="headerlink" title="本地仓库新建"></a>本地仓库新建</h4><p>需要执行本地新建的操作的花，需要首先使用ssh key，这个需要你先生成你的sshkey密钥。</p><ol><li><code>ssh-keygen -t rsa -C &quot;注册邮箱&quot;</code>其中-t选项可选的密钥形式有多种，可以在官网查看，执行命令后一路回车即可</li><li>复制生成的密钥文件的公钥内容，然后粘贴到官网进行设置</li><li>验证是否成功<code>ssh -T git@github.com</code></li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">mkdir test-repository</span><br><span class="line">cd test-repository</span><br><span class="line">git init</span><br><span class="line">touch README.md</span><br><span class="line">git add README.md</span><br><span class="line">git commit -m &quot;first commit&quot;</span><br><span class="line">git remote add rep_name https:&#x2F;&#x2F;gitee.com&#x2F;Jia_bao_Li&#x2F;repository_name.git</span><br><span class="line">git push -u origin_name master </span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h4 id=&quot;几个区域分类&quot;&gt;&lt;a href=&quot;#几个区域分类&quot; class=&quot;headerlink&quot; title=&quot;几个区域分类&quot;&gt;&lt;/a&gt;几个区域分类&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;工作区，执行文件添加修改的区域，就是看得到的克隆下来的仓库目录文件，工作区添加到暂存区的命令，&lt;</summary>
+      
+    
+    
+    
+    <category term="git使用" scheme="http://example.com/categories/git%E4%BD%BF%E7%94%A8/"/>
+    
+    
+    <category term="git使用" scheme="http://example.com/tags/git%E4%BD%BF%E7%94%A8/"/>
     
   </entry>
   

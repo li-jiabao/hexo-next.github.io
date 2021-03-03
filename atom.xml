@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-03-03T07:30:49.597Z</updated>
+  <updated>2021-03-03T07:30:49.594Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,27 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title></title>
-    <link href="http://example.com/wiki/2021-03-03-hhh/"/>
-    <id>http://example.com/wiki/2021-03-03-hhh/</id>
-    <published>2021-03-03T07:30:49.597Z</published>
-    <updated>2021-03-03T07:30:49.597Z</updated>
-    
-    <content type="html"><![CDATA[<p>ffff</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;ffff&lt;/p&gt;
-</summary>
-      
-    
-    
-    
-    
-  </entry>
   
   <entry>
     <title></title>
@@ -106,6 +85,30 @@
     
     
     
+    
+  </entry>
+  
+  <entry>
+    <title>github加速</title>
+    <link href="http://example.com/wiki/2021-03-03-github%E5%8A%A0%E9%80%9F/"/>
+    <id>http://example.com/wiki/2021-03-03-github%E5%8A%A0%E9%80%9F/</id>
+    <published>2021-03-03T06:35:05.729Z</published>
+    <updated>2021-03-03T06:35:31.961Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="hosts修改"><a href="#hosts修改" class="headerlink" title="hosts修改"></a>hosts修改</h4><p>找到github.com和github.global.ssl.fastly.Net的ip地址添加到host的域名映射中去</p><h4 id="使用梯子"><a href="#使用梯子" class="headerlink" title="使用梯子"></a>使用梯子</h4><p>有梯子的话使用git的代理设置<br><code>git config --global http.https://github.com.proxy socks5://127.0.0.1:7891</code></p><h4 id="不使用梯子"><a href="#不使用梯子" class="headerlink" title="不使用梯子"></a>不使用梯子</h4><p>在github链接中加入<code>cnpmjs.org</code><br><code>git clone https://github.com.cnpmjs.org/***</code></p><h4 id="使用浏览器插件"><a href="#使用浏览器插件" class="headerlink" title="使用浏览器插件"></a>使用浏览器插件</h4><p>github加速其</p><p><a href="http://download.eclipse.org/jdtls/snapshots/jdt-language-server-0.63.0-202010141717.tar.gz">http://download.eclipse.org/jdtls/snapshots/jdt-language-server-0.63.0-202010141717.tar.gz</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h4 id=&quot;hosts修改&quot;&gt;&lt;a href=&quot;#hosts修改&quot; class=&quot;headerlink&quot; title=&quot;hosts修改&quot;&gt;&lt;/a&gt;hosts修改&lt;/h4&gt;&lt;p&gt;找到github.com和github.global.ssl.fastly.Net的ip地址添加到h</summary>
+      
+    
+    
+    
+    <category term="杂记" scheme="http://example.com/categories/%E6%9D%82%E8%AE%B0/"/>
+    
+    
+    <category term="杂记" scheme="http://example.com/tags/%E6%9D%82%E8%AE%B0/"/>
     
   </entry>
   

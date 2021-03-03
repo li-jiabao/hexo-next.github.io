@@ -653,13 +653,6 @@
   </url>
   
   <url>
-    <loc>http://example.com/wiki/2021-03-03-hhh/</loc>
-    
-    <lastmod>2021-03-03</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://example.com/wiki/2021-03-03-i3%E9%85%8D%E7%BD%AE/</loc>
     
     <lastmod>2021-03-03</lastmod>
@@ -2473,6 +2466,13 @@
   </url>
   
   <url>
+    <loc>http://example.com/wiki/2021-03-03-github%E5%8A%A0%E9%80%9F/</loc>
+    
+    <lastmod>2021-03-03</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://example.com/wiki/hello-world/</loc>
     
     <lastmod>2021-03-03</lastmod>
@@ -2642,6 +2642,13 @@
     <priority>0.6</priority>
   </url>
   
+  <url>
+    <loc>http://example.com/tags/%E6%9D%82%E8%AE%B0/</loc>
+    <lastmod>2021-03-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
 
   
   <url>
@@ -2786,6 +2793,13 @@
   
   <url>
     <loc>http://example.com/categories/bat%E6%89%B9%E5%A4%84%E7%90%86%E7%9A%84%E4%BD%BF%E7%94%A8/</loc>
+    <lastmod>2021-03-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/categories/%E6%9D%82%E8%AE%B0/</loc>
     <lastmod>2021-03-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

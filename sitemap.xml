@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://example.com/wiki/2021-03-03-i3%E9%85%8D%E7%BD%AE/</loc>
+    
+    <lastmod>2021-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/wiki/2021-03-04-JVM%E8%BF%90%E8%A1%8C%E6%97%B6%E6%95%B0%E6%8D%AE%E5%8C%BA/</loc>
+    
+    <lastmod>2021-03-04</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://example.com/wiki/2021-03-04-JVM%20Structure/</loc>
     
     <lastmod>2021-03-04</lastmod>
@@ -10,20 +24,6 @@
   
   <url>
     <loc>http://example.com/wiki/2021-03-04-Unchecked%20Exceptions%20%C2%97%20The%20Controversy/</loc>
-    
-    <lastmod>2021-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://example.com/wiki/2021-03-03-hhh/</loc>
-    
-    <lastmod>2021-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://example.com/wiki/2021-03-04-JVM%E8%BF%90%E8%A1%8C%E6%97%B6%E6%95%B0%E6%8D%AE%E5%8C%BA/</loc>
     
     <lastmod>2021-03-04</lastmod>
     
@@ -7135,13 +7135,6 @@
   </url>
   
   <url>
-    <loc>http://example.com/wiki/2021-03-03-i3%E9%85%8D%E7%BD%AE/</loc>
-    
-    <lastmod>2021-03-04</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://example.com/embed/index.html</loc>
     
     <lastmod>2021-03-03</lastmod>
@@ -8266,13 +8259,6 @@
   </url>
   
   <url>
-    <loc>http://example.com/categories/Archlinux%E9%85%8D%E7%BD%AE-i3%E6%A1%8C%E9%9D%A2%E9%85%8D%E7%BD%AE/</loc>
-    <lastmod>2021-03-04</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://example.com/categories/BigJava/Getting-Started/</loc>
     <lastmod>2021-03-04</lastmod>
     <changefreq>daily</changefreq>
@@ -8448,14 +8434,21 @@
   </url>
   
   <url>
-    <loc>http://example.com/categories/BigJava/Java-Virtual-Machine/</loc>
+    <loc>http://example.com/categories/Data-Struture-and-Alogrithm/</loc>
     <lastmod>2021-03-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.com/categories/Data-Struture-and-Alogrithm/</loc>
+    <loc>http://example.com/categories/Archlinux%E9%85%8D%E7%BD%AE/i3%E6%A1%8C%E9%9D%A2%E9%85%8D%E7%BD%AE/</loc>
+    <lastmod>2021-03-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/categories/Java-Virtual-Machine/</loc>
     <lastmod>2021-03-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

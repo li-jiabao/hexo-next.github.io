@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    
+    <!--title>Category: Deployment | Hexo</title-->
+    <title>Jiabao's Wiki</title>
+    
+    
+        <meta name="keywords" content="Deployment">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Setting Package Version InformationYou may need to include package version information in a JAR file’s manifest. You provide this information with the following headers in the manifest: HeaderDefiniti">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Setting Package Version Information">
+<meta property="og:url" content="http://example.com/wiki/2021-03-03-Setting%20Package%20Version%20Information/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Setting Package Version InformationYou may need to include package version information in a JAR file’s manifest. You provide this information with the following headers in the manifest: HeaderDefiniti">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-12-06T04:45:47.005Z">
+<meta property="article:modified_time" content="2021-03-03T07:30:49.597Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="Deployment">
+<meta name="twitter:card" content="summary">
+    
+
+    
+        <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    
+
+    
+        <link rel="icon" href="/favicon.ico">
+    
+
+    
+<link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+
+    
+<link rel="stylesheet" href="/libs/open-sans/styles.css">
+
+    
+<link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+<script src="/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    
+<script src="/libs/jquery/plugins/cookie/1.4.1/jquery.cookie.js"></script>
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+
+    
+    
+    
+    
+
+
+    
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+    <div id="container">
+        <header id="header">
+    <div id="header-main" class="header-inner">
+        <div class="outer">
+            <a href="/" id="logo">
+                <i class="logo"></i>
+                <span class="site-title">Hexo</span>
+            </a>
+            <nav id="main-nav">
+                
+                    <a class="main-nav-link" href="/">首页</a>
+                
+                    <a class="main-nav-link" href="/archives">归档</a>
+                
+                    <a class="main-nav-link" target="_blank" rel="external nofollow noopener noreferrer" href="https://blog.hdsomebao.tk">博客</a>
+                
+                    <a class="main-nav-link" href="/categories">分类</a>
+                
+                    <a class="main-nav-link" href="/tags">标签</a>
+                
+                    <a class="main-nav-link" href="/about">关于本站</a>
+                
+            </nav>
+            
+            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search">
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something...">
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+
+</div>
+        </div>
+    </div>
+    <div id="main-nav-mobile" class="header-sub header-inner">
+        <table class="menu outer">
+            <tr>
+                
+                    <td><a class="main-nav-link" href="/">首页</a></td>
+                
+                    <td><a class="main-nav-link" href="/archives">归档</a></td>
+                
+                    <td><a class="main-nav-link" target="_blank" rel="external nofollow noopener noreferrer" href="https://blog.hdsomebao.tk">博客</a></td>
+                
+                    <td><a class="main-nav-link" href="/categories">分类</a></td>
+                
+                    <td><a class="main-nav-link" href="/tags">标签</a></td>
+                
+                    <td><a class="main-nav-link" href="/about">关于本站</a></td>
+                
+                <td>
+                    
+    <div class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search">
+    </div>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+</header>
+
+        <div class="outer">
+            
+            
+                <aside id="sidebar">
+   
+        
+    <div class="widget-wrap" id="categories">
+        <h3 class="widget-title">
+            <span>categories</span>
+            &nbsp;
+            <a id="allExpand" href="#">
+                <i class="fa fa-angle-double-down fa-2x"></i>
+            </a>
+        </h3>
+        
+        
+        
+         <ul class="unstyled" id="tree"> 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Archlinux配置
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/2021-03-03-%E4%BA%AE%E5%BA%A6%E8%B0%83%E8%8A%82/">亮度调节</a></li>  <li class="file"><a href="/wiki/2021-03-03-DPI%E7%BC%A9%E6%94%BE%E8%B0%83%E8%8A%82/">DPI缩放调节</a></li>  <li class="file"><a href="/wiki/2021-03-03-%E8%87%AA%E5%8A%A8%E7%99%BB%E9%99%86/">自动登陆</a></li>  <li class="file"><a href="/wiki/2021-03-03-%E6%81%AF%E5%B1%8F%E5%92%8C%E4%BC%91%E7%9C%A0%E8%AE%BE%E7%BD%AE/">息屏和休眠设置</a></li>  <li class="file"><a href="/wiki/2021-03-03-systemd/">systemd</a></li>  <li class="file"><a href="/wiki/2021-03-03-journalctl/">journalctl</a></li>  <li class="file"><a href="/wiki/2021-03-03-shortcut-keys/">shortcut-keys</a></li>  <li class="file"><a href="/wiki/2021-03-03-tar%E7%B3%BB%E7%BB%9F%E5%A4%87%E4%BB%BD/">tar系统备份</a></li>  <li class="file"><a href="/wiki/2021-03-03-system%20maintenance/">system maintenance</a></li>  <li class="file"><a href="/wiki/2021-03-03-%E5%90%AF%E5%8A%A8%E6%95%B0%E5%AD%97%E9%94%AE%E7%9B%98%E6%BF%80%E6%B4%BB/">启动数字键盘激活</a></li>  <li class="file"><a href="/wiki/2021-03-03-%E5%AE%89%E8%A3%85%E5%92%8C%E7%AE%80%E5%8D%95%E9%85%8D%E7%BD%AE/">安装和简单配置</a></li>  <li class="file"><a href="/wiki/2021-03-03-arch%E5%AE%89%E8%A3%85%E5%90%8E%E9%85%8D%E7%BD%AE/">arch安装后配置</a></li>  <li class="file"><a href="/wiki/2021-03-03-console%20%E5%A2%9E%E5%BC%BA/">console 增强</a></li>  <li class="file"><a href="/wiki/2021-03-03-automount%20at%20boot/">automount at boot</a></li>  <li class="file"><a href="/wiki/2021-03-03-i3%E9%85%8D%E7%BD%AE/">i3配置</a></li>  <li class="file"><a href="/wiki/2021-03-03-%E9%A2%9C%E8%89%B2%E9%85%8D%E7%BD%AE/">颜色配置</a></li>  <li class="file"><a href="/wiki/2021-03-03-%E8%B6%85%E7%BA%A7%E7%94%A8%E6%88%B7/">超级用户</a></li>  <li class="file"><a href="/wiki/2021-03-03-%E7%BD%91%E7%BB%9C%E8%AE%BE%E7%BD%AE/">网络设置</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Blog
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/2021-03-03-jekyll%E9%85%8D%E7%BD%AE%E7%AE%A1%E7%90%86%E5%8D%9A%E5%AE%A2/">jekyll配置管理博客</a></li>  <li class="file"><a href="/wiki/2021-03-03-%E4%BD%BF%E7%94%A8jekyll%E4%B8%BB%E9%A2%98/">使用jekyll主题</a></li>  <li class="file"><a href="/wiki/2021-03-03-jekyll%E8%AF%AD%E6%B3%95/">jekyll语法</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Bonus
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/2021-03-03-Bonus/">Bonus</a></li>  <li class="file"><a href="/wiki/2021-03-03-Generics/">Generics</a></li>  <li class="file"><a href="/wiki/2021-03-03-Defining%20Simple%20Generics/">Defining Simple Generics</a></li>  <li class="file"><a href="/wiki/2021-03-03-Generics%20and%20Subtyping/">Generics and Subtyping</a></li>  <li class="file"><a href="/wiki/2021-03-03-Wildcards/">Wildcards</a></li>  <li class="file"><a href="/wiki/2021-03-03-Generic%20Methods/">Generic Methods</a></li>  <li class="file"><a href="/wiki/2021-03-03-Interoperating%20with%20Legacy%20Code/">Interoperating with Legacy Code</a></li>  <li class="file"><a href="/wiki/2021-03-03-The%20Fine%20Print/">The Fine Print</a></li>  <li class="file"><a href="/wiki/2021-03-03-Class%20Literals%20as%20Runtime-Type%20Tokens/">Class Literals as Runtime-Type Tokens</a></li>  <li class="file"><a href="/wiki/2021-03-03-More%20Fun%20with%20Wildcards/">More Fun with Wildcards</a></li>  <li class="file"><a href="/wiki/2021-03-03-Converting%20Legacy%20Code%20to%20Use%20Generics/">Converting Legacy Code to Use Generics</a></li>  <li class="file"><a href="/wiki/2021-03-03-Acknowledgements/">Acknowledgements</a></li>  <li class="file"><a href="/wiki/2021-03-03-Full-Screen%20Exclusive%20Mode%20API/">Full-Screen Exclusive Mode API</a></li>  <li class="file"><a href="/wiki/2021-03-03-Full-Screen%20Exclusive%20Mode/">Full-Screen Exclusive Mode</a></li>  <li class="file"><a href="/wiki/2021-03-03-Display%20Mode/">Display Mode</a></li>  <li class="file"><a href="/wiki/2021-03-03-Passive%20vs.%20Active%20Rendering/">Passive vs. Active Rendering</a></li>  <li class="file"><a href="/wiki/2021-03-03-Double%20Buffering%20and%20Page%20Flipping/">Double Buffering and Page Flipping</a></li>  <li class="file"><a href="/wiki/2021-03-03-BufferStrategy%20and%20BufferCapabilities/">BufferStrategy and BufferCapabilities</a></li>  <li class="file"><a href="/wiki/2021-03-03-Examples/">Examples</a></li>  <li class="file"><a href="/wiki/2021-03-03-Preparation%20for%20Java%20Programmer%20Language%20Certification/">Preparation for Java Programmer Language Certification</a></li>  <li class="file"><a href="/wiki/2021-03-03-Java%20SE%208%20Programmer%20I%20Exam/">Java SE 8 Programmer I Exam</a></li>  <li class="file"><a href="/wiki/2021-03-03-Java%20SE%208%20Programmer%20II%20Exam/">Java SE 8 Programmer II Exam</a></li>  <li class="file"><a href="/wiki/2021-03-03-Java%20SE%208%20Upgrade%20Exam/">Java SE 8 Upgrade Exam</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Collections
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/2021-03-03-Collections/">Collections</a></li>  <li class="file"><a href="/wiki/2021-03-03-Introduction%20to%20Collections/">Introduction to Collections</a></li>  <li class="file"><a href="/wiki/2021-03-03-Interfaces/">Interfaces</a></li>  <li class="file"><a href="/wiki/2021-03-03-The%20Collection%20Interface/">The Collection Interface</a></li>  <li class="file"><a href="/wiki/2021-03-03-The%20Set%20Interface/">The Set Interface</a></li>  <li class="file"><a href="/wiki/2021-03-03-The%20List%20Interface/">The List Interface</a></li>  <li class="file"><a href="/wiki/2021-03-03-The%20Queue%20Interface/">The Queue Interface</a></li>  <li class="file"><a href="/wiki/2021-03-03-The%20Deque%20Interface/">The Deque Interface</a></li>  <li class="file"><a href="/wiki/2021-03-03-The%20Map%20Interface/">The Map Interface</a></li>  <li class="file"><a href="/wiki/2021-03-03-Object%20Ordering/">Object Ordering</a></li>  <li class="file"><a href="/wiki/2021-03-03-The%20SortedSet%20Interface/">The SortedSet Interface</a></li>  <li class="file"><a href="/wiki/2021-03-03-The%20SortedMap%20Interface/">The SortedMap Interface</a></li>  <li class="file"><a href="/wiki/2021-03-03-Summary%20of%20Interfaces/">Summary of Interfaces</a></li>  <li class="file"><a href="/wiki/2021-03-03-Questions%20and%20Exercises%20%20Interfaces/">Questions and Exercises  Interfaces</a></li>  <li class="file"><a href="/wiki/2021-03-03-Aggregate%20Operations/">Aggregate Operations</a></li>  <li class="file"><a href="/wiki/2021-03-03-Reduction/">Reduction</a></li>  <li class="file"><a href="/wiki/2021-03-03-Parallelism/">Parallelism</a></li>  <li class="file"><a href="/wiki/2021-03-03-Questions%20and%20Exercises%20%20Aggregate%20Operations/">Questions and Exercises  Aggregate Operations</a></li>  <li class="file"><a href="/wiki/2021-03-03-Implementations/">Implementations</a></li>  <li class="file"><a href="/wiki/2021-03-03-Set%20Implementations/">Set Implementations</a></li>  <li class="file"><a href="/wiki/2021-03-03-List%20Implementations/">List Implementations</a></li>  <li class="file"><a href="/wiki/2021-03-03-Map%20Implementations/">Map Implementations</a></li>  <li class="file"><a href="/wiki/2021-03-03-Queue%20Implementations/">Queue Implementations</a></li>  <li class="file"><a href="/wiki/2021-03-03-Deque%20Implementations/">Deque Implementations</a></li>  <li class="file"><a href="/wiki/2021-03-03-Wrapper%20Implementations/">Wrapper Implementations</a></li>  <li class="file"><a href="/wiki/2021-03-03-Convenience%20Implementations/">Convenience Implementations</a></li>  <li class="file"><a href="/wiki/2021-03-03-Summary%20of%20Implementations/">Summary of Implementations</a></li>  <li class="file"><a href="/wiki/2021-03-03-Questions%20and%20Exercises%20%20Implementations/">Questions and Exercises  Implementations</a></li>  <li class="file"><a href="/wiki/2021-03-03-Algorithms/">Algorithms</a></li>  <li class="file"><a href="/wiki/2021-03-03-Custom%20Collection%20Implementations/">Custom Collection Implementations</a></li>  <li class="file"><a href="/wiki/2021-03-03-Interoperability/">Interoperability</a></li>  <li class="file"><a href="/wiki/2021-03-03-Compatibility/">Compatibility</a></li>  <li class="file"><a href="/wiki/2021-03-03-API%20Design/">API Design</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory open">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder-open"></i>
+                            &nbsp;
+                            Deployment
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/2021-03-03-Deployment/">Deployment</a></li>  <li class="file"><a href="/wiki/2021-03-03-Java%20Applets/">Java Applets</a></li>  <li class="file"><a href="/wiki/2021-03-03-Getting%20Started%20With%20Applets/">Getting Started With Applets</a></li>  <li class="file"><a href="/wiki/2021-03-03-Defining%20an%20Applet%20Subclass/">Defining an Applet Subclass</a></li>  <li class="file"><a href="/wiki/2021-03-03-Methods%20for%20Milestones/">Methods for Milestones</a></li>  <li class="file"><a href="/wiki/2021-03-03-Life%20Cycle%20of%20an%20Applet/">Life Cycle of an Applet</a></li>  <li class="file"><a href="/wiki/2021-03-03-Applet's%20Execution%20Environment/">Applet's Execution Environment</a></li>  <li class="file"><a href="/wiki/2021-03-03-Developing%20an%20Applet/">Developing an Applet</a></li>  <li class="file"><a href="/wiki/2021-03-03-Deploying%20With%20the%20Applet%20Tag/">Deploying With the Applet Tag</a></li>  <li class="file"><a href="/wiki/2021-03-03-Doing%20More%20With%20Applets/">Doing More With Applets</a></li>  <li class="file"><a href="/wiki/2021-03-03-Finding%20and%20Loading%20Data%20Files/">Finding and Loading Data Files</a></li>  <li class="file"><a href="/wiki/2021-03-03-Defining%20and%20Using%20Applet%20Parameters/">Defining and Using Applet Parameters</a></li>  <li class="file"><a href="/wiki/2021-03-03-Displaying%20Short%20Status%20Strings/">Displaying Short Status Strings</a></li>  <li class="file"><a href="/wiki/2021-03-03-Displaying%20Documents%20in%20the%20Browser/">Displaying Documents in the Browser</a></li>  <li class="file"><a href="/wiki/2021-03-03-Invoking%20JavaScript%20Code%20From%20an%20Applet/">Invoking JavaScript Code From an Applet</a></li>  <li class="file"><a href="/wiki/2021-03-03-Invoking%20Applet%20Methods%20From%20JavaScript%20Code/">Invoking Applet Methods From JavaScript Code</a></li>  <li class="file"><a href="/wiki/2021-03-03-Handling%20Initialization%20Status%20With%20Event%20Handlers%20/">Handling Initialization Status With Event Handlers</a></li>  <li class="file"><a href="/wiki/2021-03-03-Manipulating%20DOM%20of%20Applet's%20Web%20Page/">Manipulating DOM of Applet's Web Page</a></li>  <li class="file"><a href="/wiki/2021-03-03-Writing%20Diagnostics%20to%20Standard%20Output%20and%20Error%20Streams/">Writing Diagnostics to Standard Output and Error Streams</a></li>  <li class="file"><a href="/wiki/2021-03-03-Developing%20Draggable%20Applets/">Developing Draggable Applets</a></li>  <li class="file"><a href="/wiki/2021-03-03-Communicating%20With%20Other%20Applets/">Communicating With Other Applets</a></li>  <li class="file"><a href="/wiki/2021-03-03-Working%20With%20a%20Server-Side%20Application%20/">Working With a Server-Side Application</a></li>  <li class="file"><a href="/wiki/2021-03-03-Network%20Client%20Applet%20Example/">Network Client Applet Example</a></li>  <li class="file"><a href="/wiki/2021-03-03-What%20Applets%20Can%20and%20Cannot%20Do/">What Applets Can and Cannot Do</a></li>  <li class="file"><a href="/wiki/2021-03-03-Solving%20Common%20Applet%20Problems/">Solving Common Applet Problems</a></li>  <li class="file"><a href="/wiki/2021-03-03-Questions%20and%20Exercises%20%20Applets/">Questions and Exercises  Applets</a></li>  <li class="file"><a href="/wiki/2021-03-03-Java%20Web%20Start/">Java Web Start</a></li>  <li class="file"><a href="/wiki/2021-03-03-Developing%20a%20Java%20Web%20Start%20Application/">Developing a Java Web Start Application</a></li>  <li class="file"><a href="/wiki/2021-03-03-Retrieving%20Resources/">Retrieving Resources</a></li>  <li class="file"><a href="/wiki/2021-03-03-Setting%20Up%20a%20Web%20Server/">Setting Up a Web Server</a></li>  <li class="file"><a href="/wiki/2021-03-03-Running%20a%20Java%20Web%20Start%20Application/">Running a Java Web Start Application</a></li>  <li class="file"><a href="/wiki/2021-03-03-Java%20Web%20Start%20and%20Security/">Java Web Start and Security</a></li>  <li class="file"><a href="/wiki/2021-03-03-Common%20Java%20Web%20Start%20Problems/">Common Java Web Start Problems</a></li>  <li class="file"><a href="/wiki/2021-03-03-Questions%20and%20Exercises%20%20Java%20Web%20Start/">Questions and Exercises  Java Web Start</a></li>  <li class="file"><a href="/wiki/2021-03-03-Doing%20More%20With%20Java%20Rich%20Internet%20Applications/">Doing More With Java Rich Internet Applications</a></li>  <li class="file"><a href="/wiki/2021-03-03-Setting%20Trusted%20Arguments%20and%20Secure%20Properties/">Setting Trusted Arguments and Secure Properties</a></li>  <li class="file"><a href="/wiki/2021-03-03-System%20Properties/">System Properties</a></li>  <li class="file"><a href="/wiki/2021-03-03-JNLP%20API/">JNLP API</a></li>  <li class="file"><a href="/wiki/2021-03-03-Accessing%20the%20Client%20Using%20JNLP%20API/">Accessing the Client Using JNLP API</a></li>  <li class="file"><a href="/wiki/2021-03-03-Cookies/">Cookies</a></li>  <li class="file"><a href="/wiki/2021-03-03-Accessing%20Cookies/">Accessing Cookies</a></li>  <li class="file"><a href="/wiki/2021-03-03-Security%20in%20Rich%20Internet%20Applications%20/">Security in Rich Internet Applications</a></li>  <li class="file"><a href="/wiki/2021-03-03-Guidelines%20for%20Securing%20Rich%20Internet%20Applications/">Guidelines for Securing Rich Internet Applications</a></li>  <li class="file"><a href="/wiki/2021-03-03-Questions%20and%20Exercises%20%20Doing%20More%20With%20Rich%20Internet%20Applications/">Questions and Exercises  Doing More With Rich Internet Applications</a></li>  <li class="file"><a href="/wiki/2021-03-03-Deployment%20In-Depth/">Deployment In-Depth</a></li>  <li class="file"><a href="/wiki/2021-03-03-User%20Acceptance%20of%20RIAs/">User Acceptance of RIAs</a></li>  <li class="file"><a href="/wiki/2021-03-03-Deployment%20Toolkit/">Deployment Toolkit</a></li>  <li class="file"><a href="/wiki/2021-03-03-Deploying%20an%20Applet/">Deploying an Applet</a></li>  <li class="file"><a href="/wiki/2021-03-03-Embedding%20JNLP%20File%20in%20Applet%20Tag/">Embedding JNLP File in Applet Tag</a></li>  <li class="file"><a href="/wiki/2021-03-03-Deploying%20a%20Java%20Web%20Start%20Application/">Deploying a Java Web Start Application</a></li>  <li class="file"><a href="/wiki/2021-03-03-Changing%20the%20Launch%20Button/">Changing the Launch Button</a></li>  <li class="file"><a href="/wiki/2021-03-03-Deploying%20Without%20Codebase/">Deploying Without Codebase</a></li>  <li class="file"><a href="/wiki/2021-03-03-Checking%20the%20Client%20JRE%20Software%20Version/">Checking the Client JRE Software Version</a></li>  <li class="file"><a href="/wiki/2021-03-03-Java%20Network%20Launch%20Protocol/">Java Network Launch Protocol</a></li>  <li class="file"><a href="/wiki/2021-03-03-Structure%20of%20the%20JNLP%20File/">Structure of the JNLP File</a></li>  <li class="file"><a href="/wiki/2021-03-03-Deployment%20Best%20Practices/">Deployment Best Practices</a></li>  <li class="file"><a href="/wiki/2021-03-03-Reducing%20the%20Download%20Time/">Reducing the Download Time</a></li>  <li class="file"><a href="/wiki/2021-03-03-Avoiding%20Unnecessary%20Update%20Checks/">Avoiding Unnecessary Update Checks</a></li>  <li class="file"><a href="/wiki/2021-03-03-Ensuring%20the%20Presence%20of%20the%20JRE%20Software/">Ensuring the Presence of the JRE Software</a></li>  <li class="file"><a href="/wiki/2021-03-03-Questions%20and%20Exercises%20%20Deployment%20In-Depth/">Questions and Exercises  Deployment In-Depth</a></li>  <li class="file"><a href="/wiki/2021-03-03-Deploying%20Self-Contained%20Applications/">Deploying Self-Contained Applications</a></li>  <li class="file"><a href="/wiki/2021-03-03-Pre-Requisites%20for%20Packaging%20Self-Contained%20Applications/">Pre-Requisites for Packaging Self-Contained Applications</a></li>  <li class="file"><a href="/wiki/2021-03-03-Converting%20an%20Existing%20Application/">Converting an Existing Application</a></li>  <li class="file"><a href="/wiki/2021-03-03-Using%20File%20Associations/">Using File Associations</a></li>  <li class="file"><a href="/wiki/2021-03-03-Adding%20an%20External%20Library/">Adding an External Library</a></li>  <li class="file"><a href="/wiki/2021-03-03-Providing%20a%20Default%20Argument/">Providing a Default Argument</a></li>  <li class="file"><a href="/wiki/2021-03-03-Using%20a%20Common%20Build%20File%20for%20All%20Platforms/">Using a Common Build File for All Platforms</a></li>  <li class="file"><a href="/wiki/2021-03-03-Using%20Multiple%20Entry%20Points/">Using Multiple Entry Points</a></li>  <li class="file"><a href="/wiki/2021-03-03-Questions%20and%20Exercises%20%20Self-Contained%20Applications/">Questions and Exercises  Self-Contained Applications</a></li>  <li class="file"><a href="/wiki/2021-03-03-Packaging%20Programs%20in%20JAR%20Files/">Packaging Programs in JAR Files</a></li>  <li class="file"><a href="/wiki/2021-03-03-Using%20JAR%20Files%20%20The%20Basics/">Using JAR Files  The Basics</a></li>  <li class="file"><a href="/wiki/2021-03-03-Creating%20a%20JAR%20File/">Creating a JAR File</a></li>  <li class="file"><a href="/wiki/2021-03-03-Viewing%20the%20Contents%20of%20a%20JAR%20File/">Viewing the Contents of a JAR File</a></li>  <li class="file"><a href="/wiki/2021-03-03-Extracting%20the%20Contents%20of%20a%20JAR%20File/">Extracting the Contents of a JAR File</a></li>  <li class="file"><a href="/wiki/2021-03-03-Updating%20a%20JAR%20File/">Updating a JAR File</a></li>  <li class="file"><a href="/wiki/2021-03-03-Running%20JAR-Packaged%20Software/">Running JAR-Packaged Software</a></li>  <li class="file"><a href="/wiki/2021-03-03-Working%20with%20Manifest%20Files%20%20The%20Basics/">Working with Manifest Files  The Basics</a></li>  <li class="file"><a href="/wiki/2021-03-03-Understanding%20the%20Default%20Manifest/">Understanding the Default Manifest</a></li>  <li class="file"><a href="/wiki/2021-03-03-Setting%20an%20Application's%20Entry%20Point/">Setting an Application's Entry Point</a></li>  <li class="file"><a href="/wiki/2021-03-03-Adding%20Classes%20to%20the%20JAR%20File's%20Classpath/">Adding Classes to the JAR File's Classpath</a></li>  <li class="file active"><a href="/wiki/2021-03-03-Setting%20Package%20Version%20Information/">Setting Package Version Information</a></li>  <li class="file"><a href="/wiki/2021-03-03-Sealing%20Packages%20within%20a%20JAR%20File/">Sealing Packages within a JAR File</a></li>  <li class="file"><a href="/wiki/2021-03-03-Enhancing%20Security%20with%20Manifest%20Attributes/">Enhancing Security with Manifest Attributes</a></li>  <li class="file"><a href="/wiki/2021-03-03-Signing%20and%20Verifying%20JAR%20Files/">Signing and Verifying JAR Files</a></li>  <li class="file"><a href="/wiki/2021-03-03-Understanding%20Signing%20and%20Verification/">Understanding Signing and Verification</a></li>  <li class="file"><a href="/wiki/2021-03-03-Signing%20JAR%20Files/">Signing JAR Files</a></li>  <li class="file"><a href="/wiki/2021-03-03-Verifying%20Signed%20JAR%20Files/">Verifying Signed JAR Files</a></li>  <li class="file"><a href="/wiki/2021-03-03-Using%20JAR-related%20APIs/">Using JAR-related APIs</a></li>  <li class="file"><a href="/wiki/2021-03-03-The%20JarClassLoader%20Class/">The JarClassLoader Class</a></li>  <li class="file"><a href="/wiki/2021-03-03-The%20JarRunner%20Class/">The JarRunner Class</a></li>  <li class="file"><a href="/wiki/2021-03-03-Questions%20and%20Exercises%20%20JAR/">Questions and Exercises  JAR</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Internationalization
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/2021-03-03-Internationalization/">Internationalization</a></li>  <li class="file"><a href="/wiki/2021-03-03-Introduction/">Introduction</a></li>  <li class="file"><a href="/wiki/2021-03-03-A%20Quick%20Example/">A Quick Example</a></li>  <li class="file"><a href="/wiki/2021-03-03-Before%20Internationalization/">Before Internationalization</a></li>  <li class="file"><a href="/wiki/2021-03-03-After%20Internationalization/">After Internationalization</a></li>  <li class="file"><a href="/wiki/2021-03-03-Running%20the%20Sample%20Program/">Running the Sample Program</a></li>  <li class="file"><a href="/wiki/2021-03-03-Internationalizing%20the%20Sample%20Program/">Internationalizing the Sample Program</a></li>  <li class="file"><a href="/wiki/2021-03-03-Checklist/">Checklist</a></li>  <li class="file"><a href="/wiki/2021-03-03-Setting%20the%20Locale/">Setting the Locale</a></li>  <li class="file"><a href="/wiki/2021-03-03-Creating%20a%20Locale/">Creating a Locale</a></li>  <li class="file"><a href="/wiki/2021-03-03-BCP%2047%20Extensions/">BCP 47 Extensions</a></li>  <li class="file"><a href="/wiki/2021-03-03-Identifying%20Available%20Locales/">Identifying Available Locales</a></li>  <li class="file"><a href="/wiki/2021-03-03-Language%20Tag%20Filtering%20and%20Lookup/">Language Tag Filtering and Lookup</a></li>  <li class="file"><a href="/wiki/2021-03-03-The%20Scope%20of%20a%20Locale/">The Scope of a Locale</a></li>  <li class="file"><a href="/wiki/2021-03-03-Locale-Sensitive%20Services%20SPI/">Locale-Sensitive Services SPI</a></li>  <li class="file"><a href="/wiki/2021-03-03-Isolating%20Locale-Specific%20Data/">Isolating Locale-Specific Data</a></li>  <li class="file"><a href="/wiki/2021-03-03-About%20the%20ResourceBundle%20Class/">About the ResourceBundle Class</a></li>  <li class="file"><a href="/wiki/2021-03-03-Preparing%20to%20Use%20a%20ResourceBundle/">Preparing to Use a ResourceBundle</a></li>  <li class="file"><a href="/wiki/2021-03-03-Backing%20a%20ResourceBundle%20with%20Properties%20Files/">Backing a ResourceBundle with Properties Files</a></li>  <li class="file"><a href="/wiki/2021-03-03-Using%20a%20ListResourceBundle/">Using a ListResourceBundle</a></li>  <li class="file"><a href="/wiki/2021-03-03-Customizing%20Resource%20Bundle%20Loading/">Customizing Resource Bundle Loading</a></li>  <li class="file"><a href="/wiki/2021-03-03-Formatting/">Formatting</a></li>  <li class="file"><a href="/wiki/2021-03-03-Numbers%20and%20Currencies/">Numbers and Currencies</a></li>  <li class="file"><a href="/wiki/2021-03-03-Dates%20and%20Times/">Dates and Times</a></li>  <li class="file"><a href="/wiki/2021-03-03-Using%20Predefined%20Formats/">Using Predefined Formats</a></li>  <li class="file"><a href="/wiki/2021-03-03-Customizing%20Formats/">Customizing Formats</a></li>  <li class="file"><a href="/wiki/2021-03-03-Changing%20Date%20Format%20Symbols/">Changing Date Format Symbols</a></li>  <li class="file"><a href="/wiki/2021-03-03-Messages/">Messages</a></li>  <li class="file"><a href="/wiki/2021-03-03-Dealing%20with%20Compound%20Messages/">Dealing with Compound Messages</a></li>  <li class="file"><a href="/wiki/2021-03-03-Handling%20Plurals/">Handling Plurals</a></li>  <li class="file"><a href="/wiki/2021-03-03-Working%20with%20Text/">Working with Text</a></li>  <li class="file"><a href="/wiki/2021-03-03-Checking%20Character%20Properties/">Checking Character Properties</a></li>  <li class="file"><a href="/wiki/2021-03-03-Comparing%20Strings/">Comparing Strings</a></li>  <li class="file"><a href="/wiki/2021-03-03-Performing%20Locale-Independent%20Comparisons/">Performing Locale-Independent Comparisons</a></li>  <li class="file"><a href="/wiki/2021-03-03-Customizing%20Collation%20Rules/">Customizing Collation Rules</a></li>  <li class="file"><a href="/wiki/2021-03-03-Improving%20Collation%20Performance/">Improving Collation Performance</a></li>  <li class="file"><a href="/wiki/2021-03-03-Unicode/">Unicode</a></li>  <li class="file"><a href="/wiki/2021-03-03-Terminology/">Terminology</a></li>  <li class="file"><a href="/wiki/2021-03-03-Supplementary%20Characters%20as%20Surrogates/">Supplementary Characters as Surrogates</a></li>  <li class="file"><a href="/wiki/2021-03-03-Character%20and%20String%20APIs/">Character and String APIs</a></li>  <li class="file"><a href="/wiki/2021-03-03-Sample%20Usage/">Sample Usage</a></li>  <li class="file"><a href="/wiki/2021-03-03-Design%20Considerations/">Design Considerations</a></li>  <li class="file"><a href="/wiki/2021-03-03-More%20Information/">More Information</a></li>  <li class="file"><a href="/wiki/2021-03-03-Detecting%20Text%20Boundaries/">Detecting Text Boundaries</a></li>  <li class="file"><a href="/wiki/2021-03-03-About%20the%20BreakIterator%20Class/">About the BreakIterator Class</a></li>  <li class="file"><a href="/wiki/2021-03-03-Character%20Boundaries/">Character Boundaries</a></li>  <li class="file"><a href="/wiki/2021-03-03-Word%20Boundaries/">Word Boundaries</a></li>  <li class="file"><a href="/wiki/2021-03-03-Sentence%20Boundaries/">Sentence Boundaries</a></li>  <li class="file"><a href="/wiki/2021-03-03-Line%20Boundaries/">Line Boundaries</a></li>  <li class="file"><a href="/wiki/2021-03-03-Converting%20Latin%20Digits%20to%20Other%20Unicode%20Digits/">Converting Latin Digits to Other Unicode Digits</a></li>  <li class="file"><a href="/wiki/2021-03-03-Converting%20Non-Unicode%20Text/">Converting Non-Unicode Text</a></li>  <li class="file"><a href="/wiki/2021-03-03-Byte%20Encodings%20and%20Strings/">Byte Encodings and Strings</a></li>  <li class="file"><a href="/wiki/2021-03-03-Character%20and%20Byte%20Streams/">Character and Byte Streams</a></li>  <li class="file"><a href="/wiki/2021-03-03-Normalizing%20Text/">Normalizing Text</a></li>  <li class="file"><a href="/wiki/2021-03-03-Working%20with%20Bidirectional%20Text%20with%20the%20JTextComponent%20Class/">Working with Bidirectional Text with the JTextComponent Class</a></li>  <li class="file"><a href="/wiki/2021-03-03-Internationalization%20of%20Network%20Resources/">Internationalization of Network Resources</a></li>  <li class="file"><a href="/wiki/2021-03-03-Internationalized%20Domain%20Name/">Internationalized Domain Name</a></li>  <li class="file"><a href="/wiki/2021-03-03-Service%20Providers%20for%20Internationalization/">Service Providers for Internationalization</a></li>  <li class="file"><a href="/wiki/2021-03-03-Installing%20a%20Custom%20Resource%20Bundle%20as%20an%20Extension/">Installing a Custom Resource Bundle as an Extension</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            JavaBeans(TM)
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/2021-03-03-JavaBeans(TM)/">JavaBeans(TM)</a></li>  <li class="file"><a href="/wiki/2021-03-03-Quick%20Start/">Quick Start</a></li>  <li class="file"><a href="/wiki/2021-03-03-Creating%20a%20Project/">Creating a Project</a></li>  <li class="file"><a href="/wiki/2021-03-03-A%20Button%20is%20a%20Bean/">A Button is a Bean</a></li>  <li class="file"><a href="/wiki/2021-03-03-Wiring%20the%20Application/">Wiring the Application</a></li>  <li class="file"><a href="/wiki/2021-03-03-Using%20a%20Third-Party%20Bean/">Using a Third-Party Bean</a></li>  <li class="file"><a href="/wiki/2021-03-03-Writing%20JavaBeans%20Components/">Writing JavaBeans Components</a></li>  <li class="file"><a href="/wiki/2021-03-03-Properties/">Properties</a></li>  <li class="file"><a href="/wiki/2021-03-03-Methods/">Methods</a></li>  <li class="file"><a href="/wiki/2021-03-03-Events/">Events</a></li>  <li class="file"><a href="/wiki/2021-03-03-Using%20a%20BeanInfo/">Using a BeanInfo</a></li>  <li class="file"><a href="/wiki/2021-03-03-Advanced%20JavaBeans%20Topics/">Advanced JavaBeans Topics</a></li>  <li class="file"><a href="/wiki/2021-03-03-Bean%20Persistence/">Bean Persistence</a></li>  <li class="file"><a href="/wiki/2021-03-03-Long%20Term%20Persistence/">Long Term Persistence</a></li>  <li class="file"><a href="/wiki/2021-03-03-Bean%20Customization/">Bean Customization</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            JavaNotebook
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/2021-03-03-Java%20data%20type/">Java data type</a></li>  <li class="file"><a href="/wiki/2021-03-03-Encapsulation/">Encapsulation</a></li>  <li class="file"><a href="/wiki/2021-03-03-Override/">Override</a></li>  <li class="file"><a href="/wiki/2021-03-03-aggregation%20operation/">aggregation operation</a></li>  <li class="file"><a href="/wiki/2021-03-03-Java%20Number/">Java Number</a></li>  <li class="file"><a href="/wiki/2021-03-03-Math/">Math</a></li>  <li class="file"><a href="/wiki/2021-03-03-Java%20String/">Java String</a></li>  <li class="file"><a href="/wiki/2021-03-03-Essential%20Class/">Essential Class</a></li>  <li class="file"><a href="/wiki/2021-03-03-Error%20exception/">Error exception</a></li>  <li class="file"><a href="/wiki/2021-03-03-checked%20exception/">checked exception</a></li>  <li class="file"><a href="/wiki/2021-03-03-Runtime%20exception/">Runtime exception</a></li>  <li class="file"><a href="/wiki/2021-03-03-Specify%20Exception%20thrown%20by%20method/">Specify Exception thrown by method</a></li>  <li class="file"><a href="/wiki/2021-03-03-unchecked%20exception/">unchecked exception</a></li>  <li class="file"><a href="/wiki/2021-03-03-Java/">Java</a></li>  <li class="file"><a href="/wiki/2021-03-03-Document%20Comment/">Document Comment</a></li>  <li class="file"><a href="/wiki/2021-03-03-Abstraction/">Abstraction</a></li>  <li class="file"><a href="/wiki/2021-03-03-Java%20modifier/">Java modifier</a></li>  <li class="file"><a href="/wiki/2021-03-03-Enum/">Enum</a></li>  <li class="file"><a href="/wiki/2021-03-03-Object/">Object</a></li>  <li class="file"><a href="/wiki/2021-03-03-generic%20Array%20List/">generic Array List</a></li>  <li class="file"><a href="/wiki/2021-03-03-Inheritance/">Inheritance</a></li>  <li class="file"><a href="/wiki/2021-03-03-Java%20OOP/">Java OOP</a></li>  <li class="file"><a href="/wiki/2021-03-03-Static%20inner%20class/">Static inner class</a></li>  <li class="file"><a href="/wiki/2021-03-03-Inner%20class/">Inner class</a></li>  <li class="file"><a href="/wiki/2021-03-03-Java%20variable/">Java variable</a></li>  <li class="file"><a href="/wiki/2021-03-03-Java%20basic/">Java basic</a></li>  <li class="file"><a href="/wiki/2021-03-03-Interface/">Interface</a></li>  <li class="file"><a href="/wiki/2021-03-03-Package/">Package</a></li>  <li class="file"><a href="/wiki/2021-03-03-Polymorphism/">Polymorphism</a></li>  <li class="file"><a href="/wiki/2021-03-03-casting/">casting</a></li>  <li class="file"><a href="/wiki/2021-03-03-Generic/">Generic</a></li>  <li class="file"><a href="/wiki/2021-03-03-%E6%96%AD%E8%A8%80/">断言</a></li>  <li class="file"><a href="/wiki/2021-03-03-Exception/">Exception</a></li>  <li class="file"><a href="/wiki/2021-03-03-%E6%97%A5%E5%BF%97logger/">日志logger</a></li>  <li class="file"><a href="/wiki/2021-03-03-throw%20a%20exception/">throw a exception</a></li>  <li class="file"><a href="/wiki/2021-03-03-create%20a%20exception%20class/">create a exception class</a></li>  <li class="file"><a href="/wiki/2021-03-03-catch%20and%20handle%20exception/">catch and handle exception</a></li>  <li class="file"><a href="/wiki/2021-03-03-%E5%BC%82%E5%B8%B8%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/">异常使用技巧</a></li>  <li class="file"><a href="/wiki/2021-03-03-Exception%20Advantages/">Exception Advantages</a></li>  <li class="file"><a href="/wiki/2021-03-03-Class/">Class</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            JavascriptNotebook
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/2021-03-03-JavaScript_data_type/">JavaScript_data_type</a></li>  <li class="file"><a href="/wiki/2021-03-03-javascript_grammar/">javascript_grammar</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Linux
+                        </a>
+                         <ul class="unstyled" id="tree"> 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Shell
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/2020-03-03-Shell-common-command/">2020-03-03-Shell-common-command</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/wiki/Linux/">Linux</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Linux Shell
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/2020-03-03-Simple-usage/">Simple-usage</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            RMI
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/2021-03-03-RMI/">RMI</a></li>  <li class="file"><a href="/wiki/2021-03-03-An%20Overview%20of%20RMI%20Applications/">An Overview of RMI Applications</a></li>  <li class="file"><a href="/wiki/2021-03-03-Writing%20an%20RMI%20Server/">Writing an RMI Server</a></li>  <li class="file"><a href="/wiki/2021-03-03-Designing%20a%20Remote%20Interface/">Designing a Remote Interface</a></li>  <li class="file"><a href="/wiki/2021-03-03-Implementing%20a%20Remote%20Interface/">Implementing a Remote Interface</a></li>  <li class="file"><a href="/wiki/2021-03-03-Creating%20a%20Client%20Program/">Creating a Client Program</a></li>  <li class="file"><a href="/wiki/2021-03-03-Compiling%20and%20Running%20the%20Example/">Compiling and Running the Example</a></li>  <li class="file"><a href="/wiki/2021-03-03-Compiling%20the%20Example%20Programs/">Compiling the Example Programs</a></li>  <li class="file"><a href="/wiki/2021-03-03-Running%20the%20Example%20Programs/">Running the Example Programs</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Sound
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/2021-03-03-Sound/">Sound</a></li>  <li class="file"><a href="/wiki/2021-03-03-Overview%20of%20the%20Sampled%20Package/">Overview of the Sampled Package</a></li>  <li class="file"><a href="/wiki/2021-03-03-Accessing%20Audio%20System%20Resources/">Accessing Audio System Resources</a></li>  <li class="file"><a href="/wiki/2021-03-03-Playing%20Back%20Audio/">Playing Back Audio</a></li>  <li class="file"><a href="/wiki/2021-03-03-Capturing%20Audio/">Capturing Audio</a></li>  <li class="file"><a href="/wiki/2021-03-03-Processing%20Audio%20with%20Controls/">Processing Audio with Controls</a></li>  <li class="file"><a href="/wiki/2021-03-03-Using%20Files%20and%20Format%20Converters/">Using Files and Format Converters</a></li>  <li class="file"><a href="/wiki/2021-03-03-Overview%20of%20the%20MIDI%20Package/">Overview of the MIDI Package</a></li>  <li class="file"><a href="/wiki/2021-03-03-Accessing%20MIDI%20System%20Resources/">Accessing MIDI System Resources</a></li>  <li class="file"><a href="/wiki/2021-03-03-Transmitting%20and%20Receiving%20MIDI%20Messages/">Transmitting and Receiving MIDI Messages</a></li>  <li class="file"><a href="/wiki/2021-03-03-Introduction%20to%20Sequencers/">Introduction to Sequencers</a></li>  <li class="file"><a href="/wiki/2021-03-03-Using%20Sequencer%20Methods/">Using Sequencer Methods</a></li>  <li class="file"><a href="/wiki/2021-03-03-Using%20Advanced%20Sequencer%20Features/">Using Advanced Sequencer Features</a></li>  <li class="file"><a href="/wiki/2021-03-03-Synthesizing%20Sound/">Synthesizing Sound</a></li>  <li class="file"><a href="/wiki/2021-03-03-Introduction%20to%20the%20Service%20Provider%20Interfaces/">Introduction to the Service Provider Interfaces</a></li>  <li class="file"><a href="/wiki/2021-03-03-Providing%20Sampled-Audio%20Services/">Providing Sampled-Audio Services</a></li>  <li class="file"><a href="/wiki/2021-03-03-Providing%20MIDI%20Services/">Providing MIDI Services</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Start
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/hello-world/">Hello World</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Web相关
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/2021-03-03-ssl%E8%AF%81%E4%B9%A6/">ssl证书</a></li>  <li class="file"><a href="/wiki/2021-03-03-%E5%85%8D%E8%B4%B9%E5%9F%9F%E5%90%8D%E7%94%B3%E8%AF%B7/">免费域名申请</a></li>  <li class="file"><a href="/wiki/2021-03-03-%E5%9F%9F%E5%90%8D%E5%92%8Cip/">域名和ip</a></li>  <li class="file"><a href="/wiki/2021-03-03-%E5%86%85%E7%BD%91%E5%92%8C%E5%A4%96%E7%BD%91/">内网和外网</a></li>  <li class="file"><a href="/wiki/2021-03-03-%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/">内网穿透</a></li>  <li class="file"><a href="/wiki/2021-03-03-%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F%E5%8E%9F%E7%90%86/">内网穿透原理</a></li>  <li class="file"><a href="/wiki/2021-03-03-DDNS%E4%B8%8E%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91/">DDNS与端口转发</a></li>  <li class="file"><a href="/wiki/2021-03-03-VPN%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86/">VPN工作原理</a></li>  <li class="file"><a href="/wiki/2021-03-03-trojan%E4%BB%A3%E7%90%86%E9%85%8D%E7%BD%AE/">trojan代理配置</a></li>  <li class="file"><a href="/wiki/2021-03-03-%E5%85%8D%E8%B4%B9%E4%BB%A3%E7%90%86%E9%85%8D%E7%BD%AE/">免费代理配置</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            bat批处理的使用
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/2021-03-03-%E6%89%B9%E5%A4%84%E7%90%86%E7%9A%84%E5%8F%82%E6%95%B0%E4%BC%A0%E9%80%92/">批处理的参数传递</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            git使用
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/2021-03-03-%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/">版本控制</a></li>  <li class="file"><a href="/wiki/2021-03-03-%E9%87%8D%E7%BD%AE%E7%99%BB%E9%99%86%E4%BF%A1%E6%81%AF/">重置登陆信息</a></li>  <li class="file"><a href="/wiki/2021-03-03-%E6%9F%A5%E7%9C%8B%E6%8F%90%E4%BA%A4%E5%8E%86%E5%8F%B2/">查看提交历史</a></li>  <li class="file"><a href="/wiki/2021-03-03-%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/">服务器搭建</a></li>  <li class="file"><a href="/wiki/2021-03-03-git%E9%85%8D%E7%BD%AE/">git配置</a></li>  <li class="file"><a href="/wiki/2021-03-03-Github%E8%AE%BF%E9%97%AE%E5%A4%B1%E8%B4%A5/">Github访问失败</a></li>  <li class="file"><a href="/wiki/2021-03-03-git%E5%8E%9F%E7%90%86/">git原理</a></li>  <li class="file"><a href="/wiki/2021-03-03-Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">Git常用命令</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            maven-note
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/2021-03-03-quick-start/">quick-start</a></li>  <li class="file"><a href="/wiki/2021-03-03-%E5%8A%A0%E8%BD%BD%E7%AC%AC%E4%B8%89%E6%96%B9%E8%BD%AF%E4%BB%B6%E5%8C%85%E5%92%8C%E5%BA%93/">加载第三方软件包和库</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            md_photos
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/2021-03-03-plaxis%E6%8C%87%E5%AF%BC%E6%89%8B%E5%86%8C%E7%AC%94%E8%AE%B0/">plaxis指导手册笔记</a></li>  <li class="file"><a href="/wiki/2021-03-03-plaxis_workflow/">plaxis_workflow</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            plaxis_notebook
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/2021-03-03-ansys_knowledges/">ansys_knowledges</a></li>  <li class="file"><a href="/wiki/2021-03-03-Plaxis_knowledges/">Plaxis_knowledges</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            python_notebook
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/2021-03-03-common_encrypt_algorithms_python/">common_encrypt_algorithms_python</a></li>  <li class="file"><a href="/wiki/2021-03-03-data_anlyze/">data_anlyze</a></li>  <li class="file"><a href="/wiki/2021-03-03-python_spider/">python_spider</a></li>  <li class="file"><a href="/wiki/2021-03-03-python_data_anlysis_notes/">python_data_anlysis_notes</a></li>  <li class="file"><a href="/wiki/2021-03-03-python_knowledges/">python_knowledges</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            vim使用
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/2021-03-03-%E5%BF%AB%E9%80%9F%E6%B3%A8%E9%87%8A%E5%92%8C%E5%8F%96%E6%B6%88%E6%B3%A8%E9%87%8A/">快速注释和取消注释</a></li>  <li class="file"><a href="/wiki/2021-03-03-vim%E9%85%8D%E7%BD%AE/">vim配置</a></li>  <li class="file"><a href="/wiki/2021-03-03-vim%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/">vim配置文件</a></li>  <li class="file"><a href="/wiki/2021-03-03-VIMSCRIPT/">VIMSCRIPT</a></li>  <li class="file"><a href="/wiki/2021-03-03-vim%E5%BF%AB%E6%8D%B7%E9%94%AE/">vim快捷键</a></li>  <li class="file"><a href="/wiki/2021-03-03-%E7%B3%BB%E7%BB%9Fvim%E6%8F%92%E4%BB%B6%E5%AE%89%E8%A3%85/">系统vim插件安装</a></li>  <li class="file"><a href="/wiki/2021-03-03-YouCompleteMe%E6%8F%92%E4%BB%B6/">YouCompleteMe插件</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            杂记
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/2021-03-03-github%E5%8A%A0%E9%80%9F/">github加速</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/wiki/2020-12-06-Modifying-a-Manifest-File/"></a></li>  </ul> 
+    </div>
+    <script>
+        $(document).ready(function() {
+            var iconFolderOpenClass  = 'fa-folder-open';
+            var iconFolderCloseClass = 'fa-folder';
+            var iconAllExpandClass = 'fa-angle-double-down';
+            var iconAllPackClass = 'fa-angle-double-up';
+            // Handle directory-tree expansion:
+            // 左键单独展开目录
+            $(document).on('click', '#categories a[data-role="directory"]', function (event) {
+                event.preventDefault();
+
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconFolderOpenClass);
+                var subtree = $(this).siblings('ul');
+                icon.removeClass(iconFolderOpenClass).removeClass(iconFolderCloseClass);
+                if (expanded) {
+                    if (typeof subtree != 'undefined') {
+                        subtree.slideUp({ duration: 100 });
+                    }
+                    icon.addClass(iconFolderCloseClass);
+                } else {
+                    if (typeof subtree != 'undefined') {
+                        subtree.slideDown({ duration: 100 });
+                    }
+                    icon.addClass(iconFolderOpenClass);
+                }
+            });
+            // 右键展开下属所有目录
+            $('#categories a[data-role="directory"]').bind("contextmenu", function(event){
+                event.preventDefault();
+                
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconFolderOpenClass);
+                var listNode = $(this).siblings('ul');
+                var subtrees = $.merge(listNode.find('li ul'), listNode);
+                var icons = $.merge(listNode.find('.fa'), icon);
+                icons.removeClass(iconFolderOpenClass).removeClass(iconFolderCloseClass);
+                if(expanded) {
+                    subtrees.slideUp({ duration: 100 });
+                    icons.addClass(iconFolderCloseClass);
+                } else {
+                    subtrees.slideDown({ duration: 100 });
+                    icons.addClass(iconFolderOpenClass);
+                }
+            })
+            // 展开关闭所有目录按钮
+            $(document).on('click', '#allExpand', function (event) {
+                event.preventDefault();
+                
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconAllExpandClass);
+                icon.removeClass(iconAllExpandClass).removeClass(iconAllPackClass);
+                if(expanded) {
+                    $('#sidebar .fa.fa-folder').removeClass('fa-folder').addClass('fa-folder-open')
+                    $('#categories li ul').slideDown({ duration: 100 });
+                    icon.addClass(iconAllPackClass);
+                } else {
+                    $('#sidebar .fa.fa-folder-open').removeClass('fa-folder-open').addClass('fa-folder')
+                    $('#categories li ul').slideUp({ duration: 100 });
+                    icon.addClass(iconAllExpandClass);
+                }
+            });  
+        });
+    </script>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title"><span>recent</span></h3>
+        <div class="widget">
+            <ul id="recent-post" class>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/wiki/2020-03-03-Shell-common-command/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Linux/">Linux</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/Linux/Shell/">Shell</a></p>
+                            <p class="item-title"><a href="/wiki/2020-03-03-Shell-common-command/" class="title">2020-03-03-Shell-common-command</a></p>
+                            <p class="item-date"><time datetime="2021-03-03T15:28:56.915Z" itemprop="datePublished">2021-03-03</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/wiki/2020-03-03-Simple-usage/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Linux-Shell/">Linux Shell</a></p>
+                            <p class="item-title"><a href="/wiki/2020-03-03-Simple-usage/" class="title">Simple-usage</a></p>
+                            <p class="item-date"><time datetime="2021-03-03T15:20:19.841Z" itemprop="datePublished">2021-03-03</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/wiki/2020-12-06-Modifying-a-Manifest-File/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/wiki/2020-12-06-Modifying-a-Manifest-File/" class="title"></a></p>
+                            <p class="item-date"><time datetime="2021-03-03T07:30:49.591Z" itemprop="datePublished">2021-03-03</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/wiki/2021-03-03-github%E5%8A%A0%E9%80%9F/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/%E6%9D%82%E8%AE%B0/">杂记</a></p>
+                            <p class="item-title"><a href="/wiki/2021-03-03-github%E5%8A%A0%E9%80%9F/" class="title">github加速</a></p>
+                            <p class="item-date"><time datetime="2021-03-03T06:35:05.729Z" itemprop="datePublished">2021-03-03</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/wiki/2021-03-03-Class/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/JavaNotebook/">JavaNotebook</a></p>
+                            <p class="item-title"><a href="/wiki/2021-03-03-Class/" class="title">Class</a></p>
+                            <p class="item-date"><time datetime="2021-03-03T05:46:28.651Z" itemprop="datePublished">2021-03-03</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+    
+    <div id="toTop" class="fa fa-angle-up"></div>
+</aside>
+            
+            <section id="main"><article id="post-2021-03-03-Setting Package Version Information" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+                    <div class="article-meta">
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/Deployment/">Deployment</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link-link" href="/tags/Deployment/" rel="tag">Deployment</a>
+    </div>
+
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/wiki/2021-03-03-Setting%20Package%20Version%20Information/">
+            <time datetime="2020-12-06T04:45:47.005Z" itemprop="datePublished">2020-12-06</time>
+        </a>
+    </div>
+
+
+                        
+                            <i class="fa fa-bar-chart"></i>
+                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
+                        
+                        
+                            <div class="article-meta-button">
+                                <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/li-jiabao/mywiki/raw/main/source/_posts/2021-03-03-Setting Package Version Information.md"> Source </a>
+                            </div>
+                            <div class="article-meta-button">
+                                <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/li-jiabao/mywiki/edit/main/source/_posts/2021-03-03-Setting Package Version Information.md"> Edit </a>
+                            </div>
+                            <div class="article-meta-button">
+                                <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/li-jiabao/mywiki/commits/main/source/_posts/2021-03-03-Setting Package Version Information.md"> History </a>
+                            </div>
+                        
+                    </div>
+                
+                
+    
+        <h1 class="article-title" itemprop="name">
+            Setting Package Version Information
+        </h1>
+    
+
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+        
+            
+        
+        
+            <h1 id="Setting-Package-Version-Information"><a href="#Setting-Package-Version-Information" class="headerlink" title="Setting Package Version Information"></a>Setting Package Version Information</h1><p>You may need to include package version information in a JAR file’s manifest. You provide this information with the following headers in the manifest:</p>
+<th id="h1">Header</th><th id="h2">Definition</th>
+<td headers="h1"><tt>Name</tt></td><td headers="h2">The name of the specification.</td>
+<td headers="h1"><tt>Specification-Title</tt></td><td headers="h2">The title of the specification.</td>
+<td headers="h1"><tt>Specification-Version</tt></td><td headers="h2">The version of the specification.</td>
+<td headers="h1"><tt>Specification-Vendor</tt></td><td headers="h2">The vendor of the specification.</td>
+<td headers="h1"><tt>Implementation-Title</tt></td><td headers="h2">The title of the implementation.</td>
+<td headers="h1"><tt>Implementation-Version</tt></td><td headers="h2">The build number of the implementation.</td>
+<td headers="h1"><tt>Implementation-Vendor</tt></td><td headers="h2">The vendor of the implementation.</td>
+
+<p>One set of such headers can be assigned to each package. The versioning headers should appear directly beneath the <tt>Name</tt> header for the package. This example shows all the versioning headers:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">Name: java&#x2F;util&#x2F;</span><br><span class="line">Specification-Title: Java Utility Classes</span><br><span class="line">Specification-Version: 1.2</span><br><span class="line">Specification-Vendor: Example Tech, Inc.</span><br><span class="line">Implementation-Title: java.util</span><br><span class="line">Implementation-Version: build57</span><br><span class="line">Implementation-Vendor: Example Tech, Inc.</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>For more information about package version headers, see the<br><a target="_blank" rel="external nofollow noopener noreferrer" href="https://docs.oracle.com/javase/8/docs/technotes/guides/versioning/spec/versioning2.html#wp89936">Package Versioning specification </a>.</p>
+<h2 id="An-Example"><a href="#An-Example" class="headerlink" title="An Example"></a>An Example</h2><p>We want to include the headers in the example above in the manifest of MyJar.jar.</p>
+<p>We first create a text file named <tt>Manifest.txt</tt> with the following contents:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">Name: java&#x2F;util&#x2F;</span><br><span class="line">Specification-Title: Java Utility Classes</span><br><span class="line">Specification-Version: 1.2</span><br><span class="line">Specification-Vendor: Example Tech, Inc.</span><br><span class="line">Implementation-Title: java.util </span><br><span class="line">Implementation-Version: build57</span><br><span class="line">Implementation-Vendor: Example Tech, Inc.</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>We then create a JAR file named <tt>MyJar.jar</tt> by entering the following command:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">jar cfm MyJar.jar Manifest.txt MyPackage&#x2F;*.class</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>This creates the JAR file with a manifest with the following contents:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">Manifest-Version: 1.0</span><br><span class="line">Created-By: 1.7.0_06 (Oracle Corporation)</span><br><span class="line">Name: java&#x2F;util&#x2F;</span><br><span class="line">Specification-Title: Java Utility Classes</span><br><span class="line">Specification-Version: 1.2</span><br><span class="line">Specification-Vendor: Example Tech, Inc.</span><br><span class="line">Implementation-Title: java.util </span><br><span class="line">Implementation-Version: build57</span><br><span class="line">Implementation-Vendor: Example Tech, Inc.</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+            </div>
+        
+        <footer class="article-footer">
+        </footer>
+    </div>
+</article>
+
+
+    
+<nav id="article-nav">
+    
+        <a href="/wiki/2021-03-03-Sealing%20Packages%20within%20a%20JAR%20File/" id="article-nav-newer" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Newer</strong>
+            <div class="article-nav-title">
+                
+                    Sealing Packages within a JAR File
+                
+            </div>
+        </a>
+    
+    
+        <a href="/wiki/2021-03-03-Adding%20Classes%20to%20the%20JAR%20File's%20Classpath/" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Older</strong>
+            <div class="article-nav-title">Adding Classes to the JAR File&#39;s Classpath</div>
+        </a>
+    
+</nav>
+
+
+
+
+
+    
+    
+
+
+
+
+<!-- baidu url auto push script -->
+<script type="text/javascript">
+    !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=window.location.href,o=document.referrer;if(!e.test(r)){var n="//api.share.baidu.com/s.gif";o?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var t=new Image;t.src=n}}(window);
+</script>     
+</section>
+        </div>
+        <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            Jiabao &copy; 2021 
+            <a rel="external nofollow noopener noreferrer" target="_blank" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"></a>
+            <br> Powered by <a href="http://hexo.io/" target="_blank" rel="external nofollow noopener noreferrer">Hexo</a>. Theme - <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/zthxxx/hexo-theme-Wikitten">wikitten</a>
+            
+                <br>
+                <span id="busuanzi_container_site_pv"><i class="fa fa-eye"></i> <span id="busuanzi_value_site_pv"></span></span>
+                &nbsp;|&nbsp;
+                <span id="busuanzi_container_site_pv"><i class="fa fa-user"></i> <span id="busuanzi_value_site_uv"></span></span>
+            
+        </div>
+    </div>
+</footer>
+
+        
+
+    
+        
+<script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-share.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-video.min.js"></script>
+
+    
+    
+        
+<script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+
+    
+    
+
+
+
+<!-- Custom Scripts -->
+
+<script src="/js/main.js"></script>
+
+
+    </div>
+</body>
+</html>
